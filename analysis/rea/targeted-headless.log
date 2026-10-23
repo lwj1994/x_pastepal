@@ -1,0 +1,147 @@
+openjdk version "21.0.12.1" 2026-08-18
+OpenJDK Runtime Environment Homebrew (build 21.0.12.1)
+OpenJDK 64-Bit Server VM Homebrew (build 21.0.12.1, mixed mode)
+INFO  Using log config file: jar:file:/opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: /Users/luwenjie/Library/ghidra/ghidra_12.1.4_PUBLIC/application.log (LoggingInitialization)  
+INFO  Loading user preferences: /Users/luwenjie/Library/ghidra/ghidra_12.1.4_PUBLIC/preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (363 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (1081 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (20 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Processors/JVM/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Processors/PIC/ghidra_scripts
+    /Users/luwenjie/Documents/GitHub/x_pastepal/analysis/rea
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/PyGhidra/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Debug/Debugger/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/PDB/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/VersionTracking/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/FunctionID/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/BytePatterns/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/BSim/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/SwiftDemangler/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/Decompiler/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Processors/DATA/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/Base/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/FileFormats/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Processors/8051/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Processors/Atmel/ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Creating temporary project: /tmp/xpastepal-ghidra-targeted/pastepal-targeted (HeadlessAnalyzer)  
+INFO  Creating project: /tmp/xpastepal-ghidra-targeted/pastepal-targeted (DefaultProject)  
+INFO  REPORT: Processing input files:  (HeadlessAnalyzer)  
+INFO       project: /tmp/xpastepal-ghidra-targeted/pastepal-targeted (HeadlessAnalyzer)  
+INFO  IMPORTING: file:///Users/luwenjie/.rea/targets/pastepal-ecc6c102/PastePal.arm64 (HeadlessAnalyzer)  
+INFO  Using Loader: Mac OS X Mach-O (ProgramLoader)  
+INFO  Using Language/Compiler: AARCH64:LE:64:AppleSilicon:swift (ProgramLoader)  
+INFO  Using Library Search Path: [., /System/Library/dyld/dyld_shared_cache_arm64e, /System/Library/dyld/dyld_shared_cache_x86_64, /System/Library/dyld/dyld_shared_cache_x86_64h, /System/Cryptexes/OS/System/Library/dyld/dyld_shared_cache_arm64e, /System/Cryptexes/OS/System/Library/dyld/dyld_shared_cache_x86_64, /System/Cryptexes/OS/System/Library/dyld/dyld_shared_cache_x86_64h, /Users/luwenjie/Library/Java/Extensions, /Library/Java/Extensions, /Network/Library/Java/Extensions, /System/Library/Java/Extensions, /usr/lib/java] (ProgramLoader)  
+INFO  Additional info:
+Loading file:///Users/luwenjie/.rea/targets/pastepal-ecc6c102/PastePal.arm64?MD5=d29f001e594bb4b83c11b734f9d203f7...
+Discovered 55851 DYLD_CHAINED_PTR_64_OFFSET chained pointers.
+Fixed up 55851 chained pointers.
+PastePal.arm64: installed 8 objc SpecExtensions
+------------------------------------------------
+
+Linking the External Programs of 'PastePal.arm64' to imported libraries...
+  [/System/Library/Frameworks/CloudKit.framework/Versions/A/CloudKit] -> not found in project
+  [/System/Library/Frameworks/StoreKit.framework/Versions/A/StoreKit] -> not found in project
+  [/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation] -> not found in project
+  [/usr/lib/libobjc.A.dylib] -> not found in project
+  [/usr/lib/libSystem.B.dylib] -> not found in project
+  [/System/Library/Frameworks/AVFAudio.framework/Versions/A/AVFAudio] -> not found in project
+  [/System/Library/Frameworks/AVFoundation.framework/Versions/A/AVFoundation] -> not found in project
+  [/System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate] -> not found in project
+  [/System/Library/Frameworks/AdServices.framework/Versions/A/AdServices] -> not found in project
+  [/System/Library/Frameworks/AppIntents.framework/Versions/A/AppIntents] -> not found in project
+  [/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit] -> not found in project
+  [/System/Library/Frameworks/ApplicationServices.framework/Versions/A/ApplicationServices] -> not found in project
+  [/System/Library/Frameworks/Carbon.framework/Versions/A/Carbon] -> not found in project
+  [/System/Library/Frameworks/Combine.framework/Versions/A/Combine] -> not found in project
+  [/System/Library/Frameworks/CoreData.framework/Versions/A/CoreData] -> not found in project
+  [/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation] -> not found in project
+  [/System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics] -> not found in project
+  [/System/Library/Frameworks/CoreImage.framework/Versions/A/CoreImage] -> not found in project
+  [/System/Library/Frameworks/CoreServices.framework/Versions/A/CoreServices] -> not found in project
+  [/System/Library/Frameworks/CoreText.framework/Versions/A/CoreText] -> not found in project
+  [/System/Library/Frameworks/CoreVideo.framework/Versions/A/CoreVideo] -> not found in project
+  [/System/Library/Frameworks/CryptoKit.framework/Versions/A/CryptoKit] -> not found in project
+  [/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit] -> not found in project
+  [/System/Library/Frameworks/ImageIO.framework/Versions/A/ImageIO] -> not found in project
+  [/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/JavaScriptCore] -> not found in project
+  [/System/Library/Frameworks/LinkPresentation.framework/Versions/A/LinkPresentation] -> not found in project
+  [/System/Library/Frameworks/MultipeerConnectivity.framework/Versions/A/MultipeerConnectivity] -> not found in project
+  [/System/Library/Frameworks/PDFKit.framework/Versions/A/PDFKit] -> not found in project
+  [/System/Library/Frameworks/Photos.framework/Versions/A/Photos] -> not found in project
+  [/System/Library/Frameworks/QuartzCore.framework/Versions/A/QuartzCore] -> not found in project
+  [/System/Library/Frameworks/QuickLookThumbnailing.framework/Versions/A/QuickLookThumbnailing] -> not found in project
+  [/System/Library/Frameworks/QuickLookUI.framework/Versions/A/QuickLookUI] -> not found in project
+  [/System/Library/Frameworks/Security.framework/Versions/A/Security] -> not found in project
+  [/System/Library/Frameworks/ServiceManagement.framework/Versions/A/ServiceManagement] -> not found in project
+  [/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI] -> not found in project
+  [/System/Library/Frameworks/Symbols.framework/Versions/A/Symbols] -> not found in project
+  [/System/Library/Frameworks/Vision.framework/Versions/A/Vision] -> not found in project
+  [/System/Library/Frameworks/WebKit.framework/Versions/A/WebKit] -> not found in project
+  [/System/Library/Frameworks/WidgetKit.framework/Versions/A/WidgetKit] -> not found in project
+  [/System/Library/Frameworks/_AppIntents_AppKit.framework/Versions/A/_AppIntents_AppKit] -> not found in project
+  [/System/Library/Frameworks/_AppIntents_SwiftUI.framework/Versions/A/_AppIntents_SwiftUI] -> not found in project
+  [/System/Library/Frameworks/_StoreKit_SwiftUI.framework/Versions/A/_StoreKit_SwiftUI] -> not found in project
+  [/usr/lib/libc++.1.dylib] -> not found in project
+  [/usr/lib/libsqlite3.dylib] -> not found in project
+  [/usr/lib/swift/libswiftAVFoundation.dylib] -> not found in project
+  [/usr/lib/swift/libswiftAccelerate.dylib] -> not found in project
+  [/usr/lib/swift/libswiftCore.dylib] -> not found in project
+  [/usr/lib/swift/libswiftCoreAudio.dylib] -> not found in project
+  [/usr/lib/swift/libswiftCoreFoundation.dylib] -> not found in project
+  [/usr/lib/swift/libswiftCoreImage.dylib] -> not found in project
+  [/usr/lib/swift/libswiftCoreLocation.dylib] -> not found in project
+  [/usr/lib/swift/libswiftCoreMIDI.dylib] -> not found in project
+  [/usr/lib/swift/libswiftCoreMedia.dylib] -> not found in project
+  [/usr/lib/swift/libswiftDarwin.dylib] -> not found in project
+  [/usr/lib/swift/libswiftDispatch.dylib] -> not found in project
+  [/usr/lib/swift/libswiftIOKit.dylib] -> not found in project
+  [/usr/lib/swift/libswiftIntents.dylib] -> not found in project
+  [/usr/lib/swift/libswiftMapKit.dylib] -> not found in project
+  [/usr/lib/swift/libswiftMetal.dylib] -> not found in project
+  [/usr/lib/swift/libswiftOSLog.dylib] -> not found in project
+  [/usr/lib/swift/libswiftObjectiveC.dylib] -> not found in project
+  [/usr/lib/swift/libswiftQuartzCore.dylib] -> not found in project
+  [/usr/lib/swift/libswiftQuickLookUI.dylib] -> not found in project
+  [/usr/lib/swift/libswiftSpatial.dylib] -> not found in project
+  [/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib] -> not found in project
+  [/usr/lib/swift/libswiftXPC.dylib] -> not found in project
+  [/usr/lib/swift/libswift_Concurrency.dylib] -> not found in project
+  [/usr/lib/swift/libswiftos.dylib] -> not found in project
+  [/usr/lib/swift/libswiftsimd.dylib] -> not found in project
+  [/usr/lib/swift/libswiftCloudKit.dylib] -> not found in project
+  [/usr/lib/swift/libswiftFoundation.dylib] -> not found in project
+  [/usr/lib/swift/libswiftAppKit.dylib] -> not found in project
+  [/usr/lib/swift/libswiftCoreData.dylib] -> not found in project
+  [/usr/lib/swift/libswiftCoreGraphics.dylib] -> not found in project
+  [/usr/lib/swift/libswiftNetwork.dylib] -> not found in project
+  [/usr/lib/swift/libswiftPhotosUI.dylib] -> not found in project
+------------------------------------------------
+
+ (ProgramLoader)  
+INFO  IMPORTING: Loaded 0 additional files (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: TargetedDecompile.java '/Users/luwenjie/Documents/GitHub/x_pastepal/analysis/rea/targeted-pseudocode'  (HeadlessAnalyzer)  
+INFO  SCRIPT: /Users/luwenjie/Documents/GitHub/x_pastepal/analysis/rea/TargetedDecompile.java (HeadlessAnalyzer)  
+INFO  TargetedDecompile.java> DECOMPILED 100134364 (GhidraScript)  
+INFO  TargetedDecompile.java> DECOMPILED 10013f3d8 (GhidraScript)  
+INFO  TargetedDecompile.java> DECOMPILED 10013f900 (GhidraScript)  
+INFO  TargetedDecompile.java> DECOMPILED 10013fd5c (GhidraScript)  
+INFO  TargetedDecompile.java> DECOMPILED 1001af3a8 (GhidraScript)  
+INFO  TargetedDecompile.java> DECOMPILED 1001af49c (GhidraScript)  
+INFO  TargetedDecompile.java> DECOMPILED 1001ae8ac (GhidraScript)  
+INFO  TargetedDecompile.java> DECOMPILED 1001ae8e8 (GhidraScript)  
+INFO  REPORT: Discarded file import due to readOnly option: /PastePal.arm64 (HeadlessAnalyzer)  
+INFO  REPORT: Import succeeded (HeadlessAnalyzer)  

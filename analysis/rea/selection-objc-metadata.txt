@@ -1,0 +1,164 @@
+        baseProperties 0x100000000 __mh_execute_header
+0000000100ad9800 0x100affa10
+    isa        0x100b12df0
+    superclass 0x0 _OBJC_CLASS_$_NSCollectionViewItem
+    cache      0x0 __objc_empty_cache
+    vtable     0x100000000 __mh_execute_header
+    data       0x100aff9b2 Swift class
+        flags          0x184 RO_HAS_CXX_STRUCTORS
+        instanceStart  8
+        instanceSize   24
+        reserved       0x0
+        ivarLayout     0x100000000 __mh_execute_header
+        name           0x1008da5e0 _TtC8PastePal8BaseCell
+        baseMethods    0x1008d0490
+            entsize 12 (relative)
+            count   10
+            name    0x22abc8 (0x100afb060 extends past end of file)
+            types   0xb524 (0x1008db9c0 extends past end of file)
+            imp     0xff88a900 (0x10015ada0 extends past end of file)
+            name    0x229474 (0x100af9918 extends past end of file)
+            types   0xb518 (0x1008db9c0 extends past end of file)
+            imp     0xff88a960 (0x10015ae0c extends past end of file)
+            name    0x229458 (0x100af9908 extends past end of file)
+            types   0xb50c (0x1008db9c0 extends past end of file)
+            imp     0xff88a9b0 (0x10015ae68 extends past end of file)
+            name    0x229654 (0x100af9b10 extends past end of file)
+            types   0x2bec0 (0x1008fc380 extends past end of file)
+            imp     0xff88aa14 (0x10015aed8 extends past end of file)
+            name    0x229640 (0x100af9b08 extends past end of file)
+            types   0x24d56 (0x1008f5222 extends past end of file)
+            imp     0xff88aa44 (0x10015af14 extends past end of file)
+            name    0x229624 (0x100af9af8 extends past end of file)
+            types   0xb4e8 (0x1008db9c0 extends past end of file)
+            imp     0xff88aaa4 (0x10015af80 extends past end of file)
+            name    0x2295e8 (0x100af9ac8 extends past end of file)
+            types   0x5d1c (0x1008d6200 extends past end of file)
+            imp     0xff88ac6c (0x10015b154 extends past end of file)
+            name    0x229414 (0x100af9900 extends past end of file)
+            types   0x98e0 (0x1008d9dd0 extends past end of file)
+            imp     0xff88adc0 (0x10015b2b4 extends past end of file)
+            name    0x229298 (0x100af9790 extends past end of file)
+            types   0x99e4 (0x1008d9ee0 extends past end of file)
+            imp     0xff88aef8 (0x10015b3f8 extends past end of file)
+            name    0x22aae4 (0x100afafe8 extends past end of file)
+            types   0xb4b8 (0x1008db9c0 extends past end of file)
+            imp     0xff88af44 (0x10015b450 extends past end of file)
+        baseProtocols  0x100000000 __mh_execute_header
+        ivars          0x100ae0598
+            entsize   32
+            count     2
+            offset    0x100b12de0 8
+            name      0x1008da606 borderLayer
+            type      0x1008d5090 
+            alignment 3
+            size      8
+            offset    0x100b12de8 16
+            name      0x1008da613 menuButton
+            type      0x1008d5090 
+            alignment 3
+            size      8
+        weakIvarLayout 0x100000000 __mh_execute_header
+        baseProperties 0x100ae05e0
+            entsize    16
+            count      1
+            name       0x1008e6928 selected
+            attributes 0x1008e77dc TB,N
+Meta Class
+    isa        0x0 _OBJC_METACLASS_$_NSObject
+    superclass 0x0 _OBJC_METACLASS_$_NSCollectionViewItem
+    cache      0x0 __objc_empty_cache
+    vtable     0x100000000 __mh_execute_header
+    data       0x100ae0550
+        flags          0x81 RO_META
+        instanceStart  40
+        instanceSize   40
+        reserved       0x0
+        ivarLayout     0x100000000 __mh_execute_header
+        name           0x1008da5e0 _TtC8PastePal8BaseCell
+        baseMethods    0x100000000 __mh_execute_header
+        baseProtocols  0x100000000 __mh_execute_header
+        ivars          0x100000000 __mh_execute_header
+        weakIvarLayout 0x100000000 __mh_execute_header
+        baseProperties 0x100000000 __mh_execute_header
+0000000100ad9808 0x100affb20
+    isa        0x100b12e20
+        baseProperties 0x100000000 __mh_execute_header
+0000000100ad9860 0x100b003c0
+    isa        0x100b13370
+    superclass 0x0 _OBJC_CLASS_$_NSCollectionView
+    cache      0x0 __objc_empty_cache
+    vtable     0x100000000 __mh_execute_header
+    data       0x100b00362 Swift class
+        flags          0x184 RO_HAS_CXX_STRUCTORS
+        instanceStart  8
+        instanceSize   16
+        reserved       0x0
+        ivarLayout     0x100000000 __mh_execute_header
+        name           0x1008db6f0 _TtCC8PastePal24CollectionViewController20CustomCollectionView
+        baseMethods    0x1008d0c18
+            entsize 12 (relative)
+            count   11
+            name    0x22ac88 (0x100afb8a8 extends past end of file)
+            types   0x92bc (0x1008d9ee0 extends past end of file)
+            imp     0xff8a8fe8 (0x100179c10 extends past end of file)
+            name    0x228794 (0x100af93c0 extends past end of file)
+            types   0x55d0 (0x1008d6200 extends past end of file)
+            imp     0xff8a9038 (0x100179c6c extends past end of file)
+            name    0x228e90 (0x100af9ac8 extends past end of file)
+            types   0x55c4 (0x1008d6200 extends past end of file)
+            imp     0xff8a9314 (0x100179f54 extends past end of file)
+            name    0x2290e4 (0x100af9d28 extends past end of file)
+            types   0xaae7 (0x1008db72f extends past end of file)
+            imp     0xff8a9358 (0x100179fa4 extends past end of file)
+            name    0x2290d0 (0x100af9d20 extends past end of file)
+            types   0x81ec (0x1008d8e40 extends past end of file)
+            imp     0xff8a95e4 (0x10017a23c extends past end of file)
+            name    0x2290ac (0x100af9d08 extends past end of file)
+            types   0xaae1 (0x1008db741 extends past end of file)
+            imp     0xff8a976c (0x10017a3d0 extends past end of file)
+            name    0x229098 (0x100af9d00 extends past end of file)
+            types   0x5594 (0x1008d6200 extends past end of file)
+            imp     0xff8a9890 (0x10017a500 extends past end of file)
+            name    0x229084 (0x100af9cf8 extends past end of file)
+            types   0x5588 (0x1008d6200 extends past end of file)
+            imp     0xff8a99a0 (0x10017a61c extends past end of file)
+            name    0x228ac0 (0x100af9740 extends past end of file)
+            types   0x7fcc (0x1008d8c50 extends past end of file)
+            imp     0xff8a99dc (0x10017a664 extends past end of file)
+            name    0x228b04 (0x100af9790 extends past end of file)
+            types   0x9250 (0x1008d9ee0 extends past end of file)
+            imp     0xff8a9a54 (0x10017a6e8 extends past end of file)
+            name    0x22a350 (0x100afafe8 extends past end of file)
+            types   0xad24 (0x1008db9c0 extends past end of file)
+            imp     0xff8a9ae0 (0x10017a780 extends past end of file)
+        baseProtocols  0x100000000 __mh_execute_header
+        ivars          0x100ae10c0
+            entsize   32
+            count     1
+            offset    0x100b13368 8
+            name      0x1008db754 controller
+            type      0x1008d5090 
+            alignment 3
+            size      8
+        weakIvarLayout 0x100000000 __mh_execute_header
+        baseProperties 0x100000000 __mh_execute_header
+Meta Class
+    isa        0x0 _OBJC_METACLASS_$_NSObject
+    superclass 0x0 _OBJC_METACLASS_$_NSCollectionView
+    cache      0x0 __objc_empty_cache
+    vtable     0x100000000 __mh_execute_header
+    data       0x100ae1078
+        flags          0x81 RO_META
+        instanceStart  40
+        instanceSize   40
+        reserved       0x0
+        ivarLayout     0x100000000 __mh_execute_header
+        name           0x1008db6f0 _TtCC8PastePal24CollectionViewController20CustomCollectionView
+        baseMethods    0x100000000 __mh_execute_header
+        baseProtocols  0x100000000 __mh_execute_header
+        ivars          0x100000000 __mh_execute_header
+        weakIvarLayout 0x100000000 __mh_execute_header
+        baseProperties 0x100000000 __mh_execute_header
+0000000100ad9868 0x100b00478
+    isa        0x100b13398

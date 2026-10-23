@@ -1,0 +1,232 @@
+[
+  {
+    "owner": "_TtC8PastePal8BaseCell",
+    "selector": "loadView",
+    "address": "0x10015ada0"
+  },
+  {
+    "owner": "_TtC8PastePal8BaseCell",
+    "selector": "viewDidLoad",
+    "address": "0x10015ae0c"
+  },
+  {
+    "owner": "_TtC8PastePal8BaseCell",
+    "selector": "prepareForReuse",
+    "address": "0x10015ae68"
+  },
+  {
+    "owner": "_TtC8PastePal8BaseCell",
+    "selector": "isSelected",
+    "address": "0x10015aed8"
+  },
+  {
+    "owner": "_TtC8PastePal8BaseCell",
+    "selector": "setSelected:",
+    "address": "0x10015af14"
+  },
+  {
+    "owner": "_TtC8PastePal8BaseCell",
+    "selector": "viewDidLayout",
+    "address": "0x10015af80"
+  },
+  {
+    "owner": "_TtC8PastePal8BaseCell",
+    "selector": "mouseDown:",
+    "address": "0x10015b154"
+  },
+  {
+    "owner": "_TtC8PastePal8BaseCell",
+    "selector": "initWithNibName:bundle:",
+    "address": "0x10015b2b4"
+  },
+  {
+    "owner": "_TtC8PastePal8BaseCell",
+    "selector": "initWithCoder:",
+    "address": "0x10015b3f8"
+  },
+  {
+    "owner": "_TtC8PastePal8BaseCell",
+    "selector": ".cxx_destruct",
+    "address": "0x10015b450"
+  },
+  {
+    "owner": "_TtCC8PastePal24CollectionViewController20CustomCollectionView",
+    "selector": "menuForEvent:",
+    "address": "0x100179c10"
+  },
+  {
+    "owner": "_TtCC8PastePal24CollectionViewController20CustomCollectionView",
+    "selector": "keyDown:",
+    "address": "0x100179c6c"
+  },
+  {
+    "owner": "_TtCC8PastePal24CollectionViewController20CustomCollectionView",
+    "selector": "mouseDown:",
+    "address": "0x100179f54"
+  },
+  {
+    "owner": "_TtCC8PastePal24CollectionViewController20CustomCollectionView",
+    "selector": "draggingSession:sourceOperationMaskForDraggingContext:",
+    "address": "0x100179fa4"
+  },
+  {
+    "owner": "_TtCC8PastePal24CollectionViewController20CustomCollectionView",
+    "selector": "beginDraggingSessionWithItems:event:source:",
+    "address": "0x10017a23c"
+  },
+  {
+    "owner": "_TtCC8PastePal24CollectionViewController20CustomCollectionView",
+    "selector": "draggingEntered:",
+    "address": "0x10017a3d0"
+  },
+  {
+    "owner": "_TtCC8PastePal24CollectionViewController20CustomCollectionView",
+    "selector": "draggingEnded:",
+    "address": "0x10017a500"
+  },
+  {
+    "owner": "_TtCC8PastePal24CollectionViewController20CustomCollectionView",
+    "selector": "draggingExited:",
+    "address": "0x10017a61c"
+  },
+  {
+    "owner": "_TtCC8PastePal24CollectionViewController20CustomCollectionView",
+    "selector": "initWithFrame:",
+    "address": "0x10017a664"
+  },
+  {
+    "owner": "_TtCC8PastePal24CollectionViewController20CustomCollectionView",
+    "selector": "initWithCoder:",
+    "address": "0x10017a6e8"
+  },
+  {
+    "owner": "_TtCC8PastePal24CollectionViewController20CustomCollectionView",
+    "selector": ".cxx_destruct",
+    "address": "0x10017a780"
+  },
+  {
+    "owner": "_TtC8PastePal24CollectionViewController",
+    "selector": "popoverDidShow:",
+    "address": "0x100175e80"
+  },
+  {
+    "owner": "_TtC8PastePal24CollectionViewController",
+    "selector": "popoverDidClose:",
+    "address": "0x100175efc"
+  },
+  {
+    "owner": "_TtC8PastePal24CollectionViewController",
+    "selector": "collectionView:validateDrop:proposedIndexPath:dropOperation:",
+    "address": "0x100173f54"
+  },
+  {
+    "owner": "_TtC8PastePal24CollectionViewController",
+    "selector": "collectionView:acceptDrop:indexPath:dropOperation:",
+    "address": "0x10017445c"
+  },
+  {
+    "owner": "_TtC8PastePal24CollectionViewController",
+    "selector": "collectionView:canDragItemsAtIndexPaths:withEvent:",
+    "address": "0x100171324"
+  },
+  {
+    "owner": "_TtC8PastePal24CollectionViewController",
+    "selector": "collectionView:draggingSession:willBeginAtPoint:forItemsAtIndexPaths:",
+    "address": "0x1001713a4"
+  },
+  {
+    "owner": "_TtC8PastePal24CollectionViewController",
+    "selector": "collectionView:draggingSession:endedAtPoint:dragOperation:",
+    "address": "0x1001721cc"
+  },
+  {
+    "owner": "_TtC8PastePal24CollectionViewController",
+    "selector": "collectionView:pasteboardWriterForItemAtIndexPath:",
+    "address": "0x100172230"
+  },
+  {
+    "owner": "_TtC8PastePal24CollectionViewController",
+    "selector": "collectionView:layout:sizeForItemAtIndexPath:",
+    "address": "0x100164804"
+  },
+  {
+    "owner": "_TtC8PastePal24CollectionViewController",
+    "selector": "collectionView:didSelectItemsAtIndexPaths:",
+    "address": "0x1001644cc"
+  },
+  {
+    "owner": "_TtC8PastePal24CollectionViewController",
+    "selector": "collectionView:didDeselectItemsAtIndexPaths:",
+    "address": "0x100164568"
+  },
+  {
+    "owner": "_TtC8PastePal24CollectionViewController",
+    "selector": "collectionView:shouldSelectItemsAtIndexPaths:",
+    "address": "0x1001645ec"
+  },
+  {
+    "owner": "_TtC8PastePal24CollectionViewController",
+    "selector": "collectionView:willDisplayItem:forRepresentedObjectAtIndexPath:",
+    "address": "0x10016466c"
+  },
+  {
+    "owner": "_TtC8PastePal24CollectionViewController",
+    "selector": "collectionView:didEndDisplayingItem:forRepresentedObjectAtIndexPath:",
+    "address": "0x1001646e8"
+  },
+  {
+    "owner": "_TtC8PastePal24CollectionViewController",
+    "selector": "loadView",
+    "address": "0x100162b04"
+  },
+  {
+    "owner": "_TtC8PastePal24CollectionViewController",
+    "selector": "viewDidLoad",
+    "address": "0x100163724"
+  },
+  {
+    "owner": "_TtC8PastePal24CollectionViewController",
+    "selector": "initWithNibName:bundle:",
+    "address": "0x10016424c"
+  },
+  {
+    "owner": "_TtC8PastePal24CollectionViewController",
+    "selector": "initWithCoder:",
+    "address": "0x1001643dc"
+  },
+  {
+    "owner": "_TtC8PastePal24CollectionViewController",
+    "selector": ".cxx_destruct",
+    "address": "0x100164404"
+  },
+  {
+    "owner": "_TtCE8PastePalCSo20NSCollectionViewItem19PassThroughTextView",
+    "selector": "mouseDown:",
+    "address": "0x1001585dc"
+  },
+  {
+    "owner": "_TtCE8PastePalCSo20NSCollectionViewItem19PassThroughTextView",
+    "selector": "mouseUp:",
+    "address": "0x1001585e8"
+  },
+  {
+    "owner": "_TtCE8PastePalCSo20NSCollectionViewItem19PassThroughTextView",
+    "selector": "hitTest:",
+    "address": "0x100158670"
+  },
+  {
+    "owner": "_TtCE8PastePalCSo20NSCollectionViewItem19PassThroughTextView",
+    "selector": "initWithFrame:textContainer:",
+    "address": "0x100158678"
+  },
+  {
+    "owner": "_TtCE8PastePalCSo20NSCollectionViewItem19PassThroughTextView",
+    "selector": "initWithCoder:",
+    "address": "0x1001586ec"
+  },
+  {
+    "owner": "_TtCE8PastePalCSo20NSCollectionViewItem19PassThroughTextView",
+    "selector": "initWithFrame:",
+    "address": "0x10015876c"
+  }
+]

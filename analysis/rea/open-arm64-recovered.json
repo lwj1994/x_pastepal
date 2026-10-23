@@ -1,0 +1,21 @@
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"result\":{\"path\":\"/Users/luwenjie/.rea/targets/pastepal-ecc6c102/PastePal.arm64\",\"format\":\"mach-o\",\"kind\":\"executable\",\"sha256\":\"7ee43a4a8437e805cfd1ddd7a6ce2242532fb9944e796997401864004185f317\",\"architecture\":\"arm64\"}}"
+      }
+    ],
+    "structuredContent": {
+      "result": {
+        "path": "/Users/luwenjie/.rea/targets/pastepal-ecc6c102/PastePal.arm64",
+        "format": "mach-o",
+        "kind": "executable",
+        "sha256": "7ee43a4a8437e805cfd1ddd7a6ce2242532fb9944e796997401864004185f317",
+        "architecture": "arm64"
+      }
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": 3
+}

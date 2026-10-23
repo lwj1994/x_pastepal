@@ -1,0 +1,21 @@
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"result\":{\"path\":\"/Users/luwenjie/Documents/GitHub/x_pastepal/analysis/rea/pastepal-snapshot.json\",\"bytes\":93485,\"primitive_entries\":0,\"workflow_entries\":0,\"evidence_records\":2}}"
+      }
+    ],
+    "structuredContent": {
+      "result": {
+        "path": "/Users/luwenjie/Documents/GitHub/x_pastepal/analysis/rea/pastepal-snapshot.json",
+        "bytes": 93485,
+        "primitive_entries": 0,
+        "workflow_entries": 0,
+        "evidence_records": 2
+      }
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": 6
+}

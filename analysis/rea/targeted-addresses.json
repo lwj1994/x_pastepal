@@ -1,0 +1,10 @@
+{
+  "source": "LC_FUNCTION_STARTS + ARM64 selector cross reference",
+  "changeCountSelector": "0x1009e884d",
+  "changeCountSelectorRef": "0x100af9890",
+  "callSites": [
+    "0x100134490",
+    "0x1001344b0"
+  ],
+  "functionStart": "0x100134364"
+}

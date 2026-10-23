@@ -1,0 +1,8 @@
+==> Postinstalling fontconfig
+Warning: The post-install step did not complete successfully
+You can try again using:
+  brew postinstall fontconfig
+==> Postinstalling glib
+Warning: The post-install step did not complete successfully
+You can try again using:
+  brew postinstall glib

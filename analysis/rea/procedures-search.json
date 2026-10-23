@@ -1,0 +1,2798 @@
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_466d49fe2ab2cf6c4b0195dca8958cf1ff7f6f610e649a96392f83f3907cd057\",\"subject\":{\"name\":\"PastePal.arm64\",\"digest\":{\"sha256\":\"7ee43a4a8437e805cfd1ddd7a6ce2242532fb9944e796997401864004185f317\"},\"format\":\"mach-o\",\"architecture\":\"arm64\",\"local_path\":\"/Users/luwenjie/.rea/targets/pastepal-ecc6c102/PastePal.arm64\"},\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"analysis_profile\":{\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"parameters\":{\"target_kind\":\"executable\",\"target_format\":\"mach-o\",\"architecture\":\"arm64\",\"available_architectures\":[\"arm64\"],\"import_mode\":\"ephemeral-source-immutable\",\"annotation_policy\":\"atomic-function-entry-metadata-v1\",\"load_image_observations\":\"source-mappings-entry-context-v2\",\"function_body_evidence\":\"complete-inclusive-ranges-v1\",\"function_references\":\"complete-body-and-entry-reference-manager-v2\",\"string_inventory_evidence\":\"defined-data-coverage-v1\",\"location_resolution\":\"explicit-address-exact-entry-symbol-first-v3\",\"instruction_flow_evidence\":\"decoded-return-pcode-v1\",\"function_boundary_observations\":\"ghidra-terminal-call-limitations-v1\",\"no_return_repair\":\"returning-imports-decoded-return-v2\",\"process_launch\":\"inspected-jvm-launch-support-v1\",\"jump_table_evidence\":\"typed-case-default-blocks-v1\",\"decompiler_jump_loads\":true,\"loader\":\"auto-from-header\",\"language_id\":\"auto-from-header\",\"compiler_spec_id\":\"auto-default\",\"analyzer_preset\":\"ghidra-default\"},\"digest\":\"20565088524a2d0359b9b96f46ac48e679d774c7b0092c56abc06de8fdbec11c\"},\"predicate_type\":\"rea.analysis\",\"operation\":\"search_procedures\",\"parameters\":{\"pattern\":\"paste|clip|duplicate|search|changeCount\",\"mode\":\"regex\",\"case_sensitive\":false},\"raw_result\":[{\"address\":\"EXTERNAL:0x11d\",\"value\":\"/usr/lib/swift/libswiftFoundation.dylib::Foundation::Calendar::SearchDirection::typeMetadataAccessor\"},{\"address\":\"EXTERNAL:0x176\",\"value\":\"/System/Library/Frameworks/Combine.framework/Versions/A/Combine::(extension_Combine)::Combine::Publisher::$removeDuplicates\"},{\"address\":\"EXTERNAL:0x31e\",\"value\":\"/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI::(extension_SwiftUI)::SwiftUI::View::$clipShape\"},{\"address\":\"EXTERNAL:0x74e\",\"value\":\"/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit::_IORegistryEntrySearchCFProperty\"},{\"address\":\"EXTERNAL:0xf52\",\"value\":\"/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit::generalPasteboard\"},{\"address\":\"0x100033f5c\",\"value\":\"_TtC8PastePal13CompactWindow::keyDown:\"},{\"address\":\"0x1000340a8\",\"value\":\"_TtC8PastePal13CompactWindow::flagsChanged:\"},{\"address\":\"0x1000340f8\",\"value\":\"_TtC8PastePal13CompactWindow::canBecomeKeyWindow\"},{\"address\":\"0x100034100\",\"value\":\"_TtC8PastePal13CompactWindow::canBecomeMainWindow\"},{\"address\":\"0x100034108\",\"value\":\"_TtC8PastePal13CompactWindow::cancelOperation:\"},{\"address\":\"0x1000341bc\",\"value\":\"_TtC8PastePal13CompactWindow::initWithContentRect:styleMask:backing:defer:\"},{\"address\":\"0x1000342e0\",\"value\":\"_TtC8PastePal13CompactWindow::.cxx_destruct\"},{\"address\":\"0x10007713c\",\"value\":\"_TtC8PastePal11MainManager::init\"},{\"address\":\"0x10007784c\",\"value\":\"_TtC8PastePal11MainManager::.cxx_destruct\"},{\"address\":\"0x10007787c\",\"value\":\"_TtC8PastePal11MainManager::windowWillClose:\"},{\"address\":\"0x10007d4b8\",\"value\":\"_TtC8PastePal10MainWindow::canBecomeKeyWindow\"},{\"address\":\"0x10007d4c0\",\"value\":\"_TtC8PastePal10MainWindow::canBecomeMainWindow\"},{\"address\":\"0x10007d4c8\",\"value\":\"_TtC8PastePal10MainWindow::close\"},{\"address\":\"0x10007d68c\",\"value\":\"_TtC8PastePal10MainWindow::keyDown:\"},{\"address\":\"0x10007d7d8\",\"value\":\"_TtC8PastePal10MainWindow::flagsChanged:\"},{\"address\":\"0x10007d828\",\"value\":\"_TtC8PastePal10MainWindow::cancelOperation:\"},{\"address\":\"0x10007d8dc\",\"value\":\"_TtC8PastePal10MainWindow::initWithContentRect:styleMask:backing:defer:\"},{\"address\":\"0x10007d9cc\",\"value\":\"_TtC8PastePal10MainWindow::.cxx_destruct\"},{\"address\":\"0x10008fdb4\",\"value\":\"_TtC8PastePal17PasteStackManager::init\"},{\"address\":\"0x10008fdd4\",\"value\":\"_TtC8PastePal17PasteStackManager::.cxx_destruct\"},{\"address\":\"0x10008ffa0\",\"value\":\"_TtC8PastePal17PasteStackManager::windowWillClose:\"},{\"address\":\"0x10009809c\",\"value\":\"_TtC8PastePal16PasteStackWindow::keyDown:\"},{\"address\":\"0x1000980ec\",\"value\":\"_TtC8PastePal16PasteStackWindow::initWithContentRect:styleMask:backing:defer:\"},{\"address\":\"0x100098198\",\"value\":\"_TtC8PastePal16PasteStackWindow::.cxx_destruct\"},{\"address\":\"0x1000cc8e4\",\"value\":\"_TtC8PastePal14SettingsWindow::canBecomeKeyWindow\"},{\"address\":\"0x1000cc8ec\",\"value\":\"_TtC8PastePal14SettingsWindow::canBecomeMainWindow\"},{\"address\":\"0x1000cc940\",\"value\":\"_TtC8PastePal14SettingsWindow::close\"},{\"address\":\"0x1000cc9ec\",\"value\":\"_TtC8PastePal14SettingsWindow::initWithContentRect:styleMask:backing:defer:\"},{\"address\":\"0x1000ccad4\",\"value\":\"_TtC8PastePal14SettingsWindow::.cxx_destruct\"},{\"address\":\"0x10012a158\",\"value\":\"_TtCV8PastePal8Backport5Label::initWithFrame:\"},{\"address\":\"0x10012a250\",\"value\":\"_TtCV8PastePal8Backport5Label::initWithCoder:\"},{\"address\":\"0x10012bde8\",\"value\":\"_TtCVV8PastePal8Backport10TextEditor11Coordinator::textDidChange:\"},{\"address\":\"0x10012be8c\",\"value\":\"_TtCVV8PastePal8Backport10TextEditor11Coordinator::init\"},{\"address\":\"0x10012bee8\",\"value\":\"_TtCVV8PastePal8Backport10TextEditor11Coordinator::.cxx_destruct\"},{\"address\":\"0x10012c970\",\"value\":\"_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F20NonFocusableTextView::becomeFirstResponder\"},{\"address\":\"0x10012c978\",\"value\":\"_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F20NonFocusableTextView::initWithFrame:textContainer:\"},{\"address\":\"0x10012c9ec\",\"value\":\"_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F20NonFocusableTextView::initWithCoder:\"},{\"address\":\"0x10012ca6c\",\"value\":\"_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F20NonFocusableTextView::initWithFrame:\"},{\"address\":\"0x10012caf8\",\"value\":\"_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F22DisabledScrollTextView::scrollWheel:\"},{\"address\":\"0x10012cbb8\",\"value\":\"_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F22DisabledScrollTextView::initWithFrame:textContainer:\"},{\"address\":\"0x10012cc30\",\"value\":\"_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F22DisabledScrollTextView::initWithCoder:\"},{\"address\":\"0x10012ccb4\",\"value\":\"_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F22DisabledScrollTextView::initWithFrame:\"},{\"address\":\"0x100140720\",\"value\":\"_TtC8PastePal11CompactCell::viewDidLoad\"},{\"address\":\"0x10014081c\",\"value\":\"_TtC8PastePal11CompactCell::prepareForReuse\"},{\"address\":\"0x100140a44\",\"value\":\"_TtC8PastePal11CompactCell::initWithNibName:bundle:\"},{\"address\":\"0x100140c28\",\"value\":\"_TtC8PastePal11CompactCell::initWithCoder:\"},{\"address\":\"0x100140ccc\",\"value\":\"_TtC8PastePal11CompactCell::.cxx_destruct\"},{\"address\":\"0x100140f68\",\"value\":\"_TtCC8PastePal11CompactCell9ColorCell::viewDidLoad\"},{\"address\":\"0x1001411f8\",\"value\":\"_TtCC8PastePal11CompactCell9ColorCell::initWithNibName:bundle:\"},{\"address\":\"0x1001412fc\",\"value\":\"_TtCC8PastePal11CompactCell9ColorCell::initWithCoder:\"},{\"address\":\"0x100141364\",\"value\":\"_TtCC8PastePal11CompactCell9ColorCell::.cxx_destruct\"},{\"address\":\"0x10014192c\",\"value\":\"_TtCCC8PastePal11CompactCell9ColorCell9ColorView::initWithFrame:\"},{\"address\":\"0x10014194c\",\"value\":\"_TtCCC8PastePal11CompactCell9ColorCell9ColorView::initWithCoder:\"},{\"address\":\"0x100141974\",\"value\":\"_TtCCC8PastePal11CompactCell9ColorCell9ColorView::.cxx_destruct\"},{\"address\":\"0x100141d1c\",\"value\":\"_TtCC8PastePal11CompactCell8FileCell::viewDidLoad\"},{\"address\":\"0x100141d44\",\"value\":\"_TtCC8PastePal11CompactCell8FileCell::prepareForReuse\"},{\"address\":\"0x1001422e0\",\"value\":\"_TtCC8PastePal11CompactCell8FileCell::initWithNibName:bundle:\"},{\"address\":\"0x100142618\",\"value\":\"_TtCC8PastePal11CompactCell8FileCell::initWithCoder:\"},{\"address\":\"0x1001426bc\",\"value\":\"_TtCC8PastePal11CompactCell8FileCell::.cxx_destruct\"},{\"address\":\"0x100142778\",\"value\":\"_TtCC8PastePal11CompactCell9ImageCell::viewDidLoad\"},{\"address\":\"0x100142808\",\"value\":\"_TtCC8PastePal11CompactCell9ImageCell::prepareForReuse\"},{\"address\":\"0x1001432fc\",\"value\":\"_TtCC8PastePal11CompactCell9ImageCell::initWithNibName:bundle:\"},{\"address\":\"0x1001433f8\",\"value\":\"_TtCC8PastePal11CompactCell9ImageCell::initWithCoder:\"},{\"address\":\"0x10014347c\",\"value\":\"_TtCC8PastePal11CompactCell9ImageCell::.cxx_destruct\"},{\"address\":\"0x100143b18\",\"value\":\"_TtCC8PastePal11CompactCell8LinkCell::viewDidLoad\"},{\"address\":\"0x100143c48\",\"value\":\"_TtCC8PastePal11CompactCell8LinkCell::prepareForReuse\"},{\"address\":\"0x1001448d8\",\"value\":\"_TtCC8PastePal11CompactCell8LinkCell::initWithNibName:bundle:\"},{\"address\":\"0x100144c34\",\"value\":\"_TtCC8PastePal11CompactCell8LinkCell::initWithCoder:\"},{\"address\":\"0x100144ce8\",\"value\":\"_TtCC8PastePal11CompactCell8LinkCell::.cxx_destruct\"},{\"address\":\"0x100144f60\",\"value\":\"_TtCC8PastePal11CompactCell10MFilesCell::viewDidLoad\"},{\"address\":\"0x100145160\",\"value\":\"_TtCC8PastePal11CompactCell10MFilesCell::prepareForReuse\"},{\"address\":\"0x1001458cc\",\"value\":\"_TtCC8PastePal11CompactCell10MFilesCell::initWithNibName:bundle:\"},{\"address\":\"0x1001459cc\",\"value\":\"_TtCC8PastePal11CompactCell10MFilesCell::initWithCoder:\"},{\"address\":\"0x100145a34\",\"value\":\"_TtCC8PastePal11CompactCell10MFilesCell::.cxx_destruct\"},{\"address\":\"0x100145d40\",\"value\":\"_TtCCC8PastePal11CompactCell10MFilesCell11ContentView::initWithFrame:\"},{\"address\":\"0x100145d60\",\"value\":\"_TtCCC8PastePal11CompactCell10MFilesCell11ContentView::initWithCoder:\"},{\"address\":\"0x100145d88\",\"value\":\"_TtCCC8PastePal11CompactCell10MFilesCell11ContentView::.cxx_destruct\"},{\"address\":\"0x1001461a8\",\"value\":\"_TtCC8PastePal11CompactCell9OtherCell::viewDidLoad\"},{\"address\":\"0x10014646c\",\"value\":\"_TtCC8PastePal11CompactCell9OtherCell::initWithNibName:bundle:\"},{\"address\":\"0x1001465e8\",\"value\":\"_TtCC8PastePal11CompactCell9OtherCell::initWithCoder:\"},{\"address\":\"0x100146650\",\"value\":\"_TtCC8PastePal11CompactCell9OtherCell::.cxx_destruct\"},{\"address\":\"0x100146680\",\"value\":\"_TtCC8PastePal11CompactCell12RichTextCell::viewDidLoad\"},{\"address\":\"0x100146904\",\"value\":\"_TtCC8PastePal11CompactCell12RichTextCell::initWithNibName:bundle:\"},{\"address\":\"0x100146a2c\",\"value\":\"_TtCC8PastePal11CompactCell12RichTextCell::initWithCoder:\"},{\"address\":\"0x100146a94\",\"value\":\"_TtCC8PastePal11CompactCell12RichTextCell::.cxx_destruct\"},{\"address\":\"0x100146ac4\",\"value\":\"_TtCC8PastePal11CompactCell8TextCell::viewDidLoad\"},{\"address\":\"0x100146d54\",\"value\":\"_TtCC8PastePal11CompactCell8TextCell::initWithNibName:bundle:\"},{\"address\":\"0x100146e7c\",\"value\":\"_TtCC8PastePal11CompactCell8TextCell::initWithCoder:\"},{\"address\":\"0x100146ee4\",\"value\":\"_TtCC8PastePal11CompactCell8TextCell::.cxx_destruct\"},{\"address\":\"0x1001476bc\",\"value\":\"_TtC8PastePal11MinimalCell::viewDidLoad\"},{\"address\":\"0x1001477c4\",\"value\":\"_TtC8PastePal11MinimalCell::prepareForReuse\"},{\"address\":\"0x100147d98\",\"value\":\"_TtC8PastePal11MinimalCell::initWithNibName:bundle:\"},{\"address\":\"0x10014812c\",\"value\":\"_TtC8PastePal11MinimalCell::initWithCoder:\"},{\"address\":\"0x1001481f0\",\"value\":\"_TtC8PastePal11MinimalCell::.cxx_destruct\"},{\"address\":\"0x1001488d8\",\"value\":\"_TtCC8PastePal11MinimalCell13ThumbnailView::initWithFrame:\"},{\"address\":\"0x1001488f8\",\"value\":\"_TtCC8PastePal11MinimalCell13ThumbnailView::initWithCoder:\"},{\"address\":\"0x100148920\",\"value\":\"_TtCC8PastePal11MinimalCell13ThumbnailView::.cxx_destruct\"},{\"address\":\"0x100148e64\",\"value\":\"_TtCC8PastePal11MinimalCell9ImageCell::viewDidLoad\"},{\"address\":\"0x100148f54\",\"value\":\"_TtCC8PastePal11MinimalCell9ImageCell::prepareForReuse\"},{\"address\":\"0x10014a6a8\",\"value\":\"_TtCC8PastePal11MinimalCell9ImageCell::initWithNibName:bundle:\"},{\"address\":\"0x10014a904\",\"value\":\"_TtCC8PastePal11MinimalCell9ImageCell::initWithCoder:\"},{\"address\":\"0x10014a9a8\",\"value\":\"_TtCC8PastePal11MinimalCell9ImageCell::.cxx_destruct\"},{\"address\":\"0x10014b090\",\"value\":\"_TtCC8PastePal11MinimalCell8TextCell::viewDidLoad\"},{\"address\":\"0x10014b124\",\"value\":\"_TtCC8PastePal11MinimalCell8TextCell::prepareForReuse\"},{\"address\":\"0x10014b828\",\"value\":\"_TtCC8PastePal11MinimalCell8TextCell::initWithNibName:bundle:\"},{\"address\":\"0x10014b954\",\"value\":\"_TtCC8PastePal11MinimalCell8TextCell::initWithCoder:\"},{\"address\":\"0x10014b9bc\",\"value\":\"_TtCC8PastePal11MinimalCell8TextCell::.cxx_destruct\"},{\"address\":\"0x10014bf90\",\"value\":\"_TtC8PastePal11RegularCell::viewDidLoad\"},{\"address\":\"0x10014bfb8\",\"value\":\"_TtC8PastePal11RegularCell::prepareForReuse\"},{\"address\":\"0x10014c2a0\",\"value\":\"_TtC8PastePal11RegularCell::initWithNibName:bundle:\"},{\"address\":\"0x10014c430\",\"value\":\"_TtC8PastePal11RegularCell::initWithCoder:\"},{\"address\":\"0x10014c4b4\",\"value\":\"_TtC8PastePal11RegularCell::.cxx_destruct\"},{\"address\":\"0x10014c714\",\"value\":\"_TtCC8PastePal11RegularCell17BottomOverlayView::initWithFrame:\"},{\"address\":\"0x10014c734\",\"value\":\"_TtCC8PastePal11RegularCell17BottomOverlayView::initWithCoder:\"},{\"address\":\"0x10014c75c\",\"value\":\"_TtCC8PastePal11RegularCell17BottomOverlayView::.cxx_destruct\"},{\"address\":\"0x10014cb34\",\"value\":\"_TtCC8PastePal11RegularCell9ColorCell::viewDidLoad\"},{\"address\":\"0x10014cdd4\",\"value\":\"_TtCC8PastePal11RegularCell9ColorCell::prepareForReuse\"},{\"address\":\"0x10014cf80\",\"value\":\"_TtCC8PastePal11RegularCell9ColorCell::initWithNibName:bundle:\"},{\"address\":\"0x10014d138\",\"value\":\"_TtCC8PastePal11RegularCell9ColorCell::initWithCoder:\"},{\"address\":\"0x10014d1bc\",\"value\":\"_TtCC8PastePal11RegularCell9ColorCell::.cxx_destruct\"},{\"address\":\"0x10014d214\",\"value\":\"_TtCC8PastePal11RegularCell9EmailCell::viewDidLoad\"},{\"address\":\"0x10014d3ac\",\"value\":\"_TtCC8PastePal11RegularCell9EmailCell::prepareForReuse\"},{\"address\":\"0x10014d534\",\"value\":\"_TtCC8PastePal11RegularCell9EmailCell::initWithNibName:bundle:\"},{\"address\":\"0x10014d65c\",\"value\":\"_TtCC8PastePal11RegularCell9EmailCell::initWithCoder:\"},{\"address\":\"0x10014d6c4\",\"value\":\"_TtCC8PastePal11RegularCell9EmailCell::.cxx_destruct\"},{\"address\":\"0x10014d8bc\",\"value\":\"_TtCC8PastePal11RegularCell9EmojiCell::viewDidLoad\"},{\"address\":\"0x10014d9e8\",\"value\":\"_TtCC8PastePal11RegularCell9EmojiCell::prepareForReuse\"},{\"address\":\"0x10014dbd8\",\"value\":\"_TtCC8PastePal11RegularCell9EmojiCell::initWithNibName:bundle:\"},{\"address\":\"0x10014dd68\",\"value\":\"_TtCC8PastePal11RegularCell9EmojiCell::initWithCoder:\"},{\"address\":\"0x10014ddd0\",\"value\":\"_TtCC8PastePal11RegularCell9EmojiCell::.cxx_destruct\"},{\"address\":\"0x10014e3f8\",\"value\":\"_TtCC8PastePal11RegularCell8FileCell::viewDidLoad\"},{\"address\":\"0x10014e530\",\"value\":\"_TtCC8PastePal11RegularCell8FileCell::prepareForReuse\"},{\"address\":\"0x10014eb34\",\"value\":\"_TtCC8PastePal11RegularCell8FileCell::initWithNibName:bundle:\"},{\"address\":\"0x10014ef74\",\"value\":\"_TtCC8PastePal11RegularCell8FileCell::initWithCoder:\"},{\"address\":\"0x10014f028\",\"value\":\"_TtCC8PastePal11RegularCell8FileCell::.cxx_destruct\"},{\"address\":\"0x1001502a4\",\"value\":\"_TtCC8PastePal11RegularCell17RegularHeaderView::initWithFrame:\"},{\"address\":\"0x1001502c4\",\"value\":\"_TtCC8PastePal11RegularCell17RegularHeaderView::initWithCoder:\"},{\"address\":\"0x1001502ec\",\"value\":\"_TtCC8PastePal11RegularCell17RegularHeaderView::layout\"},{\"address\":\"0x100150614\",\"value\":\"_TtCC8PastePal11RegularCell17RegularHeaderView::.cxx_destruct\"},{\"address\":\"0x100151260\",\"value\":\"_TtCC8PastePal11RegularCell9ImageCell::viewDidLoad\"},{\"address\":\"0x100151350\",\"value\":\"_TtCC8PastePal11RegularCell9ImageCell::prepareForReuse\"},{\"address\":\"0x100151d18\",\"value\":\"_TtCC8PastePal11RegularCell9ImageCell::initWithNibName:bundle:\"},{\"address\":\"0x100151fb8\",\"value\":\"_TtCC8PastePal11RegularCell9ImageCell::initWithCoder:\"},{\"address\":\"0x10015205c\",\"value\":\"_TtCC8PastePal11RegularCell9ImageCell::.cxx_destruct\"},{\"address\":\"0x100152c54\",\"value\":\"_TtCC8PastePal11RegularCell8LinkCell::viewDidLoad\"},{\"address\":\"0x100152db4\",\"value\":\"_TtCC8PastePal11RegularCell8LinkCell::prepareForReuse\"},{\"address\":\"0x100153ba8\",\"value\":\"_TtCC8PastePal11RegularCell8LinkCell::initWithNibName:bundle:\"},{\"address\":\"0x100154040\",\"value\":\"_TtCC8PastePal11RegularCell8LinkCell::initWithCoder:\"},{\"address\":\"0x100154114\",\"value\":\"_TtCC8PastePal11RegularCell8LinkCell::.cxx_destruct\"},{\"address\":\"0x100154690\",\"value\":\"_TtCCC8PastePal11RegularCell8LinkCell7URLView::initWithFrame:\"},{\"address\":\"0x1001546b0\",\"value\":\"_TtCCC8PastePal11RegularCell8LinkCell7URLView::initWithCoder:\"},{\"address\":\"0x100154764\",\"value\":\"_TtCCC8PastePal11RegularCell8LinkCell7URLView::.cxx_destruct\"},{\"address\":\"0x1001553cc\",\"value\":\"_TtCC8PastePal11RegularCell10MFilesCell::viewDidLoad\"},{\"address\":\"0x1001555cc\",\"value\":\"_TtCC8PastePal11RegularCell10MFilesCell::prepareForReuse\"},{\"address\":\"0x1001558c0\",\"value\":\"_TtCC8PastePal11RegularCell10MFilesCell::initWithNibName:bundle:\"},{\"address\":\"0x1001559c4\",\"value\":\"_TtCC8PastePal11RegularCell10MFilesCell::initWithCoder:\"},{\"address\":\"0x100155a2c\",\"value\":\"_TtCC8PastePal11RegularCell10MFilesCell::.cxx_destruct\"},{\"address\":\"0x100156034\",\"value\":\"_TtCC8PastePal11RegularCell9OtherCell::viewDidLoad\"},{\"address\":\"0x10015605c\",\"value\":\"_TtCC8PastePal11RegularCell9OtherCell::prepareForReuse\"},{\"address\":\"0x1001564e8\",\"value\":\"_TtCC8PastePal11RegularCell9OtherCell::initWithNibName:bundle:\"},{\"address\":\"0x1001567dc\",\"value\":\"_TtCC8PastePal11RegularCell9OtherCell::initWithCoder:\"},{\"address\":\"0x100156870\",\"value\":\"_TtCC8PastePal11RegularCell9OtherCell::.cxx_destruct\"},{\"address\":\"0x100157274\",\"value\":\"_TtCC8PastePal11RegularCell12RichTextCell::viewDidLoad\"},{\"address\":\"0x100158084\",\"value\":\"_TtCC8PastePal11RegularCell12RichTextCell::prepareForReuse\"},{\"address\":\"0x10015827c\",\"value\":\"_TtCC8PastePal11RegularCell12RichTextCell::initWithNibName:bundle:\"},{\"address\":\"0x100158480\",\"value\":\"_TtCC8PastePal11RegularCell12RichTextCell::initWithCoder:\"},{\"address\":\"0x100158544\",\"value\":\"_TtCC8PastePal11RegularCell12RichTextCell::.cxx_destruct\"},{\"address\":\"0x1001585dc\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem19PassThroughTextView::mouseDown:\"},{\"address\":\"0x1001585e8\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem19PassThroughTextView::mouseUp:\"},{\"address\":\"0x100158670\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem19PassThroughTextView::hitTest:\"},{\"address\":\"0x100158678\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem19PassThroughTextView::initWithFrame:textContainer:\"},{\"address\":\"0x1001586ec\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem19PassThroughTextView::initWithCoder:\"},{\"address\":\"0x10015876c\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem19PassThroughTextView::initWithFrame:\"},{\"address\":\"0x1001595f8\",\"value\":\"_TtCC8PastePal11RegularCell8TextCell::viewDidLoad\"},{\"address\":\"0x100159c14\",\"value\":\"_TtCC8PastePal11RegularCell8TextCell::prepareForReuse\"},{\"address\":\"0x100159e70\",\"value\":\"_TtCC8PastePal11RegularCell8TextCell::initWithNibName:bundle:\"},{\"address\":\"0x10015a0d8\",\"value\":\"_TtCC8PastePal11RegularCell8TextCell::initWithCoder:\"},{\"address\":\"0x10015a19c\",\"value\":\"_TtCC8PastePal11RegularCell8TextCell::.cxx_destruct\"},{\"address\":\"0x10015ada0\",\"value\":\"_TtC8PastePal8BaseCell::loadView\"},{\"address\":\"0x10015ae0c\",\"value\":\"_TtC8PastePal8BaseCell::viewDidLoad\"},{\"address\":\"0x10015ae68\",\"value\":\"_TtC8PastePal8BaseCell::prepareForReuse\"},{\"address\":\"0x10015aed8\",\"value\":\"_TtC8PastePal8BaseCell::isSelected\"},{\"address\":\"0x10015af14\",\"value\":\"_TtC8PastePal8BaseCell::setSelected:\"},{\"address\":\"0x10015af80\",\"value\":\"_TtC8PastePal8BaseCell::viewDidLayout\"},{\"address\":\"0x10015b154\",\"value\":\"_TtC8PastePal8BaseCell::mouseDown:\"},{\"address\":\"0x10015b2b4\",\"value\":\"_TtC8PastePal8BaseCell::initWithNibName:bundle:\"},{\"address\":\"0x10015b3f8\",\"value\":\"_TtC8PastePal8BaseCell::initWithCoder:\"},{\"address\":\"0x10015b450\",\"value\":\"_TtC8PastePal8BaseCell::.cxx_destruct\"},{\"address\":\"0x10015b6f4\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem11AppIconView::initWithFrame:\"},{\"address\":\"0x10015b714\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem11AppIconView::initWithCoder:\"},{\"address\":\"0x10015ba8c\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem11AppIconView::.cxx_destruct\"},{\"address\":\"0x10015c9d4\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem17FileThumbnailView::initWithFrame:\"},{\"address\":\"0x10015c9f4\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem17FileThumbnailView::initWithCoder:\"},{\"address\":\"0x10015ca1c\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem17FileThumbnailView::prepareForReuse\"},{\"address\":\"0x10015d30c\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem17FileThumbnailView::.cxx_destruct\"},{\"address\":\"0x10015e4b4\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem10HeaderView::initWithFrame:\"},{\"address\":\"0x10015e4d4\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem10HeaderView::initWithCoder:\"},{\"address\":\"0x10015e4fc\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem10HeaderView::prepareForReuse\"},{\"address\":\"0x10015ea94\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem10HeaderView::.cxx_destruct\"},{\"address\":\"0x10015fb3c\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem5Label::initWithFrame:\"},{\"address\":\"0x10015fb5c\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem5Label::initWithCoder:\"},{\"address\":\"0x10015fba4\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem5Label::viewDidMoveToSuperview\"},{\"address\":\"0x10015ff3c\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem15BackgroundLabel::initWithCoder:\"},{\"address\":\"0x10015ff64\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem15BackgroundLabel::initWithFrame:\"},{\"address\":\"0x10015ff94\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem15BackgroundLabel::.cxx_destruct\"},{\"address\":\"0x1001600ac\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem10MenuButton::initWithFrame:\"},{\"address\":\"0x10016019c\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem10MenuButton::initWithCoder:\"},{\"address\":\"0x1001601fc\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem10MenuButton::.cxx_destruct\"},{\"address\":\"0x100160230\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem16RoundedImageView::image\"},{\"address\":\"0x100160274\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem16RoundedImageView::setImage:\"},{\"address\":\"0x1001602f0\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem16RoundedImageView::layout\"},{\"address\":\"0x10016059c\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem16RoundedImageView::initWithFrame:\"},{\"address\":\"0x10016062c\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem16RoundedImageView::initWithCoder:\"},{\"address\":\"0x10016070c\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem16RoundedImageView::.cxx_destruct\"},{\"address\":\"0x100161168\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem13FillImageView::initWithFrame:\"},{\"address\":\"0x100161188\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem13FillImageView::initWithCoder:\"},{\"address\":\"0x1001611dc\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem13FillImageView::.cxx_destruct\"},{\"address\":\"0x10016120c\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem13ThumbnailView::initWithFrame:\"},{\"address\":\"0x1001612cc\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem13ThumbnailView::initWithCoder:\"},{\"address\":\"0x100162b04\",\"value\":\"_TtC8PastePal24CollectionViewController::loadView\"},{\"address\":\"0x100163724\",\"value\":\"_TtC8PastePal24CollectionViewController::viewDidLoad\"},{\"address\":\"0x10016424c\",\"value\":\"_TtC8PastePal24CollectionViewController::initWithNibName:bundle:\"},{\"address\":\"0x1001643dc\",\"value\":\"_TtC8PastePal24CollectionViewController::initWithCoder:\"},{\"address\":\"0x100164404\",\"value\":\"_TtC8PastePal24CollectionViewController::.cxx_destruct\"},{\"address\":\"0x1001644cc\",\"value\":\"_TtC8PastePal24CollectionViewController::collectionView:didSelectItemsAtIndexPaths:\"},{\"address\":\"0x100164568\",\"value\":\"_TtC8PastePal24CollectionViewController::collectionView:didDeselectItemsAtIndexPaths:\"},{\"address\":\"0x1001645ec\",\"value\":\"_TtC8PastePal24CollectionViewController::collectionView:shouldSelectItemsAtIndexPaths:\"},{\"address\":\"0x10016466c\",\"value\":\"_TtC8PastePal24CollectionViewController::collectionView:willDisplayItem:forRepresentedObjectAtIndexPath:\"},{\"address\":\"0x1001646e8\",\"value\":\"_TtC8PastePal24CollectionViewController::collectionView:didEndDisplayingItem:forRepresentedObjectAtIndexPath:\"},{\"address\":\"0x100164804\",\"value\":\"_TtC8PastePal24CollectionViewController::collectionView:layout:sizeForItemAtIndexPath:\"},{\"address\":\"0x100171324\",\"value\":\"_TtC8PastePal24CollectionViewController::collectionView:canDragItemsAtIndexPaths:withEvent:\"},{\"address\":\"0x1001713a4\",\"value\":\"_TtC8PastePal24CollectionViewController::collectionView:draggingSession:willBeginAtPoint:forItemsAtIndexPaths:\"},{\"address\":\"0x1001721cc\",\"value\":\"_TtC8PastePal24CollectionViewController::collectionView:draggingSession:endedAtPoint:dragOperation:\"},{\"address\":\"0x100172230\",\"value\":\"_TtC8PastePal24CollectionViewController::collectionView:pasteboardWriterForItemAtIndexPath:\"},{\"address\":\"0x100173f54\",\"value\":\"_TtC8PastePal24CollectionViewController::collectionView:validateDrop:proposedIndexPath:dropOperation:\"},{\"address\":\"0x10017445c\",\"value\":\"_TtC8PastePal24CollectionViewController::collectionView:acceptDrop:indexPath:dropOperation:\"},{\"address\":\"0x100175e80\",\"value\":\"_TtC8PastePal24CollectionViewController::popoverDidShow:\"},{\"address\":\"0x100175efc\",\"value\":\"_TtC8PastePal24CollectionViewController::popoverDidClose:\"},{\"address\":\"0x1001798b4\",\"value\":\"_TtCC8PastePal24CollectionViewController16CustomScrollView::scrollWheel:\"},{\"address\":\"0x100179904\",\"value\":\"_TtCC8PastePal24CollectionViewController16CustomScrollView::initWithFrame:\"},{\"address\":\"0x10017997c\",\"value\":\"_TtCC8PastePal24CollectionViewController16CustomScrollView::initWithCoder:\"},{\"address\":\"0x100179c10\",\"value\":\"_TtCC8PastePal24CollectionViewController20CustomCollectionView::menuForEvent:\"},{\"address\":\"0x100179c6c\",\"value\":\"_TtCC8PastePal24CollectionViewController20CustomCollectionView::keyDown:\"},{\"address\":\"0x100179f54\",\"value\":\"_TtCC8PastePal24CollectionViewController20CustomCollectionView::mouseDown:\"},{\"address\":\"0x100179fa4\",\"value\":\"_TtCC8PastePal24CollectionViewController20CustomCollectionView::draggingSession:sourceOperationMaskForDraggingContext:\"},{\"address\":\"0x10017a23c\",\"value\":\"_TtCC8PastePal24CollectionViewController20CustomCollectionView::beginDraggingSessionWithItems:event:source:\"},{\"address\":\"0x10017a3d0\",\"value\":\"_TtCC8PastePal24CollectionViewController20CustomCollectionView::draggingEntered:\"},{\"address\":\"0x10017a500\",\"value\":\"_TtCC8PastePal24CollectionViewController20CustomCollectionView::draggingEnded:\"},{\"address\":\"0x10017a61c\",\"value\":\"_TtCC8PastePal24CollectionViewController20CustomCollectionView::draggingExited:\"},{\"address\":\"0x10017a664\",\"value\":\"_TtCC8PastePal24CollectionViewController20CustomCollectionView::initWithFrame:\"},{\"address\":\"0x10017a6e8\",\"value\":\"_TtCC8PastePal24CollectionViewController20CustomCollectionView::initWithCoder:\"},{\"address\":\"0x10017a780\",\"value\":\"_TtCC8PastePal24CollectionViewController20CustomCollectionView::.cxx_destruct\"},{\"address\":\"0x10017a7b0\",\"value\":\"_TtCC8PastePal24CollectionViewController7Popover::acceptsFirstResponder\"},{\"address\":\"0x10017a7b8\",\"value\":\"_TtCC8PastePal24CollectionViewController7Popover::becomeFirstResponder\"},{\"address\":\"0x10017a7c0\",\"value\":\"_TtCC8PastePal24CollectionViewController7Popover::keyDown:\"},{\"address\":\"0x10017a904\",\"value\":\"_TtCC8PastePal24CollectionViewController7Popover::cancelOperation:\"},{\"address\":\"0x10017a98c\",\"value\":\"_TtCC8PastePal24CollectionViewController7Popover::init\"},{\"address\":\"0x10017a9c8\",\"value\":\"_TtCC8PastePal24CollectionViewController7Popover::initWithCoder:\"},{\"address\":\"0x10017c45c\",\"value\":\"_TtC8PastePal9AppLoader::init\"},{\"address\":\"0x10017c47c\",\"value\":\"_TtC8PastePal9AppLoader::.cxx_destruct\"},{\"address\":\"0x10017c79c\",\"value\":\"_TtC8PastePal9AppLoader::controllerDidChangeContent:\"},{\"address\":\"0x1001838c4\",\"value\":\"_TtC8PastePal12FolderLoader::init\"},{\"address\":\"0x1001838e4\",\"value\":\"_TtC8PastePal12FolderLoader::.cxx_destruct\"},{\"address\":\"0x100183c54\",\"value\":\"_TtC8PastePal12FolderLoader::controllerDidChangeContent:\"},{\"address\":\"0x100185be4\",\"value\":\"_TtC8PastePal11ItemsLoader::init\"},{\"address\":\"0x100185c10\",\"value\":\"_TtC8PastePal11ItemsLoader::.cxx_destruct\"},{\"address\":\"0x100185e40\",\"value\":\"_TtC8PastePal11ItemsLoader::controllerDidChangeContent:\"},{\"address\":\"0x10018e170\",\"value\":\"_TtC8PastePal8MenuItem::handleAction\"},{\"address\":\"0x10018e1e0\",\"value\":\"_TtC8PastePal8MenuItem::initWithTitle:action:keyEquivalent:\"},{\"address\":\"0x10018e254\",\"value\":\"_TtC8PastePal8MenuItem::initWithCoder:\"},{\"address\":\"0x10018e2e0\",\"value\":\"_TtC8PastePal8MenuItem::.cxx_destruct\"},{\"address\":\"0x1001ae8ac\",\"value\":\"_TtCV8PastePal13ClipboardItem14PasteboardItem::init\"},{\"address\":\"0x1001ae8e8\",\"value\":\"_TtCV8PastePal13ClipboardItem14PasteboardItem::initWithPasteboardPropertyList:ofType:\"},{\"address\":\"0x1001af3a8\",\"value\":\"_TtCCV8PastePal13ClipboardItem14PasteboardItem12DataProvider::pasteboard:item:provideDataForType:\"},{\"address\":\"0x1001af49c\",\"value\":\"_TtCCV8PastePal13ClipboardItem14PasteboardItem12DataProvider::pasteboardFinishedWithDataProvider:\"},{\"address\":\"0x1001afb2c\",\"value\":\"_TtCCV8PastePal13ClipboardItem14PasteboardItem12DataProvider::init\"},{\"address\":\"0x1001afb8c\",\"value\":\"_TtCCV8PastePal13ClipboardItem14PasteboardItem12DataProvider::.cxx_destruct\"},{\"address\":\"0x1001b0458\",\"value\":\"_TtCV8PastePal13ClipboardItem21PasteboardWritingItem::writableTypesForPasteboard:\"},{\"address\":\"0x1001b04d0\",\"value\":\"_TtCV8PastePal13ClipboardItem21PasteboardWritingItem::writingOptionsForType:pasteboard:\"},{\"address\":\"0x1001b0780\",\"value\":\"_TtCV8PastePal13ClipboardItem21PasteboardWritingItem::pasteboardPropertyListForType:\"},{\"address\":\"0x1001b0878\",\"value\":\"_TtCV8PastePal13ClipboardItem21PasteboardWritingItem::init\"},{\"address\":\"0x1001b08a4\",\"value\":\"_TtCV8PastePal13ClipboardItem21PasteboardWritingItem::.cxx_destruct\"},{\"address\":\"0x1001b28c4\",\"value\":\"_TtC8PastePal16PeerShareManager::init\"},{\"address\":\"0x1001b331c\",\"value\":\"_TtC8PastePal16PeerShareManager::.cxx_destruct\"},{\"address\":\"0x1001b35b0\",\"value\":\"_TtC8PastePal16PeerShareManager::advertiser:didReceiveInvitationFromPeer:withContext:invitationHandler:\"},{\"address\":\"0x1001b36a4\",\"value\":\"_TtC8PastePal16PeerShareManager::browser:foundPeer:withDiscoveryInfo:\"},{\"address\":\"0x1001b3744\",\"value\":\"_TtC8PastePal16PeerShareManager::browser:lostPeer:\"},{\"address\":\"0x1001b3b98\",\"value\":\"_TtC8PastePal16PeerShareManager::session:peer:didChangeState:\"},{\"address\":\"0x1001b3ce8\",\"value\":\"_TtC8PastePal16PeerShareManager::session:didReceiveData:fromPeer:\"},{\"address\":\"0x1001b3d9c\",\"value\":\"_TtC8PastePal16PeerShareManager::session:didReceiveStream:withName:fromPeer:\"},{\"address\":\"0x1001b3da0\",\"value\":\"_TtC8PastePal16PeerShareManager::session:didStartReceivingResourceWithName:fromPeer:withProgress:\"},{\"address\":\"0x1001b3da4\",\"value\":\"_TtC8PastePal16PeerShareManager::session:didFinishReceivingResourceWithName:fromPeer:atURL:withError:\"},{\"address\":\"0x1001b4c14\",\"value\":\"_TtC8PastePal16PeerShareManager::browser:didNotStartBrowsingForPeers:\"},{\"address\":\"0x1001b4c18\",\"value\":\"_TtC8PastePal16PeerShareManager::advertiser:didNotStartAdvertisingPeer:\"},{\"address\":\"0x1001b5030\",\"value\":\"_TtC8PastePal16PeerShareManager::windowWillClose:\"},{\"address\":\"0x1001c649c\",\"value\":\"_TtCV8PastePal13QuickLookView17CustomPreviewView::becomeFirstResponder\"},{\"address\":\"0x1001c64a4\",\"value\":\"_TtCV8PastePal13QuickLookView17CustomPreviewView::initWithFrame:style:\"},{\"address\":\"0x1001c6518\",\"value\":\"_TtCV8PastePal13QuickLookView17CustomPreviewView::initWithFrame:\"},{\"address\":\"0x1001c6584\",\"value\":\"_TtCV8PastePal13QuickLookView17CustomPreviewView::initWithCoder:\"},{\"address\":\"0x1001dabcc\",\"value\":\"_TtCV8PastePal7WebView11Coordinator::webView:didStartProvisionalNavigation:\"},{\"address\":\"0x1001dac44\",\"value\":\"_TtCV8PastePal7WebView11Coordinator::webView:didFinishNavigation:\"},{\"address\":\"0x1001dad04\",\"value\":\"_TtCV8PastePal7WebView11Coordinator::init\"},{\"address\":\"0x1001dad64\",\"value\":\"_TtCV8PastePal7WebView11Coordinator::.cxx_destruct\"},{\"address\":\"0x1001dafbc\",\"value\":\"_TtCV8PastePal7WebViewP33_D494EAEFBA79C965C99DEAF737578BAC19NonFocusableWebView::removeFromSuperview\"},{\"address\":\"0x1001db024\",\"value\":\"_TtCV8PastePal7WebViewP33_D494EAEFBA79C965C99DEAF737578BAC19NonFocusableWebView::initWithFrame:configuration:\"},{\"address\":\"0x1001db098\",\"value\":\"_TtCV8PastePal7WebViewP33_D494EAEFBA79C965C99DEAF737578BAC19NonFocusableWebView::initWithCoder:\"},{\"address\":\"0x1001de83c\",\"value\":\"_TtC8PastePal14MenuBarManager::statusMenuButtonTouched:\"},{\"address\":\"0x1001dee04\",\"value\":\"_TtC8PastePalP33_2D606F1B35E825545888ADC50CBF738811MySavePanel::close\"},{\"address\":\"0x1001dee88\",\"value\":\"_TtC8PastePalP33_2D606F1B35E825545888ADC50CBF738811MySavePanel::initWithContentRect:styleMask:backing:defer:\"},{\"address\":\"0x1001e12a8\",\"value\":\"_TtC8PastePal11AppDelegate::applicationDidFinishLaunching:\"},{\"address\":\"0x1001e1bb4\",\"value\":\"_TtC8PastePal11AppDelegate::applicationShouldTerminateAfterLastWindowClosed:\"},{\"address\":\"0x1001e1bbc\",\"value\":\"_TtC8PastePal11AppDelegate::applicationWillTerminate:\"},{\"address\":\"0x1001e1c40\",\"value\":\"_TtC8PastePal11AppDelegate::applicationDidChangeScreenParameters:\"},{\"address\":\"0x1001e1cf4\",\"value\":\"_TtC8PastePal11AppDelegate::applicationShouldHandleReopen:hasVisibleWindows:\"},{\"address\":\"0x1001e1d10\",\"value\":\"_TtC8PastePal11AppDelegate::applicationShouldTerminate:\"},{\"address\":\"0x1001e1e40\",\"value\":\"_TtC8PastePal11AppDelegate::terminate:\"},{\"address\":\"0x1001e1f34\",\"value\":\"_TtC8PastePal11AppDelegate::onPreferenceMenuItem:\"},{\"address\":\"0x1001e200c\",\"value\":\"_TtC8PastePal11AppDelegate::application:didRegisterForRemoteNotificationsWithDeviceToken:\"},{\"address\":\"0x1001e2044\",\"value\":\"_TtC8PastePal11AppDelegate::application:didFailToRegisterForRemoteNotificationsWithError:\"},{\"address\":\"0x1001e2048\",\"value\":\"_TtC8PastePal11AppDelegate::init\"},{\"address\":\"0x1001e2100\",\"value\":\"_TtC8PastePal11AppDelegate::.cxx_destruct\"},{\"address\":\"0x1001e571c\",\"value\":\"CDClipboardApp::initWithEntity:insertIntoManagedObjectContext:\"},{\"address\":\"0x1001e58dc\",\"value\":\"CDClipboardItem::initWithEntity:insertIntoManagedObjectContext:\"},{\"address\":\"0x1004b96d0\",\"value\":\"RCPurchases::automaticAppleSearchAdsAttributionCollection\"},{\"address\":\"0x1004b9760\",\"value\":\"RCPurchases::setAutomaticAppleSearchAdsAttributionCollection:\"},{\"address\":\"0x1008c9f1c\",\"value\":\"/usr/lib/swift/libswiftFoundation.dylib::Foundation::Calendar::SearchDirection::typeMetadataAccessor\"},{\"address\":\"0x1008ca348\",\"value\":\"/System/Library/Frameworks/Combine.framework/Versions/A/Combine::(extension_Combine)::Combine::Publisher::$removeDuplicates\"},{\"address\":\"0x1008cb728\",\"value\":\"/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI::(extension_SwiftUI)::SwiftUI::View::$clipShape\"},{\"address\":\"0x1008ce968\",\"value\":\"_IORegistryEntrySearchCFProperty\"},{\"address\":\"0x100e2f201\",\"value\":\"NSPasteboard::generalPasteboard\"},{\"address\":\"0x100e2f202\",\"value\":\"NSPasteboard::accessBehavior\"},{\"address\":\"0x100e2f203\",\"value\":\"NSPasteboard::clearContents\"},{\"address\":\"0x100e2f204\",\"value\":\"NSPasteboard::stringForType:\"},{\"address\":\"0x100e2f205\",\"value\":\"NSPasteboard::setString:forType:\"}],\"normalized_result\":[{\"address\":\"EXTERNAL:0x11d\",\"value\":\"/usr/lib/swift/libswiftFoundation.dylib::Foundation::Calendar::SearchDirection::typeMetadataAccessor\"},{\"address\":\"EXTERNAL:0x176\",\"value\":\"/System/Library/Frameworks/Combine.framework/Versions/A/Combine::(extension_Combine)::Combine::Publisher::$removeDuplicates\"},{\"address\":\"EXTERNAL:0x31e\",\"value\":\"/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI::(extension_SwiftUI)::SwiftUI::View::$clipShape\"},{\"address\":\"EXTERNAL:0x74e\",\"value\":\"/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit::_IORegistryEntrySearchCFProperty\"},{\"address\":\"EXTERNAL:0xf52\",\"value\":\"/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit::generalPasteboard\"},{\"address\":\"0x100033f5c\",\"value\":\"_TtC8PastePal13CompactWindow::keyDown:\"},{\"address\":\"0x1000340a8\",\"value\":\"_TtC8PastePal13CompactWindow::flagsChanged:\"},{\"address\":\"0x1000340f8\",\"value\":\"_TtC8PastePal13CompactWindow::canBecomeKeyWindow\"},{\"address\":\"0x100034100\",\"value\":\"_TtC8PastePal13CompactWindow::canBecomeMainWindow\"},{\"address\":\"0x100034108\",\"value\":\"_TtC8PastePal13CompactWindow::cancelOperation:\"},{\"address\":\"0x1000341bc\",\"value\":\"_TtC8PastePal13CompactWindow::initWithContentRect:styleMask:backing:defer:\"},{\"address\":\"0x1000342e0\",\"value\":\"_TtC8PastePal13CompactWindow::.cxx_destruct\"},{\"address\":\"0x10007713c\",\"value\":\"_TtC8PastePal11MainManager::init\"},{\"address\":\"0x10007784c\",\"value\":\"_TtC8PastePal11MainManager::.cxx_destruct\"},{\"address\":\"0x10007787c\",\"value\":\"_TtC8PastePal11MainManager::windowWillClose:\"},{\"address\":\"0x10007d4b8\",\"value\":\"_TtC8PastePal10MainWindow::canBecomeKeyWindow\"},{\"address\":\"0x10007d4c0\",\"value\":\"_TtC8PastePal10MainWindow::canBecomeMainWindow\"},{\"address\":\"0x10007d4c8\",\"value\":\"_TtC8PastePal10MainWindow::close\"},{\"address\":\"0x10007d68c\",\"value\":\"_TtC8PastePal10MainWindow::keyDown:\"},{\"address\":\"0x10007d7d8\",\"value\":\"_TtC8PastePal10MainWindow::flagsChanged:\"},{\"address\":\"0x10007d828\",\"value\":\"_TtC8PastePal10MainWindow::cancelOperation:\"},{\"address\":\"0x10007d8dc\",\"value\":\"_TtC8PastePal10MainWindow::initWithContentRect:styleMask:backing:defer:\"},{\"address\":\"0x10007d9cc\",\"value\":\"_TtC8PastePal10MainWindow::.cxx_destruct\"},{\"address\":\"0x10008fdb4\",\"value\":\"_TtC8PastePal17PasteStackManager::init\"},{\"address\":\"0x10008fdd4\",\"value\":\"_TtC8PastePal17PasteStackManager::.cxx_destruct\"},{\"address\":\"0x10008ffa0\",\"value\":\"_TtC8PastePal17PasteStackManager::windowWillClose:\"},{\"address\":\"0x10009809c\",\"value\":\"_TtC8PastePal16PasteStackWindow::keyDown:\"},{\"address\":\"0x1000980ec\",\"value\":\"_TtC8PastePal16PasteStackWindow::initWithContentRect:styleMask:backing:defer:\"},{\"address\":\"0x100098198\",\"value\":\"_TtC8PastePal16PasteStackWindow::.cxx_destruct\"},{\"address\":\"0x1000cc8e4\",\"value\":\"_TtC8PastePal14SettingsWindow::canBecomeKeyWindow\"},{\"address\":\"0x1000cc8ec\",\"value\":\"_TtC8PastePal14SettingsWindow::canBecomeMainWindow\"},{\"address\":\"0x1000cc940\",\"value\":\"_TtC8PastePal14SettingsWindow::close\"},{\"address\":\"0x1000cc9ec\",\"value\":\"_TtC8PastePal14SettingsWindow::initWithContentRect:styleMask:backing:defer:\"},{\"address\":\"0x1000ccad4\",\"value\":\"_TtC8PastePal14SettingsWindow::.cxx_destruct\"},{\"address\":\"0x10012a158\",\"value\":\"_TtCV8PastePal8Backport5Label::initWithFrame:\"},{\"address\":\"0x10012a250\",\"value\":\"_TtCV8PastePal8Backport5Label::initWithCoder:\"},{\"address\":\"0x10012bde8\",\"value\":\"_TtCVV8PastePal8Backport10TextEditor11Coordinator::textDidChange:\"},{\"address\":\"0x10012be8c\",\"value\":\"_TtCVV8PastePal8Backport10TextEditor11Coordinator::init\"},{\"address\":\"0x10012bee8\",\"value\":\"_TtCVV8PastePal8Backport10TextEditor11Coordinator::.cxx_destruct\"},{\"address\":\"0x10012c970\",\"value\":\"_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F20NonFocusableTextView::becomeFirstResponder\"},{\"address\":\"0x10012c978\",\"value\":\"_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F20NonFocusableTextView::initWithFrame:textContainer:\"},{\"address\":\"0x10012c9ec\",\"value\":\"_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F20NonFocusableTextView::initWithCoder:\"},{\"address\":\"0x10012ca6c\",\"value\":\"_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F20NonFocusableTextView::initWithFrame:\"},{\"address\":\"0x10012caf8\",\"value\":\"_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F22DisabledScrollTextView::scrollWheel:\"},{\"address\":\"0x10012cbb8\",\"value\":\"_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F22DisabledScrollTextView::initWithFrame:textContainer:\"},{\"address\":\"0x10012cc30\",\"value\":\"_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F22DisabledScrollTextView::initWithCoder:\"},{\"address\":\"0x10012ccb4\",\"value\":\"_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F22DisabledScrollTextView::initWithFrame:\"},{\"address\":\"0x100140720\",\"value\":\"_TtC8PastePal11CompactCell::viewDidLoad\"},{\"address\":\"0x10014081c\",\"value\":\"_TtC8PastePal11CompactCell::prepareForReuse\"},{\"address\":\"0x100140a44\",\"value\":\"_TtC8PastePal11CompactCell::initWithNibName:bundle:\"},{\"address\":\"0x100140c28\",\"value\":\"_TtC8PastePal11CompactCell::initWithCoder:\"},{\"address\":\"0x100140ccc\",\"value\":\"_TtC8PastePal11CompactCell::.cxx_destruct\"},{\"address\":\"0x100140f68\",\"value\":\"_TtCC8PastePal11CompactCell9ColorCell::viewDidLoad\"},{\"address\":\"0x1001411f8\",\"value\":\"_TtCC8PastePal11CompactCell9ColorCell::initWithNibName:bundle:\"},{\"address\":\"0x1001412fc\",\"value\":\"_TtCC8PastePal11CompactCell9ColorCell::initWithCoder:\"},{\"address\":\"0x100141364\",\"value\":\"_TtCC8PastePal11CompactCell9ColorCell::.cxx_destruct\"},{\"address\":\"0x10014192c\",\"value\":\"_TtCCC8PastePal11CompactCell9ColorCell9ColorView::initWithFrame:\"},{\"address\":\"0x10014194c\",\"value\":\"_TtCCC8PastePal11CompactCell9ColorCell9ColorView::initWithCoder:\"},{\"address\":\"0x100141974\",\"value\":\"_TtCCC8PastePal11CompactCell9ColorCell9ColorView::.cxx_destruct\"},{\"address\":\"0x100141d1c\",\"value\":\"_TtCC8PastePal11CompactCell8FileCell::viewDidLoad\"},{\"address\":\"0x100141d44\",\"value\":\"_TtCC8PastePal11CompactCell8FileCell::prepareForReuse\"},{\"address\":\"0x1001422e0\",\"value\":\"_TtCC8PastePal11CompactCell8FileCell::initWithNibName:bundle:\"},{\"address\":\"0x100142618\",\"value\":\"_TtCC8PastePal11CompactCell8FileCell::initWithCoder:\"},{\"address\":\"0x1001426bc\",\"value\":\"_TtCC8PastePal11CompactCell8FileCell::.cxx_destruct\"},{\"address\":\"0x100142778\",\"value\":\"_TtCC8PastePal11CompactCell9ImageCell::viewDidLoad\"},{\"address\":\"0x100142808\",\"value\":\"_TtCC8PastePal11CompactCell9ImageCell::prepareForReuse\"},{\"address\":\"0x1001432fc\",\"value\":\"_TtCC8PastePal11CompactCell9ImageCell::initWithNibName:bundle:\"},{\"address\":\"0x1001433f8\",\"value\":\"_TtCC8PastePal11CompactCell9ImageCell::initWithCoder:\"},{\"address\":\"0x10014347c\",\"value\":\"_TtCC8PastePal11CompactCell9ImageCell::.cxx_destruct\"},{\"address\":\"0x100143b18\",\"value\":\"_TtCC8PastePal11CompactCell8LinkCell::viewDidLoad\"},{\"address\":\"0x100143c48\",\"value\":\"_TtCC8PastePal11CompactCell8LinkCell::prepareForReuse\"},{\"address\":\"0x1001448d8\",\"value\":\"_TtCC8PastePal11CompactCell8LinkCell::initWithNibName:bundle:\"},{\"address\":\"0x100144c34\",\"value\":\"_TtCC8PastePal11CompactCell8LinkCell::initWithCoder:\"},{\"address\":\"0x100144ce8\",\"value\":\"_TtCC8PastePal11CompactCell8LinkCell::.cxx_destruct\"},{\"address\":\"0x100144f60\",\"value\":\"_TtCC8PastePal11CompactCell10MFilesCell::viewDidLoad\"},{\"address\":\"0x100145160\",\"value\":\"_TtCC8PastePal11CompactCell10MFilesCell::prepareForReuse\"},{\"address\":\"0x1001458cc\",\"value\":\"_TtCC8PastePal11CompactCell10MFilesCell::initWithNibName:bundle:\"},{\"address\":\"0x1001459cc\",\"value\":\"_TtCC8PastePal11CompactCell10MFilesCell::initWithCoder:\"},{\"address\":\"0x100145a34\",\"value\":\"_TtCC8PastePal11CompactCell10MFilesCell::.cxx_destruct\"},{\"address\":\"0x100145d40\",\"value\":\"_TtCCC8PastePal11CompactCell10MFilesCell11ContentView::initWithFrame:\"},{\"address\":\"0x100145d60\",\"value\":\"_TtCCC8PastePal11CompactCell10MFilesCell11ContentView::initWithCoder:\"},{\"address\":\"0x100145d88\",\"value\":\"_TtCCC8PastePal11CompactCell10MFilesCell11ContentView::.cxx_destruct\"},{\"address\":\"0x1001461a8\",\"value\":\"_TtCC8PastePal11CompactCell9OtherCell::viewDidLoad\"},{\"address\":\"0x10014646c\",\"value\":\"_TtCC8PastePal11CompactCell9OtherCell::initWithNibName:bundle:\"},{\"address\":\"0x1001465e8\",\"value\":\"_TtCC8PastePal11CompactCell9OtherCell::initWithCoder:\"},{\"address\":\"0x100146650\",\"value\":\"_TtCC8PastePal11CompactCell9OtherCell::.cxx_destruct\"},{\"address\":\"0x100146680\",\"value\":\"_TtCC8PastePal11CompactCell12RichTextCell::viewDidLoad\"},{\"address\":\"0x100146904\",\"value\":\"_TtCC8PastePal11CompactCell12RichTextCell::initWithNibName:bundle:\"},{\"address\":\"0x100146a2c\",\"value\":\"_TtCC8PastePal11CompactCell12RichTextCell::initWithCoder:\"},{\"address\":\"0x100146a94\",\"value\":\"_TtCC8PastePal11CompactCell12RichTextCell::.cxx_destruct\"},{\"address\":\"0x100146ac4\",\"value\":\"_TtCC8PastePal11CompactCell8TextCell::viewDidLoad\"},{\"address\":\"0x100146d54\",\"value\":\"_TtCC8PastePal11CompactCell8TextCell::initWithNibName:bundle:\"},{\"address\":\"0x100146e7c\",\"value\":\"_TtCC8PastePal11CompactCell8TextCell::initWithCoder:\"},{\"address\":\"0x100146ee4\",\"value\":\"_TtCC8PastePal11CompactCell8TextCell::.cxx_destruct\"},{\"address\":\"0x1001476bc\",\"value\":\"_TtC8PastePal11MinimalCell::viewDidLoad\"},{\"address\":\"0x1001477c4\",\"value\":\"_TtC8PastePal11MinimalCell::prepareForReuse\"},{\"address\":\"0x100147d98\",\"value\":\"_TtC8PastePal11MinimalCell::initWithNibName:bundle:\"},{\"address\":\"0x10014812c\",\"value\":\"_TtC8PastePal11MinimalCell::initWithCoder:\"},{\"address\":\"0x1001481f0\",\"value\":\"_TtC8PastePal11MinimalCell::.cxx_destruct\"},{\"address\":\"0x1001488d8\",\"value\":\"_TtCC8PastePal11MinimalCell13ThumbnailView::initWithFrame:\"},{\"address\":\"0x1001488f8\",\"value\":\"_TtCC8PastePal11MinimalCell13ThumbnailView::initWithCoder:\"},{\"address\":\"0x100148920\",\"value\":\"_TtCC8PastePal11MinimalCell13ThumbnailView::.cxx_destruct\"},{\"address\":\"0x100148e64\",\"value\":\"_TtCC8PastePal11MinimalCell9ImageCell::viewDidLoad\"},{\"address\":\"0x100148f54\",\"value\":\"_TtCC8PastePal11MinimalCell9ImageCell::prepareForReuse\"},{\"address\":\"0x10014a6a8\",\"value\":\"_TtCC8PastePal11MinimalCell9ImageCell::initWithNibName:bundle:\"},{\"address\":\"0x10014a904\",\"value\":\"_TtCC8PastePal11MinimalCell9ImageCell::initWithCoder:\"},{\"address\":\"0x10014a9a8\",\"value\":\"_TtCC8PastePal11MinimalCell9ImageCell::.cxx_destruct\"},{\"address\":\"0x10014b090\",\"value\":\"_TtCC8PastePal11MinimalCell8TextCell::viewDidLoad\"},{\"address\":\"0x10014b124\",\"value\":\"_TtCC8PastePal11MinimalCell8TextCell::prepareForReuse\"},{\"address\":\"0x10014b828\",\"value\":\"_TtCC8PastePal11MinimalCell8TextCell::initWithNibName:bundle:\"},{\"address\":\"0x10014b954\",\"value\":\"_TtCC8PastePal11MinimalCell8TextCell::initWithCoder:\"},{\"address\":\"0x10014b9bc\",\"value\":\"_TtCC8PastePal11MinimalCell8TextCell::.cxx_destruct\"},{\"address\":\"0x10014bf90\",\"value\":\"_TtC8PastePal11RegularCell::viewDidLoad\"},{\"address\":\"0x10014bfb8\",\"value\":\"_TtC8PastePal11RegularCell::prepareForReuse\"},{\"address\":\"0x10014c2a0\",\"value\":\"_TtC8PastePal11RegularCell::initWithNibName:bundle:\"},{\"address\":\"0x10014c430\",\"value\":\"_TtC8PastePal11RegularCell::initWithCoder:\"},{\"address\":\"0x10014c4b4\",\"value\":\"_TtC8PastePal11RegularCell::.cxx_destruct\"},{\"address\":\"0x10014c714\",\"value\":\"_TtCC8PastePal11RegularCell17BottomOverlayView::initWithFrame:\"},{\"address\":\"0x10014c734\",\"value\":\"_TtCC8PastePal11RegularCell17BottomOverlayView::initWithCoder:\"},{\"address\":\"0x10014c75c\",\"value\":\"_TtCC8PastePal11RegularCell17BottomOverlayView::.cxx_destruct\"},{\"address\":\"0x10014cb34\",\"value\":\"_TtCC8PastePal11RegularCell9ColorCell::viewDidLoad\"},{\"address\":\"0x10014cdd4\",\"value\":\"_TtCC8PastePal11RegularCell9ColorCell::prepareForReuse\"},{\"address\":\"0x10014cf80\",\"value\":\"_TtCC8PastePal11RegularCell9ColorCell::initWithNibName:bundle:\"},{\"address\":\"0x10014d138\",\"value\":\"_TtCC8PastePal11RegularCell9ColorCell::initWithCoder:\"},{\"address\":\"0x10014d1bc\",\"value\":\"_TtCC8PastePal11RegularCell9ColorCell::.cxx_destruct\"},{\"address\":\"0x10014d214\",\"value\":\"_TtCC8PastePal11RegularCell9EmailCell::viewDidLoad\"},{\"address\":\"0x10014d3ac\",\"value\":\"_TtCC8PastePal11RegularCell9EmailCell::prepareForReuse\"},{\"address\":\"0x10014d534\",\"value\":\"_TtCC8PastePal11RegularCell9EmailCell::initWithNibName:bundle:\"},{\"address\":\"0x10014d65c\",\"value\":\"_TtCC8PastePal11RegularCell9EmailCell::initWithCoder:\"},{\"address\":\"0x10014d6c4\",\"value\":\"_TtCC8PastePal11RegularCell9EmailCell::.cxx_destruct\"},{\"address\":\"0x10014d8bc\",\"value\":\"_TtCC8PastePal11RegularCell9EmojiCell::viewDidLoad\"},{\"address\":\"0x10014d9e8\",\"value\":\"_TtCC8PastePal11RegularCell9EmojiCell::prepareForReuse\"},{\"address\":\"0x10014dbd8\",\"value\":\"_TtCC8PastePal11RegularCell9EmojiCell::initWithNibName:bundle:\"},{\"address\":\"0x10014dd68\",\"value\":\"_TtCC8PastePal11RegularCell9EmojiCell::initWithCoder:\"},{\"address\":\"0x10014ddd0\",\"value\":\"_TtCC8PastePal11RegularCell9EmojiCell::.cxx_destruct\"},{\"address\":\"0x10014e3f8\",\"value\":\"_TtCC8PastePal11RegularCell8FileCell::viewDidLoad\"},{\"address\":\"0x10014e530\",\"value\":\"_TtCC8PastePal11RegularCell8FileCell::prepareForReuse\"},{\"address\":\"0x10014eb34\",\"value\":\"_TtCC8PastePal11RegularCell8FileCell::initWithNibName:bundle:\"},{\"address\":\"0x10014ef74\",\"value\":\"_TtCC8PastePal11RegularCell8FileCell::initWithCoder:\"},{\"address\":\"0x10014f028\",\"value\":\"_TtCC8PastePal11RegularCell8FileCell::.cxx_destruct\"},{\"address\":\"0x1001502a4\",\"value\":\"_TtCC8PastePal11RegularCell17RegularHeaderView::initWithFrame:\"},{\"address\":\"0x1001502c4\",\"value\":\"_TtCC8PastePal11RegularCell17RegularHeaderView::initWithCoder:\"},{\"address\":\"0x1001502ec\",\"value\":\"_TtCC8PastePal11RegularCell17RegularHeaderView::layout\"},{\"address\":\"0x100150614\",\"value\":\"_TtCC8PastePal11RegularCell17RegularHeaderView::.cxx_destruct\"},{\"address\":\"0x100151260\",\"value\":\"_TtCC8PastePal11RegularCell9ImageCell::viewDidLoad\"},{\"address\":\"0x100151350\",\"value\":\"_TtCC8PastePal11RegularCell9ImageCell::prepareForReuse\"},{\"address\":\"0x100151d18\",\"value\":\"_TtCC8PastePal11RegularCell9ImageCell::initWithNibName:bundle:\"},{\"address\":\"0x100151fb8\",\"value\":\"_TtCC8PastePal11RegularCell9ImageCell::initWithCoder:\"},{\"address\":\"0x10015205c\",\"value\":\"_TtCC8PastePal11RegularCell9ImageCell::.cxx_destruct\"},{\"address\":\"0x100152c54\",\"value\":\"_TtCC8PastePal11RegularCell8LinkCell::viewDidLoad\"},{\"address\":\"0x100152db4\",\"value\":\"_TtCC8PastePal11RegularCell8LinkCell::prepareForReuse\"},{\"address\":\"0x100153ba8\",\"value\":\"_TtCC8PastePal11RegularCell8LinkCell::initWithNibName:bundle:\"},{\"address\":\"0x100154040\",\"value\":\"_TtCC8PastePal11RegularCell8LinkCell::initWithCoder:\"},{\"address\":\"0x100154114\",\"value\":\"_TtCC8PastePal11RegularCell8LinkCell::.cxx_destruct\"},{\"address\":\"0x100154690\",\"value\":\"_TtCCC8PastePal11RegularCell8LinkCell7URLView::initWithFrame:\"},{\"address\":\"0x1001546b0\",\"value\":\"_TtCCC8PastePal11RegularCell8LinkCell7URLView::initWithCoder:\"},{\"address\":\"0x100154764\",\"value\":\"_TtCCC8PastePal11RegularCell8LinkCell7URLView::.cxx_destruct\"},{\"address\":\"0x1001553cc\",\"value\":\"_TtCC8PastePal11RegularCell10MFilesCell::viewDidLoad\"},{\"address\":\"0x1001555cc\",\"value\":\"_TtCC8PastePal11RegularCell10MFilesCell::prepareForReuse\"},{\"address\":\"0x1001558c0\",\"value\":\"_TtCC8PastePal11RegularCell10MFilesCell::initWithNibName:bundle:\"},{\"address\":\"0x1001559c4\",\"value\":\"_TtCC8PastePal11RegularCell10MFilesCell::initWithCoder:\"},{\"address\":\"0x100155a2c\",\"value\":\"_TtCC8PastePal11RegularCell10MFilesCell::.cxx_destruct\"},{\"address\":\"0x100156034\",\"value\":\"_TtCC8PastePal11RegularCell9OtherCell::viewDidLoad\"},{\"address\":\"0x10015605c\",\"value\":\"_TtCC8PastePal11RegularCell9OtherCell::prepareForReuse\"},{\"address\":\"0x1001564e8\",\"value\":\"_TtCC8PastePal11RegularCell9OtherCell::initWithNibName:bundle:\"},{\"address\":\"0x1001567dc\",\"value\":\"_TtCC8PastePal11RegularCell9OtherCell::initWithCoder:\"},{\"address\":\"0x100156870\",\"value\":\"_TtCC8PastePal11RegularCell9OtherCell::.cxx_destruct\"},{\"address\":\"0x100157274\",\"value\":\"_TtCC8PastePal11RegularCell12RichTextCell::viewDidLoad\"},{\"address\":\"0x100158084\",\"value\":\"_TtCC8PastePal11RegularCell12RichTextCell::prepareForReuse\"},{\"address\":\"0x10015827c\",\"value\":\"_TtCC8PastePal11RegularCell12RichTextCell::initWithNibName:bundle:\"},{\"address\":\"0x100158480\",\"value\":\"_TtCC8PastePal11RegularCell12RichTextCell::initWithCoder:\"},{\"address\":\"0x100158544\",\"value\":\"_TtCC8PastePal11RegularCell12RichTextCell::.cxx_destruct\"},{\"address\":\"0x1001585dc\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem19PassThroughTextView::mouseDown:\"},{\"address\":\"0x1001585e8\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem19PassThroughTextView::mouseUp:\"},{\"address\":\"0x100158670\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem19PassThroughTextView::hitTest:\"},{\"address\":\"0x100158678\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem19PassThroughTextView::initWithFrame:textContainer:\"},{\"address\":\"0x1001586ec\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem19PassThroughTextView::initWithCoder:\"},{\"address\":\"0x10015876c\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem19PassThroughTextView::initWithFrame:\"},{\"address\":\"0x1001595f8\",\"value\":\"_TtCC8PastePal11RegularCell8TextCell::viewDidLoad\"},{\"address\":\"0x100159c14\",\"value\":\"_TtCC8PastePal11RegularCell8TextCell::prepareForReuse\"},{\"address\":\"0x100159e70\",\"value\":\"_TtCC8PastePal11RegularCell8TextCell::initWithNibName:bundle:\"},{\"address\":\"0x10015a0d8\",\"value\":\"_TtCC8PastePal11RegularCell8TextCell::initWithCoder:\"},{\"address\":\"0x10015a19c\",\"value\":\"_TtCC8PastePal11RegularCell8TextCell::.cxx_destruct\"},{\"address\":\"0x10015ada0\",\"value\":\"_TtC8PastePal8BaseCell::loadView\"},{\"address\":\"0x10015ae0c\",\"value\":\"_TtC8PastePal8BaseCell::viewDidLoad\"},{\"address\":\"0x10015ae68\",\"value\":\"_TtC8PastePal8BaseCell::prepareForReuse\"},{\"address\":\"0x10015aed8\",\"value\":\"_TtC8PastePal8BaseCell::isSelected\"},{\"address\":\"0x10015af14\",\"value\":\"_TtC8PastePal8BaseCell::setSelected:\"},{\"address\":\"0x10015af80\",\"value\":\"_TtC8PastePal8BaseCell::viewDidLayout\"},{\"address\":\"0x10015b154\",\"value\":\"_TtC8PastePal8BaseCell::mouseDown:\"},{\"address\":\"0x10015b2b4\",\"value\":\"_TtC8PastePal8BaseCell::initWithNibName:bundle:\"},{\"address\":\"0x10015b3f8\",\"value\":\"_TtC8PastePal8BaseCell::initWithCoder:\"},{\"address\":\"0x10015b450\",\"value\":\"_TtC8PastePal8BaseCell::.cxx_destruct\"},{\"address\":\"0x10015b6f4\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem11AppIconView::initWithFrame:\"},{\"address\":\"0x10015b714\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem11AppIconView::initWithCoder:\"},{\"address\":\"0x10015ba8c\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem11AppIconView::.cxx_destruct\"},{\"address\":\"0x10015c9d4\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem17FileThumbnailView::initWithFrame:\"},{\"address\":\"0x10015c9f4\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem17FileThumbnailView::initWithCoder:\"},{\"address\":\"0x10015ca1c\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem17FileThumbnailView::prepareForReuse\"},{\"address\":\"0x10015d30c\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem17FileThumbnailView::.cxx_destruct\"},{\"address\":\"0x10015e4b4\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem10HeaderView::initWithFrame:\"},{\"address\":\"0x10015e4d4\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem10HeaderView::initWithCoder:\"},{\"address\":\"0x10015e4fc\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem10HeaderView::prepareForReuse\"},{\"address\":\"0x10015ea94\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem10HeaderView::.cxx_destruct\"},{\"address\":\"0x10015fb3c\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem5Label::initWithFrame:\"},{\"address\":\"0x10015fb5c\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem5Label::initWithCoder:\"},{\"address\":\"0x10015fba4\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem5Label::viewDidMoveToSuperview\"},{\"address\":\"0x10015ff3c\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem15BackgroundLabel::initWithCoder:\"},{\"address\":\"0x10015ff64\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem15BackgroundLabel::initWithFrame:\"},{\"address\":\"0x10015ff94\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem15BackgroundLabel::.cxx_destruct\"},{\"address\":\"0x1001600ac\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem10MenuButton::initWithFrame:\"},{\"address\":\"0x10016019c\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem10MenuButton::initWithCoder:\"},{\"address\":\"0x1001601fc\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem10MenuButton::.cxx_destruct\"},{\"address\":\"0x100160230\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem16RoundedImageView::image\"},{\"address\":\"0x100160274\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem16RoundedImageView::setImage:\"},{\"address\":\"0x1001602f0\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem16RoundedImageView::layout\"},{\"address\":\"0x10016059c\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem16RoundedImageView::initWithFrame:\"},{\"address\":\"0x10016062c\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem16RoundedImageView::initWithCoder:\"},{\"address\":\"0x10016070c\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem16RoundedImageView::.cxx_destruct\"},{\"address\":\"0x100161168\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem13FillImageView::initWithFrame:\"},{\"address\":\"0x100161188\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem13FillImageView::initWithCoder:\"},{\"address\":\"0x1001611dc\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem13FillImageView::.cxx_destruct\"},{\"address\":\"0x10016120c\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem13ThumbnailView::initWithFrame:\"},{\"address\":\"0x1001612cc\",\"value\":\"_TtCE8PastePalCSo20NSCollectionViewItem13ThumbnailView::initWithCoder:\"},{\"address\":\"0x100162b04\",\"value\":\"_TtC8PastePal24CollectionViewController::loadView\"},{\"address\":\"0x100163724\",\"value\":\"_TtC8PastePal24CollectionViewController::viewDidLoad\"},{\"address\":\"0x10016424c\",\"value\":\"_TtC8PastePal24CollectionViewController::initWithNibName:bundle:\"},{\"address\":\"0x1001643dc\",\"value\":\"_TtC8PastePal24CollectionViewController::initWithCoder:\"},{\"address\":\"0x100164404\",\"value\":\"_TtC8PastePal24CollectionViewController::.cxx_destruct\"},{\"address\":\"0x1001644cc\",\"value\":\"_TtC8PastePal24CollectionViewController::collectionView:didSelectItemsAtIndexPaths:\"},{\"address\":\"0x100164568\",\"value\":\"_TtC8PastePal24CollectionViewController::collectionView:didDeselectItemsAtIndexPaths:\"},{\"address\":\"0x1001645ec\",\"value\":\"_TtC8PastePal24CollectionViewController::collectionView:shouldSelectItemsAtIndexPaths:\"},{\"address\":\"0x10016466c\",\"value\":\"_TtC8PastePal24CollectionViewController::collectionView:willDisplayItem:forRepresentedObjectAtIndexPath:\"},{\"address\":\"0x1001646e8\",\"value\":\"_TtC8PastePal24CollectionViewController::collectionView:didEndDisplayingItem:forRepresentedObjectAtIndexPath:\"},{\"address\":\"0x100164804\",\"value\":\"_TtC8PastePal24CollectionViewController::collectionView:layout:sizeForItemAtIndexPath:\"},{\"address\":\"0x100171324\",\"value\":\"_TtC8PastePal24CollectionViewController::collectionView:canDragItemsAtIndexPaths:withEvent:\"},{\"address\":\"0x1001713a4\",\"value\":\"_TtC8PastePal24CollectionViewController::collectionView:draggingSession:willBeginAtPoint:forItemsAtIndexPaths:\"},{\"address\":\"0x1001721cc\",\"value\":\"_TtC8PastePal24CollectionViewController::collectionView:draggingSession:endedAtPoint:dragOperation:\"},{\"address\":\"0x100172230\",\"value\":\"_TtC8PastePal24CollectionViewController::collectionView:pasteboardWriterForItemAtIndexPath:\"},{\"address\":\"0x100173f54\",\"value\":\"_TtC8PastePal24CollectionViewController::collectionView:validateDrop:proposedIndexPath:dropOperation:\"},{\"address\":\"0x10017445c\",\"value\":\"_TtC8PastePal24CollectionViewController::collectionView:acceptDrop:indexPath:dropOperation:\"},{\"address\":\"0x100175e80\",\"value\":\"_TtC8PastePal24CollectionViewController::popoverDidShow:\"},{\"address\":\"0x100175efc\",\"value\":\"_TtC8PastePal24CollectionViewController::popoverDidClose:\"},{\"address\":\"0x1001798b4\",\"value\":\"_TtCC8PastePal24CollectionViewController16CustomScrollView::scrollWheel:\"},{\"address\":\"0x100179904\",\"value\":\"_TtCC8PastePal24CollectionViewController16CustomScrollView::initWithFrame:\"},{\"address\":\"0x10017997c\",\"value\":\"_TtCC8PastePal24CollectionViewController16CustomScrollView::initWithCoder:\"},{\"address\":\"0x100179c10\",\"value\":\"_TtCC8PastePal24CollectionViewController20CustomCollectionView::menuForEvent:\"},{\"address\":\"0x100179c6c\",\"value\":\"_TtCC8PastePal24CollectionViewController20CustomCollectionView::keyDown:\"},{\"address\":\"0x100179f54\",\"value\":\"_TtCC8PastePal24CollectionViewController20CustomCollectionView::mouseDown:\"},{\"address\":\"0x100179fa4\",\"value\":\"_TtCC8PastePal24CollectionViewController20CustomCollectionView::draggingSession:sourceOperationMaskForDraggingContext:\"},{\"address\":\"0x10017a23c\",\"value\":\"_TtCC8PastePal24CollectionViewController20CustomCollectionView::beginDraggingSessionWithItems:event:source:\"},{\"address\":\"0x10017a3d0\",\"value\":\"_TtCC8PastePal24CollectionViewController20CustomCollectionView::draggingEntered:\"},{\"address\":\"0x10017a500\",\"value\":\"_TtCC8PastePal24CollectionViewController20CustomCollectionView::draggingEnded:\"},{\"address\":\"0x10017a61c\",\"value\":\"_TtCC8PastePal24CollectionViewController20CustomCollectionView::draggingExited:\"},{\"address\":\"0x10017a664\",\"value\":\"_TtCC8PastePal24CollectionViewController20CustomCollectionView::initWithFrame:\"},{\"address\":\"0x10017a6e8\",\"value\":\"_TtCC8PastePal24CollectionViewController20CustomCollectionView::initWithCoder:\"},{\"address\":\"0x10017a780\",\"value\":\"_TtCC8PastePal24CollectionViewController20CustomCollectionView::.cxx_destruct\"},{\"address\":\"0x10017a7b0\",\"value\":\"_TtCC8PastePal24CollectionViewController7Popover::acceptsFirstResponder\"},{\"address\":\"0x10017a7b8\",\"value\":\"_TtCC8PastePal24CollectionViewController7Popover::becomeFirstResponder\"},{\"address\":\"0x10017a7c0\",\"value\":\"_TtCC8PastePal24CollectionViewController7Popover::keyDown:\"},{\"address\":\"0x10017a904\",\"value\":\"_TtCC8PastePal24CollectionViewController7Popover::cancelOperation:\"},{\"address\":\"0x10017a98c\",\"value\":\"_TtCC8PastePal24CollectionViewController7Popover::init\"},{\"address\":\"0x10017a9c8\",\"value\":\"_TtCC8PastePal24CollectionViewController7Popover::initWithCoder:\"},{\"address\":\"0x10017c45c\",\"value\":\"_TtC8PastePal9AppLoader::init\"},{\"address\":\"0x10017c47c\",\"value\":\"_TtC8PastePal9AppLoader::.cxx_destruct\"},{\"address\":\"0x10017c79c\",\"value\":\"_TtC8PastePal9AppLoader::controllerDidChangeContent:\"},{\"address\":\"0x1001838c4\",\"value\":\"_TtC8PastePal12FolderLoader::init\"},{\"address\":\"0x1001838e4\",\"value\":\"_TtC8PastePal12FolderLoader::.cxx_destruct\"},{\"address\":\"0x100183c54\",\"value\":\"_TtC8PastePal12FolderLoader::controllerDidChangeContent:\"},{\"address\":\"0x100185be4\",\"value\":\"_TtC8PastePal11ItemsLoader::init\"},{\"address\":\"0x100185c10\",\"value\":\"_TtC8PastePal11ItemsLoader::.cxx_destruct\"},{\"address\":\"0x100185e40\",\"value\":\"_TtC8PastePal11ItemsLoader::controllerDidChangeContent:\"},{\"address\":\"0x10018e170\",\"value\":\"_TtC8PastePal8MenuItem::handleAction\"},{\"address\":\"0x10018e1e0\",\"value\":\"_TtC8PastePal8MenuItem::initWithTitle:action:keyEquivalent:\"},{\"address\":\"0x10018e254\",\"value\":\"_TtC8PastePal8MenuItem::initWithCoder:\"},{\"address\":\"0x10018e2e0\",\"value\":\"_TtC8PastePal8MenuItem::.cxx_destruct\"},{\"address\":\"0x1001ae8ac\",\"value\":\"_TtCV8PastePal13ClipboardItem14PasteboardItem::init\"},{\"address\":\"0x1001ae8e8\",\"value\":\"_TtCV8PastePal13ClipboardItem14PasteboardItem::initWithPasteboardPropertyList:ofType:\"},{\"address\":\"0x1001af3a8\",\"value\":\"_TtCCV8PastePal13ClipboardItem14PasteboardItem12DataProvider::pasteboard:item:provideDataForType:\"},{\"address\":\"0x1001af49c\",\"value\":\"_TtCCV8PastePal13ClipboardItem14PasteboardItem12DataProvider::pasteboardFinishedWithDataProvider:\"},{\"address\":\"0x1001afb2c\",\"value\":\"_TtCCV8PastePal13ClipboardItem14PasteboardItem12DataProvider::init\"},{\"address\":\"0x1001afb8c\",\"value\":\"_TtCCV8PastePal13ClipboardItem14PasteboardItem12DataProvider::.cxx_destruct\"},{\"address\":\"0x1001b0458\",\"value\":\"_TtCV8PastePal13ClipboardItem21PasteboardWritingItem::writableTypesForPasteboard:\"},{\"address\":\"0x1001b04d0\",\"value\":\"_TtCV8PastePal13ClipboardItem21PasteboardWritingItem::writingOptionsForType:pasteboard:\"},{\"address\":\"0x1001b0780\",\"value\":\"_TtCV8PastePal13ClipboardItem21PasteboardWritingItem::pasteboardPropertyListForType:\"},{\"address\":\"0x1001b0878\",\"value\":\"_TtCV8PastePal13ClipboardItem21PasteboardWritingItem::init\"},{\"address\":\"0x1001b08a4\",\"value\":\"_TtCV8PastePal13ClipboardItem21PasteboardWritingItem::.cxx_destruct\"},{\"address\":\"0x1001b28c4\",\"value\":\"_TtC8PastePal16PeerShareManager::init\"},{\"address\":\"0x1001b331c\",\"value\":\"_TtC8PastePal16PeerShareManager::.cxx_destruct\"},{\"address\":\"0x1001b35b0\",\"value\":\"_TtC8PastePal16PeerShareManager::advertiser:didReceiveInvitationFromPeer:withContext:invitationHandler:\"},{\"address\":\"0x1001b36a4\",\"value\":\"_TtC8PastePal16PeerShareManager::browser:foundPeer:withDiscoveryInfo:\"},{\"address\":\"0x1001b3744\",\"value\":\"_TtC8PastePal16PeerShareManager::browser:lostPeer:\"},{\"address\":\"0x1001b3b98\",\"value\":\"_TtC8PastePal16PeerShareManager::session:peer:didChangeState:\"},{\"address\":\"0x1001b3ce8\",\"value\":\"_TtC8PastePal16PeerShareManager::session:didReceiveData:fromPeer:\"},{\"address\":\"0x1001b3d9c\",\"value\":\"_TtC8PastePal16PeerShareManager::session:didReceiveStream:withName:fromPeer:\"},{\"address\":\"0x1001b3da0\",\"value\":\"_TtC8PastePal16PeerShareManager::session:didStartReceivingResourceWithName:fromPeer:withProgress:\"},{\"address\":\"0x1001b3da4\",\"value\":\"_TtC8PastePal16PeerShareManager::session:didFinishReceivingResourceWithName:fromPeer:atURL:withError:\"},{\"address\":\"0x1001b4c14\",\"value\":\"_TtC8PastePal16PeerShareManager::browser:didNotStartBrowsingForPeers:\"},{\"address\":\"0x1001b4c18\",\"value\":\"_TtC8PastePal16PeerShareManager::advertiser:didNotStartAdvertisingPeer:\"},{\"address\":\"0x1001b5030\",\"value\":\"_TtC8PastePal16PeerShareManager::windowWillClose:\"},{\"address\":\"0x1001c649c\",\"value\":\"_TtCV8PastePal13QuickLookView17CustomPreviewView::becomeFirstResponder\"},{\"address\":\"0x1001c64a4\",\"value\":\"_TtCV8PastePal13QuickLookView17CustomPreviewView::initWithFrame:style:\"},{\"address\":\"0x1001c6518\",\"value\":\"_TtCV8PastePal13QuickLookView17CustomPreviewView::initWithFrame:\"},{\"address\":\"0x1001c6584\",\"value\":\"_TtCV8PastePal13QuickLookView17CustomPreviewView::initWithCoder:\"},{\"address\":\"0x1001dabcc\",\"value\":\"_TtCV8PastePal7WebView11Coordinator::webView:didStartProvisionalNavigation:\"},{\"address\":\"0x1001dac44\",\"value\":\"_TtCV8PastePal7WebView11Coordinator::webView:didFinishNavigation:\"},{\"address\":\"0x1001dad04\",\"value\":\"_TtCV8PastePal7WebView11Coordinator::init\"},{\"address\":\"0x1001dad64\",\"value\":\"_TtCV8PastePal7WebView11Coordinator::.cxx_destruct\"},{\"address\":\"0x1001dafbc\",\"value\":\"_TtCV8PastePal7WebViewP33_D494EAEFBA79C965C99DEAF737578BAC19NonFocusableWebView::removeFromSuperview\"},{\"address\":\"0x1001db024\",\"value\":\"_TtCV8PastePal7WebViewP33_D494EAEFBA79C965C99DEAF737578BAC19NonFocusableWebView::initWithFrame:configuration:\"},{\"address\":\"0x1001db098\",\"value\":\"_TtCV8PastePal7WebViewP33_D494EAEFBA79C965C99DEAF737578BAC19NonFocusableWebView::initWithCoder:\"},{\"address\":\"0x1001de83c\",\"value\":\"_TtC8PastePal14MenuBarManager::statusMenuButtonTouched:\"},{\"address\":\"0x1001dee04\",\"value\":\"_TtC8PastePalP33_2D606F1B35E825545888ADC50CBF738811MySavePanel::close\"},{\"address\":\"0x1001dee88\",\"value\":\"_TtC8PastePalP33_2D606F1B35E825545888ADC50CBF738811MySavePanel::initWithContentRect:styleMask:backing:defer:\"},{\"address\":\"0x1001e12a8\",\"value\":\"_TtC8PastePal11AppDelegate::applicationDidFinishLaunching:\"},{\"address\":\"0x1001e1bb4\",\"value\":\"_TtC8PastePal11AppDelegate::applicationShouldTerminateAfterLastWindowClosed:\"},{\"address\":\"0x1001e1bbc\",\"value\":\"_TtC8PastePal11AppDelegate::applicationWillTerminate:\"},{\"address\":\"0x1001e1c40\",\"value\":\"_TtC8PastePal11AppDelegate::applicationDidChangeScreenParameters:\"},{\"address\":\"0x1001e1cf4\",\"value\":\"_TtC8PastePal11AppDelegate::applicationShouldHandleReopen:hasVisibleWindows:\"},{\"address\":\"0x1001e1d10\",\"value\":\"_TtC8PastePal11AppDelegate::applicationShouldTerminate:\"},{\"address\":\"0x1001e1e40\",\"value\":\"_TtC8PastePal11AppDelegate::terminate:\"},{\"address\":\"0x1001e1f34\",\"value\":\"_TtC8PastePal11AppDelegate::onPreferenceMenuItem:\"},{\"address\":\"0x1001e200c\",\"value\":\"_TtC8PastePal11AppDelegate::application:didRegisterForRemoteNotificationsWithDeviceToken:\"},{\"address\":\"0x1001e2044\",\"value\":\"_TtC8PastePal11AppDelegate::application:didFailToRegisterForRemoteNotificationsWithError:\"},{\"address\":\"0x1001e2048\",\"value\":\"_TtC8PastePal11AppDelegate::init\"},{\"address\":\"0x1001e2100\",\"value\":\"_TtC8PastePal11AppDelegate::.cxx_destruct\"},{\"address\":\"0x1001e571c\",\"value\":\"CDClipboardApp::initWithEntity:insertIntoManagedObjectContext:\"},{\"address\":\"0x1001e58dc\",\"value\":\"CDClipboardItem::initWithEntity:insertIntoManagedObjectContext:\"},{\"address\":\"0x1004b96d0\",\"value\":\"RCPurchases::automaticAppleSearchAdsAttributionCollection\"},{\"address\":\"0x1004b9760\",\"value\":\"RCPurchases::setAutomaticAppleSearchAdsAttributionCollection:\"},{\"address\":\"0x1008c9f1c\",\"value\":\"/usr/lib/swift/libswiftFoundation.dylib::Foundation::Calendar::SearchDirection::typeMetadataAccessor\"},{\"address\":\"0x1008ca348\",\"value\":\"/System/Library/Frameworks/Combine.framework/Versions/A/Combine::(extension_Combine)::Combine::Publisher::$removeDuplicates\"},{\"address\":\"0x1008cb728\",\"value\":\"/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI::(extension_SwiftUI)::SwiftUI::View::$clipShape\"},{\"address\":\"0x1008ce968\",\"value\":\"_IORegistryEntrySearchCFProperty\"},{\"address\":\"0x100e2f201\",\"value\":\"NSPasteboard::generalPasteboard\"},{\"address\":\"0x100e2f202\",\"value\":\"NSPasteboard::accessBehavior\"},{\"address\":\"0x100e2f203\",\"value\":\"NSPasteboard::clearContents\"},{\"address\":\"0x100e2f204\",\"value\":\"NSPasteboard::stringForType:\"},{\"address\":\"0x100e2f205\",\"value\":\"NSPasteboard::setString:forType:\"}],\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.\",\"The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.\",\"Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.\",\"Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.\",\"Regex mode uses Java Pattern semantics. Matcher or compiler stack exhaustion returns a resource constraint without closing the session; literal mode avoids regex recursion and returns complete matching values.\",\"macOS sessions require a matching executable Ghidra native decompiler; REA checks for it but does not build native components or change Gatekeeper quarantine state.\"],\"locations\":[],\"evidence_links\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_466d49fe2ab2cf6c4b0195dca8958cf1ff7f6f610e649a96392f83f3907cd057",
+      "subject": {
+        "name": "PastePal.arm64",
+        "digest": {
+          "sha256": "7ee43a4a8437e805cfd1ddd7a6ce2242532fb9944e796997401864004185f317"
+        },
+        "format": "mach-o",
+        "architecture": "arm64",
+        "local_path": "/Users/luwenjie/.rea/targets/pastepal-ecc6c102/PastePal.arm64"
+      },
+      "provider": {
+        "id": "ghidra",
+        "name": "Ghidra",
+        "version": "12.1.4"
+      },
+      "analysis_profile": {
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "parameters": {
+          "target_kind": "executable",
+          "target_format": "mach-o",
+          "architecture": "arm64",
+          "available_architectures": [
+            "arm64"
+          ],
+          "import_mode": "ephemeral-source-immutable",
+          "annotation_policy": "atomic-function-entry-metadata-v1",
+          "load_image_observations": "source-mappings-entry-context-v2",
+          "function_body_evidence": "complete-inclusive-ranges-v1",
+          "function_references": "complete-body-and-entry-reference-manager-v2",
+          "string_inventory_evidence": "defined-data-coverage-v1",
+          "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+          "instruction_flow_evidence": "decoded-return-pcode-v1",
+          "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+          "no_return_repair": "returning-imports-decoded-return-v2",
+          "process_launch": "inspected-jvm-launch-support-v1",
+          "jump_table_evidence": "typed-case-default-blocks-v1",
+          "decompiler_jump_loads": true,
+          "loader": "auto-from-header",
+          "language_id": "auto-from-header",
+          "compiler_spec_id": "auto-default",
+          "analyzer_preset": "ghidra-default"
+        },
+        "digest": "20565088524a2d0359b9b96f46ac48e679d774c7b0092c56abc06de8fdbec11c"
+      },
+      "predicate_type": "rea.analysis",
+      "operation": "search_procedures",
+      "parameters": {
+        "pattern": "paste|clip|duplicate|search|changeCount",
+        "mode": "regex",
+        "case_sensitive": false
+      },
+      "raw_result": [
+        {
+          "address": "EXTERNAL:0x11d",
+          "value": "/usr/lib/swift/libswiftFoundation.dylib::Foundation::Calendar::SearchDirection::typeMetadataAccessor"
+        },
+        {
+          "address": "EXTERNAL:0x176",
+          "value": "/System/Library/Frameworks/Combine.framework/Versions/A/Combine::(extension_Combine)::Combine::Publisher::$removeDuplicates"
+        },
+        {
+          "address": "EXTERNAL:0x31e",
+          "value": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI::(extension_SwiftUI)::SwiftUI::View::$clipShape"
+        },
+        {
+          "address": "EXTERNAL:0x74e",
+          "value": "/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit::_IORegistryEntrySearchCFProperty"
+        },
+        {
+          "address": "EXTERNAL:0xf52",
+          "value": "/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit::generalPasteboard"
+        },
+        {
+          "address": "0x100033f5c",
+          "value": "_TtC8PastePal13CompactWindow::keyDown:"
+        },
+        {
+          "address": "0x1000340a8",
+          "value": "_TtC8PastePal13CompactWindow::flagsChanged:"
+        },
+        {
+          "address": "0x1000340f8",
+          "value": "_TtC8PastePal13CompactWindow::canBecomeKeyWindow"
+        },
+        {
+          "address": "0x100034100",
+          "value": "_TtC8PastePal13CompactWindow::canBecomeMainWindow"
+        },
+        {
+          "address": "0x100034108",
+          "value": "_TtC8PastePal13CompactWindow::cancelOperation:"
+        },
+        {
+          "address": "0x1000341bc",
+          "value": "_TtC8PastePal13CompactWindow::initWithContentRect:styleMask:backing:defer:"
+        },
+        {
+          "address": "0x1000342e0",
+          "value": "_TtC8PastePal13CompactWindow::.cxx_destruct"
+        },
+        {
+          "address": "0x10007713c",
+          "value": "_TtC8PastePal11MainManager::init"
+        },
+        {
+          "address": "0x10007784c",
+          "value": "_TtC8PastePal11MainManager::.cxx_destruct"
+        },
+        {
+          "address": "0x10007787c",
+          "value": "_TtC8PastePal11MainManager::windowWillClose:"
+        },
+        {
+          "address": "0x10007d4b8",
+          "value": "_TtC8PastePal10MainWindow::canBecomeKeyWindow"
+        },
+        {
+          "address": "0x10007d4c0",
+          "value": "_TtC8PastePal10MainWindow::canBecomeMainWindow"
+        },
+        {
+          "address": "0x10007d4c8",
+          "value": "_TtC8PastePal10MainWindow::close"
+        },
+        {
+          "address": "0x10007d68c",
+          "value": "_TtC8PastePal10MainWindow::keyDown:"
+        },
+        {
+          "address": "0x10007d7d8",
+          "value": "_TtC8PastePal10MainWindow::flagsChanged:"
+        },
+        {
+          "address": "0x10007d828",
+          "value": "_TtC8PastePal10MainWindow::cancelOperation:"
+        },
+        {
+          "address": "0x10007d8dc",
+          "value": "_TtC8PastePal10MainWindow::initWithContentRect:styleMask:backing:defer:"
+        },
+        {
+          "address": "0x10007d9cc",
+          "value": "_TtC8PastePal10MainWindow::.cxx_destruct"
+        },
+        {
+          "address": "0x10008fdb4",
+          "value": "_TtC8PastePal17PasteStackManager::init"
+        },
+        {
+          "address": "0x10008fdd4",
+          "value": "_TtC8PastePal17PasteStackManager::.cxx_destruct"
+        },
+        {
+          "address": "0x10008ffa0",
+          "value": "_TtC8PastePal17PasteStackManager::windowWillClose:"
+        },
+        {
+          "address": "0x10009809c",
+          "value": "_TtC8PastePal16PasteStackWindow::keyDown:"
+        },
+        {
+          "address": "0x1000980ec",
+          "value": "_TtC8PastePal16PasteStackWindow::initWithContentRect:styleMask:backing:defer:"
+        },
+        {
+          "address": "0x100098198",
+          "value": "_TtC8PastePal16PasteStackWindow::.cxx_destruct"
+        },
+        {
+          "address": "0x1000cc8e4",
+          "value": "_TtC8PastePal14SettingsWindow::canBecomeKeyWindow"
+        },
+        {
+          "address": "0x1000cc8ec",
+          "value": "_TtC8PastePal14SettingsWindow::canBecomeMainWindow"
+        },
+        {
+          "address": "0x1000cc940",
+          "value": "_TtC8PastePal14SettingsWindow::close"
+        },
+        {
+          "address": "0x1000cc9ec",
+          "value": "_TtC8PastePal14SettingsWindow::initWithContentRect:styleMask:backing:defer:"
+        },
+        {
+          "address": "0x1000ccad4",
+          "value": "_TtC8PastePal14SettingsWindow::.cxx_destruct"
+        },
+        {
+          "address": "0x10012a158",
+          "value": "_TtCV8PastePal8Backport5Label::initWithFrame:"
+        },
+        {
+          "address": "0x10012a250",
+          "value": "_TtCV8PastePal8Backport5Label::initWithCoder:"
+        },
+        {
+          "address": "0x10012bde8",
+          "value": "_TtCVV8PastePal8Backport10TextEditor11Coordinator::textDidChange:"
+        },
+        {
+          "address": "0x10012be8c",
+          "value": "_TtCVV8PastePal8Backport10TextEditor11Coordinator::init"
+        },
+        {
+          "address": "0x10012bee8",
+          "value": "_TtCVV8PastePal8Backport10TextEditor11Coordinator::.cxx_destruct"
+        },
+        {
+          "address": "0x10012c970",
+          "value": "_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F20NonFocusableTextView::becomeFirstResponder"
+        },
+        {
+          "address": "0x10012c978",
+          "value": "_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F20NonFocusableTextView::initWithFrame:textContainer:"
+        },
+        {
+          "address": "0x10012c9ec",
+          "value": "_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F20NonFocusableTextView::initWithCoder:"
+        },
+        {
+          "address": "0x10012ca6c",
+          "value": "_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F20NonFocusableTextView::initWithFrame:"
+        },
+        {
+          "address": "0x10012caf8",
+          "value": "_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F22DisabledScrollTextView::scrollWheel:"
+        },
+        {
+          "address": "0x10012cbb8",
+          "value": "_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F22DisabledScrollTextView::initWithFrame:textContainer:"
+        },
+        {
+          "address": "0x10012cc30",
+          "value": "_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F22DisabledScrollTextView::initWithCoder:"
+        },
+        {
+          "address": "0x10012ccb4",
+          "value": "_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F22DisabledScrollTextView::initWithFrame:"
+        },
+        {
+          "address": "0x100140720",
+          "value": "_TtC8PastePal11CompactCell::viewDidLoad"
+        },
+        {
+          "address": "0x10014081c",
+          "value": "_TtC8PastePal11CompactCell::prepareForReuse"
+        },
+        {
+          "address": "0x100140a44",
+          "value": "_TtC8PastePal11CompactCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x100140c28",
+          "value": "_TtC8PastePal11CompactCell::initWithCoder:"
+        },
+        {
+          "address": "0x100140ccc",
+          "value": "_TtC8PastePal11CompactCell::.cxx_destruct"
+        },
+        {
+          "address": "0x100140f68",
+          "value": "_TtCC8PastePal11CompactCell9ColorCell::viewDidLoad"
+        },
+        {
+          "address": "0x1001411f8",
+          "value": "_TtCC8PastePal11CompactCell9ColorCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x1001412fc",
+          "value": "_TtCC8PastePal11CompactCell9ColorCell::initWithCoder:"
+        },
+        {
+          "address": "0x100141364",
+          "value": "_TtCC8PastePal11CompactCell9ColorCell::.cxx_destruct"
+        },
+        {
+          "address": "0x10014192c",
+          "value": "_TtCCC8PastePal11CompactCell9ColorCell9ColorView::initWithFrame:"
+        },
+        {
+          "address": "0x10014194c",
+          "value": "_TtCCC8PastePal11CompactCell9ColorCell9ColorView::initWithCoder:"
+        },
+        {
+          "address": "0x100141974",
+          "value": "_TtCCC8PastePal11CompactCell9ColorCell9ColorView::.cxx_destruct"
+        },
+        {
+          "address": "0x100141d1c",
+          "value": "_TtCC8PastePal11CompactCell8FileCell::viewDidLoad"
+        },
+        {
+          "address": "0x100141d44",
+          "value": "_TtCC8PastePal11CompactCell8FileCell::prepareForReuse"
+        },
+        {
+          "address": "0x1001422e0",
+          "value": "_TtCC8PastePal11CompactCell8FileCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x100142618",
+          "value": "_TtCC8PastePal11CompactCell8FileCell::initWithCoder:"
+        },
+        {
+          "address": "0x1001426bc",
+          "value": "_TtCC8PastePal11CompactCell8FileCell::.cxx_destruct"
+        },
+        {
+          "address": "0x100142778",
+          "value": "_TtCC8PastePal11CompactCell9ImageCell::viewDidLoad"
+        },
+        {
+          "address": "0x100142808",
+          "value": "_TtCC8PastePal11CompactCell9ImageCell::prepareForReuse"
+        },
+        {
+          "address": "0x1001432fc",
+          "value": "_TtCC8PastePal11CompactCell9ImageCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x1001433f8",
+          "value": "_TtCC8PastePal11CompactCell9ImageCell::initWithCoder:"
+        },
+        {
+          "address": "0x10014347c",
+          "value": "_TtCC8PastePal11CompactCell9ImageCell::.cxx_destruct"
+        },
+        {
+          "address": "0x100143b18",
+          "value": "_TtCC8PastePal11CompactCell8LinkCell::viewDidLoad"
+        },
+        {
+          "address": "0x100143c48",
+          "value": "_TtCC8PastePal11CompactCell8LinkCell::prepareForReuse"
+        },
+        {
+          "address": "0x1001448d8",
+          "value": "_TtCC8PastePal11CompactCell8LinkCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x100144c34",
+          "value": "_TtCC8PastePal11CompactCell8LinkCell::initWithCoder:"
+        },
+        {
+          "address": "0x100144ce8",
+          "value": "_TtCC8PastePal11CompactCell8LinkCell::.cxx_destruct"
+        },
+        {
+          "address": "0x100144f60",
+          "value": "_TtCC8PastePal11CompactCell10MFilesCell::viewDidLoad"
+        },
+        {
+          "address": "0x100145160",
+          "value": "_TtCC8PastePal11CompactCell10MFilesCell::prepareForReuse"
+        },
+        {
+          "address": "0x1001458cc",
+          "value": "_TtCC8PastePal11CompactCell10MFilesCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x1001459cc",
+          "value": "_TtCC8PastePal11CompactCell10MFilesCell::initWithCoder:"
+        },
+        {
+          "address": "0x100145a34",
+          "value": "_TtCC8PastePal11CompactCell10MFilesCell::.cxx_destruct"
+        },
+        {
+          "address": "0x100145d40",
+          "value": "_TtCCC8PastePal11CompactCell10MFilesCell11ContentView::initWithFrame:"
+        },
+        {
+          "address": "0x100145d60",
+          "value": "_TtCCC8PastePal11CompactCell10MFilesCell11ContentView::initWithCoder:"
+        },
+        {
+          "address": "0x100145d88",
+          "value": "_TtCCC8PastePal11CompactCell10MFilesCell11ContentView::.cxx_destruct"
+        },
+        {
+          "address": "0x1001461a8",
+          "value": "_TtCC8PastePal11CompactCell9OtherCell::viewDidLoad"
+        },
+        {
+          "address": "0x10014646c",
+          "value": "_TtCC8PastePal11CompactCell9OtherCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x1001465e8",
+          "value": "_TtCC8PastePal11CompactCell9OtherCell::initWithCoder:"
+        },
+        {
+          "address": "0x100146650",
+          "value": "_TtCC8PastePal11CompactCell9OtherCell::.cxx_destruct"
+        },
+        {
+          "address": "0x100146680",
+          "value": "_TtCC8PastePal11CompactCell12RichTextCell::viewDidLoad"
+        },
+        {
+          "address": "0x100146904",
+          "value": "_TtCC8PastePal11CompactCell12RichTextCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x100146a2c",
+          "value": "_TtCC8PastePal11CompactCell12RichTextCell::initWithCoder:"
+        },
+        {
+          "address": "0x100146a94",
+          "value": "_TtCC8PastePal11CompactCell12RichTextCell::.cxx_destruct"
+        },
+        {
+          "address": "0x100146ac4",
+          "value": "_TtCC8PastePal11CompactCell8TextCell::viewDidLoad"
+        },
+        {
+          "address": "0x100146d54",
+          "value": "_TtCC8PastePal11CompactCell8TextCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x100146e7c",
+          "value": "_TtCC8PastePal11CompactCell8TextCell::initWithCoder:"
+        },
+        {
+          "address": "0x100146ee4",
+          "value": "_TtCC8PastePal11CompactCell8TextCell::.cxx_destruct"
+        },
+        {
+          "address": "0x1001476bc",
+          "value": "_TtC8PastePal11MinimalCell::viewDidLoad"
+        },
+        {
+          "address": "0x1001477c4",
+          "value": "_TtC8PastePal11MinimalCell::prepareForReuse"
+        },
+        {
+          "address": "0x100147d98",
+          "value": "_TtC8PastePal11MinimalCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x10014812c",
+          "value": "_TtC8PastePal11MinimalCell::initWithCoder:"
+        },
+        {
+          "address": "0x1001481f0",
+          "value": "_TtC8PastePal11MinimalCell::.cxx_destruct"
+        },
+        {
+          "address": "0x1001488d8",
+          "value": "_TtCC8PastePal11MinimalCell13ThumbnailView::initWithFrame:"
+        },
+        {
+          "address": "0x1001488f8",
+          "value": "_TtCC8PastePal11MinimalCell13ThumbnailView::initWithCoder:"
+        },
+        {
+          "address": "0x100148920",
+          "value": "_TtCC8PastePal11MinimalCell13ThumbnailView::.cxx_destruct"
+        },
+        {
+          "address": "0x100148e64",
+          "value": "_TtCC8PastePal11MinimalCell9ImageCell::viewDidLoad"
+        },
+        {
+          "address": "0x100148f54",
+          "value": "_TtCC8PastePal11MinimalCell9ImageCell::prepareForReuse"
+        },
+        {
+          "address": "0x10014a6a8",
+          "value": "_TtCC8PastePal11MinimalCell9ImageCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x10014a904",
+          "value": "_TtCC8PastePal11MinimalCell9ImageCell::initWithCoder:"
+        },
+        {
+          "address": "0x10014a9a8",
+          "value": "_TtCC8PastePal11MinimalCell9ImageCell::.cxx_destruct"
+        },
+        {
+          "address": "0x10014b090",
+          "value": "_TtCC8PastePal11MinimalCell8TextCell::viewDidLoad"
+        },
+        {
+          "address": "0x10014b124",
+          "value": "_TtCC8PastePal11MinimalCell8TextCell::prepareForReuse"
+        },
+        {
+          "address": "0x10014b828",
+          "value": "_TtCC8PastePal11MinimalCell8TextCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x10014b954",
+          "value": "_TtCC8PastePal11MinimalCell8TextCell::initWithCoder:"
+        },
+        {
+          "address": "0x10014b9bc",
+          "value": "_TtCC8PastePal11MinimalCell8TextCell::.cxx_destruct"
+        },
+        {
+          "address": "0x10014bf90",
+          "value": "_TtC8PastePal11RegularCell::viewDidLoad"
+        },
+        {
+          "address": "0x10014bfb8",
+          "value": "_TtC8PastePal11RegularCell::prepareForReuse"
+        },
+        {
+          "address": "0x10014c2a0",
+          "value": "_TtC8PastePal11RegularCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x10014c430",
+          "value": "_TtC8PastePal11RegularCell::initWithCoder:"
+        },
+        {
+          "address": "0x10014c4b4",
+          "value": "_TtC8PastePal11RegularCell::.cxx_destruct"
+        },
+        {
+          "address": "0x10014c714",
+          "value": "_TtCC8PastePal11RegularCell17BottomOverlayView::initWithFrame:"
+        },
+        {
+          "address": "0x10014c734",
+          "value": "_TtCC8PastePal11RegularCell17BottomOverlayView::initWithCoder:"
+        },
+        {
+          "address": "0x10014c75c",
+          "value": "_TtCC8PastePal11RegularCell17BottomOverlayView::.cxx_destruct"
+        },
+        {
+          "address": "0x10014cb34",
+          "value": "_TtCC8PastePal11RegularCell9ColorCell::viewDidLoad"
+        },
+        {
+          "address": "0x10014cdd4",
+          "value": "_TtCC8PastePal11RegularCell9ColorCell::prepareForReuse"
+        },
+        {
+          "address": "0x10014cf80",
+          "value": "_TtCC8PastePal11RegularCell9ColorCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x10014d138",
+          "value": "_TtCC8PastePal11RegularCell9ColorCell::initWithCoder:"
+        },
+        {
+          "address": "0x10014d1bc",
+          "value": "_TtCC8PastePal11RegularCell9ColorCell::.cxx_destruct"
+        },
+        {
+          "address": "0x10014d214",
+          "value": "_TtCC8PastePal11RegularCell9EmailCell::viewDidLoad"
+        },
+        {
+          "address": "0x10014d3ac",
+          "value": "_TtCC8PastePal11RegularCell9EmailCell::prepareForReuse"
+        },
+        {
+          "address": "0x10014d534",
+          "value": "_TtCC8PastePal11RegularCell9EmailCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x10014d65c",
+          "value": "_TtCC8PastePal11RegularCell9EmailCell::initWithCoder:"
+        },
+        {
+          "address": "0x10014d6c4",
+          "value": "_TtCC8PastePal11RegularCell9EmailCell::.cxx_destruct"
+        },
+        {
+          "address": "0x10014d8bc",
+          "value": "_TtCC8PastePal11RegularCell9EmojiCell::viewDidLoad"
+        },
+        {
+          "address": "0x10014d9e8",
+          "value": "_TtCC8PastePal11RegularCell9EmojiCell::prepareForReuse"
+        },
+        {
+          "address": "0x10014dbd8",
+          "value": "_TtCC8PastePal11RegularCell9EmojiCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x10014dd68",
+          "value": "_TtCC8PastePal11RegularCell9EmojiCell::initWithCoder:"
+        },
+        {
+          "address": "0x10014ddd0",
+          "value": "_TtCC8PastePal11RegularCell9EmojiCell::.cxx_destruct"
+        },
+        {
+          "address": "0x10014e3f8",
+          "value": "_TtCC8PastePal11RegularCell8FileCell::viewDidLoad"
+        },
+        {
+          "address": "0x10014e530",
+          "value": "_TtCC8PastePal11RegularCell8FileCell::prepareForReuse"
+        },
+        {
+          "address": "0x10014eb34",
+          "value": "_TtCC8PastePal11RegularCell8FileCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x10014ef74",
+          "value": "_TtCC8PastePal11RegularCell8FileCell::initWithCoder:"
+        },
+        {
+          "address": "0x10014f028",
+          "value": "_TtCC8PastePal11RegularCell8FileCell::.cxx_destruct"
+        },
+        {
+          "address": "0x1001502a4",
+          "value": "_TtCC8PastePal11RegularCell17RegularHeaderView::initWithFrame:"
+        },
+        {
+          "address": "0x1001502c4",
+          "value": "_TtCC8PastePal11RegularCell17RegularHeaderView::initWithCoder:"
+        },
+        {
+          "address": "0x1001502ec",
+          "value": "_TtCC8PastePal11RegularCell17RegularHeaderView::layout"
+        },
+        {
+          "address": "0x100150614",
+          "value": "_TtCC8PastePal11RegularCell17RegularHeaderView::.cxx_destruct"
+        },
+        {
+          "address": "0x100151260",
+          "value": "_TtCC8PastePal11RegularCell9ImageCell::viewDidLoad"
+        },
+        {
+          "address": "0x100151350",
+          "value": "_TtCC8PastePal11RegularCell9ImageCell::prepareForReuse"
+        },
+        {
+          "address": "0x100151d18",
+          "value": "_TtCC8PastePal11RegularCell9ImageCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x100151fb8",
+          "value": "_TtCC8PastePal11RegularCell9ImageCell::initWithCoder:"
+        },
+        {
+          "address": "0x10015205c",
+          "value": "_TtCC8PastePal11RegularCell9ImageCell::.cxx_destruct"
+        },
+        {
+          "address": "0x100152c54",
+          "value": "_TtCC8PastePal11RegularCell8LinkCell::viewDidLoad"
+        },
+        {
+          "address": "0x100152db4",
+          "value": "_TtCC8PastePal11RegularCell8LinkCell::prepareForReuse"
+        },
+        {
+          "address": "0x100153ba8",
+          "value": "_TtCC8PastePal11RegularCell8LinkCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x100154040",
+          "value": "_TtCC8PastePal11RegularCell8LinkCell::initWithCoder:"
+        },
+        {
+          "address": "0x100154114",
+          "value": "_TtCC8PastePal11RegularCell8LinkCell::.cxx_destruct"
+        },
+        {
+          "address": "0x100154690",
+          "value": "_TtCCC8PastePal11RegularCell8LinkCell7URLView::initWithFrame:"
+        },
+        {
+          "address": "0x1001546b0",
+          "value": "_TtCCC8PastePal11RegularCell8LinkCell7URLView::initWithCoder:"
+        },
+        {
+          "address": "0x100154764",
+          "value": "_TtCCC8PastePal11RegularCell8LinkCell7URLView::.cxx_destruct"
+        },
+        {
+          "address": "0x1001553cc",
+          "value": "_TtCC8PastePal11RegularCell10MFilesCell::viewDidLoad"
+        },
+        {
+          "address": "0x1001555cc",
+          "value": "_TtCC8PastePal11RegularCell10MFilesCell::prepareForReuse"
+        },
+        {
+          "address": "0x1001558c0",
+          "value": "_TtCC8PastePal11RegularCell10MFilesCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x1001559c4",
+          "value": "_TtCC8PastePal11RegularCell10MFilesCell::initWithCoder:"
+        },
+        {
+          "address": "0x100155a2c",
+          "value": "_TtCC8PastePal11RegularCell10MFilesCell::.cxx_destruct"
+        },
+        {
+          "address": "0x100156034",
+          "value": "_TtCC8PastePal11RegularCell9OtherCell::viewDidLoad"
+        },
+        {
+          "address": "0x10015605c",
+          "value": "_TtCC8PastePal11RegularCell9OtherCell::prepareForReuse"
+        },
+        {
+          "address": "0x1001564e8",
+          "value": "_TtCC8PastePal11RegularCell9OtherCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x1001567dc",
+          "value": "_TtCC8PastePal11RegularCell9OtherCell::initWithCoder:"
+        },
+        {
+          "address": "0x100156870",
+          "value": "_TtCC8PastePal11RegularCell9OtherCell::.cxx_destruct"
+        },
+        {
+          "address": "0x100157274",
+          "value": "_TtCC8PastePal11RegularCell12RichTextCell::viewDidLoad"
+        },
+        {
+          "address": "0x100158084",
+          "value": "_TtCC8PastePal11RegularCell12RichTextCell::prepareForReuse"
+        },
+        {
+          "address": "0x10015827c",
+          "value": "_TtCC8PastePal11RegularCell12RichTextCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x100158480",
+          "value": "_TtCC8PastePal11RegularCell12RichTextCell::initWithCoder:"
+        },
+        {
+          "address": "0x100158544",
+          "value": "_TtCC8PastePal11RegularCell12RichTextCell::.cxx_destruct"
+        },
+        {
+          "address": "0x1001585dc",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem19PassThroughTextView::mouseDown:"
+        },
+        {
+          "address": "0x1001585e8",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem19PassThroughTextView::mouseUp:"
+        },
+        {
+          "address": "0x100158670",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem19PassThroughTextView::hitTest:"
+        },
+        {
+          "address": "0x100158678",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem19PassThroughTextView::initWithFrame:textContainer:"
+        },
+        {
+          "address": "0x1001586ec",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem19PassThroughTextView::initWithCoder:"
+        },
+        {
+          "address": "0x10015876c",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem19PassThroughTextView::initWithFrame:"
+        },
+        {
+          "address": "0x1001595f8",
+          "value": "_TtCC8PastePal11RegularCell8TextCell::viewDidLoad"
+        },
+        {
+          "address": "0x100159c14",
+          "value": "_TtCC8PastePal11RegularCell8TextCell::prepareForReuse"
+        },
+        {
+          "address": "0x100159e70",
+          "value": "_TtCC8PastePal11RegularCell8TextCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x10015a0d8",
+          "value": "_TtCC8PastePal11RegularCell8TextCell::initWithCoder:"
+        },
+        {
+          "address": "0x10015a19c",
+          "value": "_TtCC8PastePal11RegularCell8TextCell::.cxx_destruct"
+        },
+        {
+          "address": "0x10015ada0",
+          "value": "_TtC8PastePal8BaseCell::loadView"
+        },
+        {
+          "address": "0x10015ae0c",
+          "value": "_TtC8PastePal8BaseCell::viewDidLoad"
+        },
+        {
+          "address": "0x10015ae68",
+          "value": "_TtC8PastePal8BaseCell::prepareForReuse"
+        },
+        {
+          "address": "0x10015aed8",
+          "value": "_TtC8PastePal8BaseCell::isSelected"
+        },
+        {
+          "address": "0x10015af14",
+          "value": "_TtC8PastePal8BaseCell::setSelected:"
+        },
+        {
+          "address": "0x10015af80",
+          "value": "_TtC8PastePal8BaseCell::viewDidLayout"
+        },
+        {
+          "address": "0x10015b154",
+          "value": "_TtC8PastePal8BaseCell::mouseDown:"
+        },
+        {
+          "address": "0x10015b2b4",
+          "value": "_TtC8PastePal8BaseCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x10015b3f8",
+          "value": "_TtC8PastePal8BaseCell::initWithCoder:"
+        },
+        {
+          "address": "0x10015b450",
+          "value": "_TtC8PastePal8BaseCell::.cxx_destruct"
+        },
+        {
+          "address": "0x10015b6f4",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem11AppIconView::initWithFrame:"
+        },
+        {
+          "address": "0x10015b714",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem11AppIconView::initWithCoder:"
+        },
+        {
+          "address": "0x10015ba8c",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem11AppIconView::.cxx_destruct"
+        },
+        {
+          "address": "0x10015c9d4",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem17FileThumbnailView::initWithFrame:"
+        },
+        {
+          "address": "0x10015c9f4",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem17FileThumbnailView::initWithCoder:"
+        },
+        {
+          "address": "0x10015ca1c",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem17FileThumbnailView::prepareForReuse"
+        },
+        {
+          "address": "0x10015d30c",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem17FileThumbnailView::.cxx_destruct"
+        },
+        {
+          "address": "0x10015e4b4",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem10HeaderView::initWithFrame:"
+        },
+        {
+          "address": "0x10015e4d4",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem10HeaderView::initWithCoder:"
+        },
+        {
+          "address": "0x10015e4fc",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem10HeaderView::prepareForReuse"
+        },
+        {
+          "address": "0x10015ea94",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem10HeaderView::.cxx_destruct"
+        },
+        {
+          "address": "0x10015fb3c",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem5Label::initWithFrame:"
+        },
+        {
+          "address": "0x10015fb5c",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem5Label::initWithCoder:"
+        },
+        {
+          "address": "0x10015fba4",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem5Label::viewDidMoveToSuperview"
+        },
+        {
+          "address": "0x10015ff3c",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem15BackgroundLabel::initWithCoder:"
+        },
+        {
+          "address": "0x10015ff64",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem15BackgroundLabel::initWithFrame:"
+        },
+        {
+          "address": "0x10015ff94",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem15BackgroundLabel::.cxx_destruct"
+        },
+        {
+          "address": "0x1001600ac",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem10MenuButton::initWithFrame:"
+        },
+        {
+          "address": "0x10016019c",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem10MenuButton::initWithCoder:"
+        },
+        {
+          "address": "0x1001601fc",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem10MenuButton::.cxx_destruct"
+        },
+        {
+          "address": "0x100160230",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem16RoundedImageView::image"
+        },
+        {
+          "address": "0x100160274",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem16RoundedImageView::setImage:"
+        },
+        {
+          "address": "0x1001602f0",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem16RoundedImageView::layout"
+        },
+        {
+          "address": "0x10016059c",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem16RoundedImageView::initWithFrame:"
+        },
+        {
+          "address": "0x10016062c",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem16RoundedImageView::initWithCoder:"
+        },
+        {
+          "address": "0x10016070c",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem16RoundedImageView::.cxx_destruct"
+        },
+        {
+          "address": "0x100161168",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem13FillImageView::initWithFrame:"
+        },
+        {
+          "address": "0x100161188",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem13FillImageView::initWithCoder:"
+        },
+        {
+          "address": "0x1001611dc",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem13FillImageView::.cxx_destruct"
+        },
+        {
+          "address": "0x10016120c",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem13ThumbnailView::initWithFrame:"
+        },
+        {
+          "address": "0x1001612cc",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem13ThumbnailView::initWithCoder:"
+        },
+        {
+          "address": "0x100162b04",
+          "value": "_TtC8PastePal24CollectionViewController::loadView"
+        },
+        {
+          "address": "0x100163724",
+          "value": "_TtC8PastePal24CollectionViewController::viewDidLoad"
+        },
+        {
+          "address": "0x10016424c",
+          "value": "_TtC8PastePal24CollectionViewController::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x1001643dc",
+          "value": "_TtC8PastePal24CollectionViewController::initWithCoder:"
+        },
+        {
+          "address": "0x100164404",
+          "value": "_TtC8PastePal24CollectionViewController::.cxx_destruct"
+        },
+        {
+          "address": "0x1001644cc",
+          "value": "_TtC8PastePal24CollectionViewController::collectionView:didSelectItemsAtIndexPaths:"
+        },
+        {
+          "address": "0x100164568",
+          "value": "_TtC8PastePal24CollectionViewController::collectionView:didDeselectItemsAtIndexPaths:"
+        },
+        {
+          "address": "0x1001645ec",
+          "value": "_TtC8PastePal24CollectionViewController::collectionView:shouldSelectItemsAtIndexPaths:"
+        },
+        {
+          "address": "0x10016466c",
+          "value": "_TtC8PastePal24CollectionViewController::collectionView:willDisplayItem:forRepresentedObjectAtIndexPath:"
+        },
+        {
+          "address": "0x1001646e8",
+          "value": "_TtC8PastePal24CollectionViewController::collectionView:didEndDisplayingItem:forRepresentedObjectAtIndexPath:"
+        },
+        {
+          "address": "0x100164804",
+          "value": "_TtC8PastePal24CollectionViewController::collectionView:layout:sizeForItemAtIndexPath:"
+        },
+        {
+          "address": "0x100171324",
+          "value": "_TtC8PastePal24CollectionViewController::collectionView:canDragItemsAtIndexPaths:withEvent:"
+        },
+        {
+          "address": "0x1001713a4",
+          "value": "_TtC8PastePal24CollectionViewController::collectionView:draggingSession:willBeginAtPoint:forItemsAtIndexPaths:"
+        },
+        {
+          "address": "0x1001721cc",
+          "value": "_TtC8PastePal24CollectionViewController::collectionView:draggingSession:endedAtPoint:dragOperation:"
+        },
+        {
+          "address": "0x100172230",
+          "value": "_TtC8PastePal24CollectionViewController::collectionView:pasteboardWriterForItemAtIndexPath:"
+        },
+        {
+          "address": "0x100173f54",
+          "value": "_TtC8PastePal24CollectionViewController::collectionView:validateDrop:proposedIndexPath:dropOperation:"
+        },
+        {
+          "address": "0x10017445c",
+          "value": "_TtC8PastePal24CollectionViewController::collectionView:acceptDrop:indexPath:dropOperation:"
+        },
+        {
+          "address": "0x100175e80",
+          "value": "_TtC8PastePal24CollectionViewController::popoverDidShow:"
+        },
+        {
+          "address": "0x100175efc",
+          "value": "_TtC8PastePal24CollectionViewController::popoverDidClose:"
+        },
+        {
+          "address": "0x1001798b4",
+          "value": "_TtCC8PastePal24CollectionViewController16CustomScrollView::scrollWheel:"
+        },
+        {
+          "address": "0x100179904",
+          "value": "_TtCC8PastePal24CollectionViewController16CustomScrollView::initWithFrame:"
+        },
+        {
+          "address": "0x10017997c",
+          "value": "_TtCC8PastePal24CollectionViewController16CustomScrollView::initWithCoder:"
+        },
+        {
+          "address": "0x100179c10",
+          "value": "_TtCC8PastePal24CollectionViewController20CustomCollectionView::menuForEvent:"
+        },
+        {
+          "address": "0x100179c6c",
+          "value": "_TtCC8PastePal24CollectionViewController20CustomCollectionView::keyDown:"
+        },
+        {
+          "address": "0x100179f54",
+          "value": "_TtCC8PastePal24CollectionViewController20CustomCollectionView::mouseDown:"
+        },
+        {
+          "address": "0x100179fa4",
+          "value": "_TtCC8PastePal24CollectionViewController20CustomCollectionView::draggingSession:sourceOperationMaskForDraggingContext:"
+        },
+        {
+          "address": "0x10017a23c",
+          "value": "_TtCC8PastePal24CollectionViewController20CustomCollectionView::beginDraggingSessionWithItems:event:source:"
+        },
+        {
+          "address": "0x10017a3d0",
+          "value": "_TtCC8PastePal24CollectionViewController20CustomCollectionView::draggingEntered:"
+        },
+        {
+          "address": "0x10017a500",
+          "value": "_TtCC8PastePal24CollectionViewController20CustomCollectionView::draggingEnded:"
+        },
+        {
+          "address": "0x10017a61c",
+          "value": "_TtCC8PastePal24CollectionViewController20CustomCollectionView::draggingExited:"
+        },
+        {
+          "address": "0x10017a664",
+          "value": "_TtCC8PastePal24CollectionViewController20CustomCollectionView::initWithFrame:"
+        },
+        {
+          "address": "0x10017a6e8",
+          "value": "_TtCC8PastePal24CollectionViewController20CustomCollectionView::initWithCoder:"
+        },
+        {
+          "address": "0x10017a780",
+          "value": "_TtCC8PastePal24CollectionViewController20CustomCollectionView::.cxx_destruct"
+        },
+        {
+          "address": "0x10017a7b0",
+          "value": "_TtCC8PastePal24CollectionViewController7Popover::acceptsFirstResponder"
+        },
+        {
+          "address": "0x10017a7b8",
+          "value": "_TtCC8PastePal24CollectionViewController7Popover::becomeFirstResponder"
+        },
+        {
+          "address": "0x10017a7c0",
+          "value": "_TtCC8PastePal24CollectionViewController7Popover::keyDown:"
+        },
+        {
+          "address": "0x10017a904",
+          "value": "_TtCC8PastePal24CollectionViewController7Popover::cancelOperation:"
+        },
+        {
+          "address": "0x10017a98c",
+          "value": "_TtCC8PastePal24CollectionViewController7Popover::init"
+        },
+        {
+          "address": "0x10017a9c8",
+          "value": "_TtCC8PastePal24CollectionViewController7Popover::initWithCoder:"
+        },
+        {
+          "address": "0x10017c45c",
+          "value": "_TtC8PastePal9AppLoader::init"
+        },
+        {
+          "address": "0x10017c47c",
+          "value": "_TtC8PastePal9AppLoader::.cxx_destruct"
+        },
+        {
+          "address": "0x10017c79c",
+          "value": "_TtC8PastePal9AppLoader::controllerDidChangeContent:"
+        },
+        {
+          "address": "0x1001838c4",
+          "value": "_TtC8PastePal12FolderLoader::init"
+        },
+        {
+          "address": "0x1001838e4",
+          "value": "_TtC8PastePal12FolderLoader::.cxx_destruct"
+        },
+        {
+          "address": "0x100183c54",
+          "value": "_TtC8PastePal12FolderLoader::controllerDidChangeContent:"
+        },
+        {
+          "address": "0x100185be4",
+          "value": "_TtC8PastePal11ItemsLoader::init"
+        },
+        {
+          "address": "0x100185c10",
+          "value": "_TtC8PastePal11ItemsLoader::.cxx_destruct"
+        },
+        {
+          "address": "0x100185e40",
+          "value": "_TtC8PastePal11ItemsLoader::controllerDidChangeContent:"
+        },
+        {
+          "address": "0x10018e170",
+          "value": "_TtC8PastePal8MenuItem::handleAction"
+        },
+        {
+          "address": "0x10018e1e0",
+          "value": "_TtC8PastePal8MenuItem::initWithTitle:action:keyEquivalent:"
+        },
+        {
+          "address": "0x10018e254",
+          "value": "_TtC8PastePal8MenuItem::initWithCoder:"
+        },
+        {
+          "address": "0x10018e2e0",
+          "value": "_TtC8PastePal8MenuItem::.cxx_destruct"
+        },
+        {
+          "address": "0x1001ae8ac",
+          "value": "_TtCV8PastePal13ClipboardItem14PasteboardItem::init"
+        },
+        {
+          "address": "0x1001ae8e8",
+          "value": "_TtCV8PastePal13ClipboardItem14PasteboardItem::initWithPasteboardPropertyList:ofType:"
+        },
+        {
+          "address": "0x1001af3a8",
+          "value": "_TtCCV8PastePal13ClipboardItem14PasteboardItem12DataProvider::pasteboard:item:provideDataForType:"
+        },
+        {
+          "address": "0x1001af49c",
+          "value": "_TtCCV8PastePal13ClipboardItem14PasteboardItem12DataProvider::pasteboardFinishedWithDataProvider:"
+        },
+        {
+          "address": "0x1001afb2c",
+          "value": "_TtCCV8PastePal13ClipboardItem14PasteboardItem12DataProvider::init"
+        },
+        {
+          "address": "0x1001afb8c",
+          "value": "_TtCCV8PastePal13ClipboardItem14PasteboardItem12DataProvider::.cxx_destruct"
+        },
+        {
+          "address": "0x1001b0458",
+          "value": "_TtCV8PastePal13ClipboardItem21PasteboardWritingItem::writableTypesForPasteboard:"
+        },
+        {
+          "address": "0x1001b04d0",
+          "value": "_TtCV8PastePal13ClipboardItem21PasteboardWritingItem::writingOptionsForType:pasteboard:"
+        },
+        {
+          "address": "0x1001b0780",
+          "value": "_TtCV8PastePal13ClipboardItem21PasteboardWritingItem::pasteboardPropertyListForType:"
+        },
+        {
+          "address": "0x1001b0878",
+          "value": "_TtCV8PastePal13ClipboardItem21PasteboardWritingItem::init"
+        },
+        {
+          "address": "0x1001b08a4",
+          "value": "_TtCV8PastePal13ClipboardItem21PasteboardWritingItem::.cxx_destruct"
+        },
+        {
+          "address": "0x1001b28c4",
+          "value": "_TtC8PastePal16PeerShareManager::init"
+        },
+        {
+          "address": "0x1001b331c",
+          "value": "_TtC8PastePal16PeerShareManager::.cxx_destruct"
+        },
+        {
+          "address": "0x1001b35b0",
+          "value": "_TtC8PastePal16PeerShareManager::advertiser:didReceiveInvitationFromPeer:withContext:invitationHandler:"
+        },
+        {
+          "address": "0x1001b36a4",
+          "value": "_TtC8PastePal16PeerShareManager::browser:foundPeer:withDiscoveryInfo:"
+        },
+        {
+          "address": "0x1001b3744",
+          "value": "_TtC8PastePal16PeerShareManager::browser:lostPeer:"
+        },
+        {
+          "address": "0x1001b3b98",
+          "value": "_TtC8PastePal16PeerShareManager::session:peer:didChangeState:"
+        },
+        {
+          "address": "0x1001b3ce8",
+          "value": "_TtC8PastePal16PeerShareManager::session:didReceiveData:fromPeer:"
+        },
+        {
+          "address": "0x1001b3d9c",
+          "value": "_TtC8PastePal16PeerShareManager::session:didReceiveStream:withName:fromPeer:"
+        },
+        {
+          "address": "0x1001b3da0",
+          "value": "_TtC8PastePal16PeerShareManager::session:didStartReceivingResourceWithName:fromPeer:withProgress:"
+        },
+        {
+          "address": "0x1001b3da4",
+          "value": "_TtC8PastePal16PeerShareManager::session:didFinishReceivingResourceWithName:fromPeer:atURL:withError:"
+        },
+        {
+          "address": "0x1001b4c14",
+          "value": "_TtC8PastePal16PeerShareManager::browser:didNotStartBrowsingForPeers:"
+        },
+        {
+          "address": "0x1001b4c18",
+          "value": "_TtC8PastePal16PeerShareManager::advertiser:didNotStartAdvertisingPeer:"
+        },
+        {
+          "address": "0x1001b5030",
+          "value": "_TtC8PastePal16PeerShareManager::windowWillClose:"
+        },
+        {
+          "address": "0x1001c649c",
+          "value": "_TtCV8PastePal13QuickLookView17CustomPreviewView::becomeFirstResponder"
+        },
+        {
+          "address": "0x1001c64a4",
+          "value": "_TtCV8PastePal13QuickLookView17CustomPreviewView::initWithFrame:style:"
+        },
+        {
+          "address": "0x1001c6518",
+          "value": "_TtCV8PastePal13QuickLookView17CustomPreviewView::initWithFrame:"
+        },
+        {
+          "address": "0x1001c6584",
+          "value": "_TtCV8PastePal13QuickLookView17CustomPreviewView::initWithCoder:"
+        },
+        {
+          "address": "0x1001dabcc",
+          "value": "_TtCV8PastePal7WebView11Coordinator::webView:didStartProvisionalNavigation:"
+        },
+        {
+          "address": "0x1001dac44",
+          "value": "_TtCV8PastePal7WebView11Coordinator::webView:didFinishNavigation:"
+        },
+        {
+          "address": "0x1001dad04",
+          "value": "_TtCV8PastePal7WebView11Coordinator::init"
+        },
+        {
+          "address": "0x1001dad64",
+          "value": "_TtCV8PastePal7WebView11Coordinator::.cxx_destruct"
+        },
+        {
+          "address": "0x1001dafbc",
+          "value": "_TtCV8PastePal7WebViewP33_D494EAEFBA79C965C99DEAF737578BAC19NonFocusableWebView::removeFromSuperview"
+        },
+        {
+          "address": "0x1001db024",
+          "value": "_TtCV8PastePal7WebViewP33_D494EAEFBA79C965C99DEAF737578BAC19NonFocusableWebView::initWithFrame:configuration:"
+        },
+        {
+          "address": "0x1001db098",
+          "value": "_TtCV8PastePal7WebViewP33_D494EAEFBA79C965C99DEAF737578BAC19NonFocusableWebView::initWithCoder:"
+        },
+        {
+          "address": "0x1001de83c",
+          "value": "_TtC8PastePal14MenuBarManager::statusMenuButtonTouched:"
+        },
+        {
+          "address": "0x1001dee04",
+          "value": "_TtC8PastePalP33_2D606F1B35E825545888ADC50CBF738811MySavePanel::close"
+        },
+        {
+          "address": "0x1001dee88",
+          "value": "_TtC8PastePalP33_2D606F1B35E825545888ADC50CBF738811MySavePanel::initWithContentRect:styleMask:backing:defer:"
+        },
+        {
+          "address": "0x1001e12a8",
+          "value": "_TtC8PastePal11AppDelegate::applicationDidFinishLaunching:"
+        },
+        {
+          "address": "0x1001e1bb4",
+          "value": "_TtC8PastePal11AppDelegate::applicationShouldTerminateAfterLastWindowClosed:"
+        },
+        {
+          "address": "0x1001e1bbc",
+          "value": "_TtC8PastePal11AppDelegate::applicationWillTerminate:"
+        },
+        {
+          "address": "0x1001e1c40",
+          "value": "_TtC8PastePal11AppDelegate::applicationDidChangeScreenParameters:"
+        },
+        {
+          "address": "0x1001e1cf4",
+          "value": "_TtC8PastePal11AppDelegate::applicationShouldHandleReopen:hasVisibleWindows:"
+        },
+        {
+          "address": "0x1001e1d10",
+          "value": "_TtC8PastePal11AppDelegate::applicationShouldTerminate:"
+        },
+        {
+          "address": "0x1001e1e40",
+          "value": "_TtC8PastePal11AppDelegate::terminate:"
+        },
+        {
+          "address": "0x1001e1f34",
+          "value": "_TtC8PastePal11AppDelegate::onPreferenceMenuItem:"
+        },
+        {
+          "address": "0x1001e200c",
+          "value": "_TtC8PastePal11AppDelegate::application:didRegisterForRemoteNotificationsWithDeviceToken:"
+        },
+        {
+          "address": "0x1001e2044",
+          "value": "_TtC8PastePal11AppDelegate::application:didFailToRegisterForRemoteNotificationsWithError:"
+        },
+        {
+          "address": "0x1001e2048",
+          "value": "_TtC8PastePal11AppDelegate::init"
+        },
+        {
+          "address": "0x1001e2100",
+          "value": "_TtC8PastePal11AppDelegate::.cxx_destruct"
+        },
+        {
+          "address": "0x1001e571c",
+          "value": "CDClipboardApp::initWithEntity:insertIntoManagedObjectContext:"
+        },
+        {
+          "address": "0x1001e58dc",
+          "value": "CDClipboardItem::initWithEntity:insertIntoManagedObjectContext:"
+        },
+        {
+          "address": "0x1004b96d0",
+          "value": "RCPurchases::automaticAppleSearchAdsAttributionCollection"
+        },
+        {
+          "address": "0x1004b9760",
+          "value": "RCPurchases::setAutomaticAppleSearchAdsAttributionCollection:"
+        },
+        {
+          "address": "0x1008c9f1c",
+          "value": "/usr/lib/swift/libswiftFoundation.dylib::Foundation::Calendar::SearchDirection::typeMetadataAccessor"
+        },
+        {
+          "address": "0x1008ca348",
+          "value": "/System/Library/Frameworks/Combine.framework/Versions/A/Combine::(extension_Combine)::Combine::Publisher::$removeDuplicates"
+        },
+        {
+          "address": "0x1008cb728",
+          "value": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI::(extension_SwiftUI)::SwiftUI::View::$clipShape"
+        },
+        {
+          "address": "0x1008ce968",
+          "value": "_IORegistryEntrySearchCFProperty"
+        },
+        {
+          "address": "0x100e2f201",
+          "value": "NSPasteboard::generalPasteboard"
+        },
+        {
+          "address": "0x100e2f202",
+          "value": "NSPasteboard::accessBehavior"
+        },
+        {
+          "address": "0x100e2f203",
+          "value": "NSPasteboard::clearContents"
+        },
+        {
+          "address": "0x100e2f204",
+          "value": "NSPasteboard::stringForType:"
+        },
+        {
+          "address": "0x100e2f205",
+          "value": "NSPasteboard::setString:forType:"
+        }
+      ],
+      "normalized_result": [
+        {
+          "address": "EXTERNAL:0x11d",
+          "value": "/usr/lib/swift/libswiftFoundation.dylib::Foundation::Calendar::SearchDirection::typeMetadataAccessor"
+        },
+        {
+          "address": "EXTERNAL:0x176",
+          "value": "/System/Library/Frameworks/Combine.framework/Versions/A/Combine::(extension_Combine)::Combine::Publisher::$removeDuplicates"
+        },
+        {
+          "address": "EXTERNAL:0x31e",
+          "value": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI::(extension_SwiftUI)::SwiftUI::View::$clipShape"
+        },
+        {
+          "address": "EXTERNAL:0x74e",
+          "value": "/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit::_IORegistryEntrySearchCFProperty"
+        },
+        {
+          "address": "EXTERNAL:0xf52",
+          "value": "/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit::generalPasteboard"
+        },
+        {
+          "address": "0x100033f5c",
+          "value": "_TtC8PastePal13CompactWindow::keyDown:"
+        },
+        {
+          "address": "0x1000340a8",
+          "value": "_TtC8PastePal13CompactWindow::flagsChanged:"
+        },
+        {
+          "address": "0x1000340f8",
+          "value": "_TtC8PastePal13CompactWindow::canBecomeKeyWindow"
+        },
+        {
+          "address": "0x100034100",
+          "value": "_TtC8PastePal13CompactWindow::canBecomeMainWindow"
+        },
+        {
+          "address": "0x100034108",
+          "value": "_TtC8PastePal13CompactWindow::cancelOperation:"
+        },
+        {
+          "address": "0x1000341bc",
+          "value": "_TtC8PastePal13CompactWindow::initWithContentRect:styleMask:backing:defer:"
+        },
+        {
+          "address": "0x1000342e0",
+          "value": "_TtC8PastePal13CompactWindow::.cxx_destruct"
+        },
+        {
+          "address": "0x10007713c",
+          "value": "_TtC8PastePal11MainManager::init"
+        },
+        {
+          "address": "0x10007784c",
+          "value": "_TtC8PastePal11MainManager::.cxx_destruct"
+        },
+        {
+          "address": "0x10007787c",
+          "value": "_TtC8PastePal11MainManager::windowWillClose:"
+        },
+        {
+          "address": "0x10007d4b8",
+          "value": "_TtC8PastePal10MainWindow::canBecomeKeyWindow"
+        },
+        {
+          "address": "0x10007d4c0",
+          "value": "_TtC8PastePal10MainWindow::canBecomeMainWindow"
+        },
+        {
+          "address": "0x10007d4c8",
+          "value": "_TtC8PastePal10MainWindow::close"
+        },
+        {
+          "address": "0x10007d68c",
+          "value": "_TtC8PastePal10MainWindow::keyDown:"
+        },
+        {
+          "address": "0x10007d7d8",
+          "value": "_TtC8PastePal10MainWindow::flagsChanged:"
+        },
+        {
+          "address": "0x10007d828",
+          "value": "_TtC8PastePal10MainWindow::cancelOperation:"
+        },
+        {
+          "address": "0x10007d8dc",
+          "value": "_TtC8PastePal10MainWindow::initWithContentRect:styleMask:backing:defer:"
+        },
+        {
+          "address": "0x10007d9cc",
+          "value": "_TtC8PastePal10MainWindow::.cxx_destruct"
+        },
+        {
+          "address": "0x10008fdb4",
+          "value": "_TtC8PastePal17PasteStackManager::init"
+        },
+        {
+          "address": "0x10008fdd4",
+          "value": "_TtC8PastePal17PasteStackManager::.cxx_destruct"
+        },
+        {
+          "address": "0x10008ffa0",
+          "value": "_TtC8PastePal17PasteStackManager::windowWillClose:"
+        },
+        {
+          "address": "0x10009809c",
+          "value": "_TtC8PastePal16PasteStackWindow::keyDown:"
+        },
+        {
+          "address": "0x1000980ec",
+          "value": "_TtC8PastePal16PasteStackWindow::initWithContentRect:styleMask:backing:defer:"
+        },
+        {
+          "address": "0x100098198",
+          "value": "_TtC8PastePal16PasteStackWindow::.cxx_destruct"
+        },
+        {
+          "address": "0x1000cc8e4",
+          "value": "_TtC8PastePal14SettingsWindow::canBecomeKeyWindow"
+        },
+        {
+          "address": "0x1000cc8ec",
+          "value": "_TtC8PastePal14SettingsWindow::canBecomeMainWindow"
+        },
+        {
+          "address": "0x1000cc940",
+          "value": "_TtC8PastePal14SettingsWindow::close"
+        },
+        {
+          "address": "0x1000cc9ec",
+          "value": "_TtC8PastePal14SettingsWindow::initWithContentRect:styleMask:backing:defer:"
+        },
+        {
+          "address": "0x1000ccad4",
+          "value": "_TtC8PastePal14SettingsWindow::.cxx_destruct"
+        },
+        {
+          "address": "0x10012a158",
+          "value": "_TtCV8PastePal8Backport5Label::initWithFrame:"
+        },
+        {
+          "address": "0x10012a250",
+          "value": "_TtCV8PastePal8Backport5Label::initWithCoder:"
+        },
+        {
+          "address": "0x10012bde8",
+          "value": "_TtCVV8PastePal8Backport10TextEditor11Coordinator::textDidChange:"
+        },
+        {
+          "address": "0x10012be8c",
+          "value": "_TtCVV8PastePal8Backport10TextEditor11Coordinator::init"
+        },
+        {
+          "address": "0x10012bee8",
+          "value": "_TtCVV8PastePal8Backport10TextEditor11Coordinator::.cxx_destruct"
+        },
+        {
+          "address": "0x10012c970",
+          "value": "_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F20NonFocusableTextView::becomeFirstResponder"
+        },
+        {
+          "address": "0x10012c978",
+          "value": "_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F20NonFocusableTextView::initWithFrame:textContainer:"
+        },
+        {
+          "address": "0x10012c9ec",
+          "value": "_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F20NonFocusableTextView::initWithCoder:"
+        },
+        {
+          "address": "0x10012ca6c",
+          "value": "_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F20NonFocusableTextView::initWithFrame:"
+        },
+        {
+          "address": "0x10012caf8",
+          "value": "_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F22DisabledScrollTextView::scrollWheel:"
+        },
+        {
+          "address": "0x10012cbb8",
+          "value": "_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F22DisabledScrollTextView::initWithFrame:textContainer:"
+        },
+        {
+          "address": "0x10012cc30",
+          "value": "_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F22DisabledScrollTextView::initWithCoder:"
+        },
+        {
+          "address": "0x10012ccb4",
+          "value": "_TtC8PastePalP33_7DDAA9318209BAECCDDF75C60751636F22DisabledScrollTextView::initWithFrame:"
+        },
+        {
+          "address": "0x100140720",
+          "value": "_TtC8PastePal11CompactCell::viewDidLoad"
+        },
+        {
+          "address": "0x10014081c",
+          "value": "_TtC8PastePal11CompactCell::prepareForReuse"
+        },
+        {
+          "address": "0x100140a44",
+          "value": "_TtC8PastePal11CompactCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x100140c28",
+          "value": "_TtC8PastePal11CompactCell::initWithCoder:"
+        },
+        {
+          "address": "0x100140ccc",
+          "value": "_TtC8PastePal11CompactCell::.cxx_destruct"
+        },
+        {
+          "address": "0x100140f68",
+          "value": "_TtCC8PastePal11CompactCell9ColorCell::viewDidLoad"
+        },
+        {
+          "address": "0x1001411f8",
+          "value": "_TtCC8PastePal11CompactCell9ColorCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x1001412fc",
+          "value": "_TtCC8PastePal11CompactCell9ColorCell::initWithCoder:"
+        },
+        {
+          "address": "0x100141364",
+          "value": "_TtCC8PastePal11CompactCell9ColorCell::.cxx_destruct"
+        },
+        {
+          "address": "0x10014192c",
+          "value": "_TtCCC8PastePal11CompactCell9ColorCell9ColorView::initWithFrame:"
+        },
+        {
+          "address": "0x10014194c",
+          "value": "_TtCCC8PastePal11CompactCell9ColorCell9ColorView::initWithCoder:"
+        },
+        {
+          "address": "0x100141974",
+          "value": "_TtCCC8PastePal11CompactCell9ColorCell9ColorView::.cxx_destruct"
+        },
+        {
+          "address": "0x100141d1c",
+          "value": "_TtCC8PastePal11CompactCell8FileCell::viewDidLoad"
+        },
+        {
+          "address": "0x100141d44",
+          "value": "_TtCC8PastePal11CompactCell8FileCell::prepareForReuse"
+        },
+        {
+          "address": "0x1001422e0",
+          "value": "_TtCC8PastePal11CompactCell8FileCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x100142618",
+          "value": "_TtCC8PastePal11CompactCell8FileCell::initWithCoder:"
+        },
+        {
+          "address": "0x1001426bc",
+          "value": "_TtCC8PastePal11CompactCell8FileCell::.cxx_destruct"
+        },
+        {
+          "address": "0x100142778",
+          "value": "_TtCC8PastePal11CompactCell9ImageCell::viewDidLoad"
+        },
+        {
+          "address": "0x100142808",
+          "value": "_TtCC8PastePal11CompactCell9ImageCell::prepareForReuse"
+        },
+        {
+          "address": "0x1001432fc",
+          "value": "_TtCC8PastePal11CompactCell9ImageCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x1001433f8",
+          "value": "_TtCC8PastePal11CompactCell9ImageCell::initWithCoder:"
+        },
+        {
+          "address": "0x10014347c",
+          "value": "_TtCC8PastePal11CompactCell9ImageCell::.cxx_destruct"
+        },
+        {
+          "address": "0x100143b18",
+          "value": "_TtCC8PastePal11CompactCell8LinkCell::viewDidLoad"
+        },
+        {
+          "address": "0x100143c48",
+          "value": "_TtCC8PastePal11CompactCell8LinkCell::prepareForReuse"
+        },
+        {
+          "address": "0x1001448d8",
+          "value": "_TtCC8PastePal11CompactCell8LinkCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x100144c34",
+          "value": "_TtCC8PastePal11CompactCell8LinkCell::initWithCoder:"
+        },
+        {
+          "address": "0x100144ce8",
+          "value": "_TtCC8PastePal11CompactCell8LinkCell::.cxx_destruct"
+        },
+        {
+          "address": "0x100144f60",
+          "value": "_TtCC8PastePal11CompactCell10MFilesCell::viewDidLoad"
+        },
+        {
+          "address": "0x100145160",
+          "value": "_TtCC8PastePal11CompactCell10MFilesCell::prepareForReuse"
+        },
+        {
+          "address": "0x1001458cc",
+          "value": "_TtCC8PastePal11CompactCell10MFilesCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x1001459cc",
+          "value": "_TtCC8PastePal11CompactCell10MFilesCell::initWithCoder:"
+        },
+        {
+          "address": "0x100145a34",
+          "value": "_TtCC8PastePal11CompactCell10MFilesCell::.cxx_destruct"
+        },
+        {
+          "address": "0x100145d40",
+          "value": "_TtCCC8PastePal11CompactCell10MFilesCell11ContentView::initWithFrame:"
+        },
+        {
+          "address": "0x100145d60",
+          "value": "_TtCCC8PastePal11CompactCell10MFilesCell11ContentView::initWithCoder:"
+        },
+        {
+          "address": "0x100145d88",
+          "value": "_TtCCC8PastePal11CompactCell10MFilesCell11ContentView::.cxx_destruct"
+        },
+        {
+          "address": "0x1001461a8",
+          "value": "_TtCC8PastePal11CompactCell9OtherCell::viewDidLoad"
+        },
+        {
+          "address": "0x10014646c",
+          "value": "_TtCC8PastePal11CompactCell9OtherCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x1001465e8",
+          "value": "_TtCC8PastePal11CompactCell9OtherCell::initWithCoder:"
+        },
+        {
+          "address": "0x100146650",
+          "value": "_TtCC8PastePal11CompactCell9OtherCell::.cxx_destruct"
+        },
+        {
+          "address": "0x100146680",
+          "value": "_TtCC8PastePal11CompactCell12RichTextCell::viewDidLoad"
+        },
+        {
+          "address": "0x100146904",
+          "value": "_TtCC8PastePal11CompactCell12RichTextCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x100146a2c",
+          "value": "_TtCC8PastePal11CompactCell12RichTextCell::initWithCoder:"
+        },
+        {
+          "address": "0x100146a94",
+          "value": "_TtCC8PastePal11CompactCell12RichTextCell::.cxx_destruct"
+        },
+        {
+          "address": "0x100146ac4",
+          "value": "_TtCC8PastePal11CompactCell8TextCell::viewDidLoad"
+        },
+        {
+          "address": "0x100146d54",
+          "value": "_TtCC8PastePal11CompactCell8TextCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x100146e7c",
+          "value": "_TtCC8PastePal11CompactCell8TextCell::initWithCoder:"
+        },
+        {
+          "address": "0x100146ee4",
+          "value": "_TtCC8PastePal11CompactCell8TextCell::.cxx_destruct"
+        },
+        {
+          "address": "0x1001476bc",
+          "value": "_TtC8PastePal11MinimalCell::viewDidLoad"
+        },
+        {
+          "address": "0x1001477c4",
+          "value": "_TtC8PastePal11MinimalCell::prepareForReuse"
+        },
+        {
+          "address": "0x100147d98",
+          "value": "_TtC8PastePal11MinimalCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x10014812c",
+          "value": "_TtC8PastePal11MinimalCell::initWithCoder:"
+        },
+        {
+          "address": "0x1001481f0",
+          "value": "_TtC8PastePal11MinimalCell::.cxx_destruct"
+        },
+        {
+          "address": "0x1001488d8",
+          "value": "_TtCC8PastePal11MinimalCell13ThumbnailView::initWithFrame:"
+        },
+        {
+          "address": "0x1001488f8",
+          "value": "_TtCC8PastePal11MinimalCell13ThumbnailView::initWithCoder:"
+        },
+        {
+          "address": "0x100148920",
+          "value": "_TtCC8PastePal11MinimalCell13ThumbnailView::.cxx_destruct"
+        },
+        {
+          "address": "0x100148e64",
+          "value": "_TtCC8PastePal11MinimalCell9ImageCell::viewDidLoad"
+        },
+        {
+          "address": "0x100148f54",
+          "value": "_TtCC8PastePal11MinimalCell9ImageCell::prepareForReuse"
+        },
+        {
+          "address": "0x10014a6a8",
+          "value": "_TtCC8PastePal11MinimalCell9ImageCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x10014a904",
+          "value": "_TtCC8PastePal11MinimalCell9ImageCell::initWithCoder:"
+        },
+        {
+          "address": "0x10014a9a8",
+          "value": "_TtCC8PastePal11MinimalCell9ImageCell::.cxx_destruct"
+        },
+        {
+          "address": "0x10014b090",
+          "value": "_TtCC8PastePal11MinimalCell8TextCell::viewDidLoad"
+        },
+        {
+          "address": "0x10014b124",
+          "value": "_TtCC8PastePal11MinimalCell8TextCell::prepareForReuse"
+        },
+        {
+          "address": "0x10014b828",
+          "value": "_TtCC8PastePal11MinimalCell8TextCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x10014b954",
+          "value": "_TtCC8PastePal11MinimalCell8TextCell::initWithCoder:"
+        },
+        {
+          "address": "0x10014b9bc",
+          "value": "_TtCC8PastePal11MinimalCell8TextCell::.cxx_destruct"
+        },
+        {
+          "address": "0x10014bf90",
+          "value": "_TtC8PastePal11RegularCell::viewDidLoad"
+        },
+        {
+          "address": "0x10014bfb8",
+          "value": "_TtC8PastePal11RegularCell::prepareForReuse"
+        },
+        {
+          "address": "0x10014c2a0",
+          "value": "_TtC8PastePal11RegularCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x10014c430",
+          "value": "_TtC8PastePal11RegularCell::initWithCoder:"
+        },
+        {
+          "address": "0x10014c4b4",
+          "value": "_TtC8PastePal11RegularCell::.cxx_destruct"
+        },
+        {
+          "address": "0x10014c714",
+          "value": "_TtCC8PastePal11RegularCell17BottomOverlayView::initWithFrame:"
+        },
+        {
+          "address": "0x10014c734",
+          "value": "_TtCC8PastePal11RegularCell17BottomOverlayView::initWithCoder:"
+        },
+        {
+          "address": "0x10014c75c",
+          "value": "_TtCC8PastePal11RegularCell17BottomOverlayView::.cxx_destruct"
+        },
+        {
+          "address": "0x10014cb34",
+          "value": "_TtCC8PastePal11RegularCell9ColorCell::viewDidLoad"
+        },
+        {
+          "address": "0x10014cdd4",
+          "value": "_TtCC8PastePal11RegularCell9ColorCell::prepareForReuse"
+        },
+        {
+          "address": "0x10014cf80",
+          "value": "_TtCC8PastePal11RegularCell9ColorCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x10014d138",
+          "value": "_TtCC8PastePal11RegularCell9ColorCell::initWithCoder:"
+        },
+        {
+          "address": "0x10014d1bc",
+          "value": "_TtCC8PastePal11RegularCell9ColorCell::.cxx_destruct"
+        },
+        {
+          "address": "0x10014d214",
+          "value": "_TtCC8PastePal11RegularCell9EmailCell::viewDidLoad"
+        },
+        {
+          "address": "0x10014d3ac",
+          "value": "_TtCC8PastePal11RegularCell9EmailCell::prepareForReuse"
+        },
+        {
+          "address": "0x10014d534",
+          "value": "_TtCC8PastePal11RegularCell9EmailCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x10014d65c",
+          "value": "_TtCC8PastePal11RegularCell9EmailCell::initWithCoder:"
+        },
+        {
+          "address": "0x10014d6c4",
+          "value": "_TtCC8PastePal11RegularCell9EmailCell::.cxx_destruct"
+        },
+        {
+          "address": "0x10014d8bc",
+          "value": "_TtCC8PastePal11RegularCell9EmojiCell::viewDidLoad"
+        },
+        {
+          "address": "0x10014d9e8",
+          "value": "_TtCC8PastePal11RegularCell9EmojiCell::prepareForReuse"
+        },
+        {
+          "address": "0x10014dbd8",
+          "value": "_TtCC8PastePal11RegularCell9EmojiCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x10014dd68",
+          "value": "_TtCC8PastePal11RegularCell9EmojiCell::initWithCoder:"
+        },
+        {
+          "address": "0x10014ddd0",
+          "value": "_TtCC8PastePal11RegularCell9EmojiCell::.cxx_destruct"
+        },
+        {
+          "address": "0x10014e3f8",
+          "value": "_TtCC8PastePal11RegularCell8FileCell::viewDidLoad"
+        },
+        {
+          "address": "0x10014e530",
+          "value": "_TtCC8PastePal11RegularCell8FileCell::prepareForReuse"
+        },
+        {
+          "address": "0x10014eb34",
+          "value": "_TtCC8PastePal11RegularCell8FileCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x10014ef74",
+          "value": "_TtCC8PastePal11RegularCell8FileCell::initWithCoder:"
+        },
+        {
+          "address": "0x10014f028",
+          "value": "_TtCC8PastePal11RegularCell8FileCell::.cxx_destruct"
+        },
+        {
+          "address": "0x1001502a4",
+          "value": "_TtCC8PastePal11RegularCell17RegularHeaderView::initWithFrame:"
+        },
+        {
+          "address": "0x1001502c4",
+          "value": "_TtCC8PastePal11RegularCell17RegularHeaderView::initWithCoder:"
+        },
+        {
+          "address": "0x1001502ec",
+          "value": "_TtCC8PastePal11RegularCell17RegularHeaderView::layout"
+        },
+        {
+          "address": "0x100150614",
+          "value": "_TtCC8PastePal11RegularCell17RegularHeaderView::.cxx_destruct"
+        },
+        {
+          "address": "0x100151260",
+          "value": "_TtCC8PastePal11RegularCell9ImageCell::viewDidLoad"
+        },
+        {
+          "address": "0x100151350",
+          "value": "_TtCC8PastePal11RegularCell9ImageCell::prepareForReuse"
+        },
+        {
+          "address": "0x100151d18",
+          "value": "_TtCC8PastePal11RegularCell9ImageCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x100151fb8",
+          "value": "_TtCC8PastePal11RegularCell9ImageCell::initWithCoder:"
+        },
+        {
+          "address": "0x10015205c",
+          "value": "_TtCC8PastePal11RegularCell9ImageCell::.cxx_destruct"
+        },
+        {
+          "address": "0x100152c54",
+          "value": "_TtCC8PastePal11RegularCell8LinkCell::viewDidLoad"
+        },
+        {
+          "address": "0x100152db4",
+          "value": "_TtCC8PastePal11RegularCell8LinkCell::prepareForReuse"
+        },
+        {
+          "address": "0x100153ba8",
+          "value": "_TtCC8PastePal11RegularCell8LinkCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x100154040",
+          "value": "_TtCC8PastePal11RegularCell8LinkCell::initWithCoder:"
+        },
+        {
+          "address": "0x100154114",
+          "value": "_TtCC8PastePal11RegularCell8LinkCell::.cxx_destruct"
+        },
+        {
+          "address": "0x100154690",
+          "value": "_TtCCC8PastePal11RegularCell8LinkCell7URLView::initWithFrame:"
+        },
+        {
+          "address": "0x1001546b0",
+          "value": "_TtCCC8PastePal11RegularCell8LinkCell7URLView::initWithCoder:"
+        },
+        {
+          "address": "0x100154764",
+          "value": "_TtCCC8PastePal11RegularCell8LinkCell7URLView::.cxx_destruct"
+        },
+        {
+          "address": "0x1001553cc",
+          "value": "_TtCC8PastePal11RegularCell10MFilesCell::viewDidLoad"
+        },
+        {
+          "address": "0x1001555cc",
+          "value": "_TtCC8PastePal11RegularCell10MFilesCell::prepareForReuse"
+        },
+        {
+          "address": "0x1001558c0",
+          "value": "_TtCC8PastePal11RegularCell10MFilesCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x1001559c4",
+          "value": "_TtCC8PastePal11RegularCell10MFilesCell::initWithCoder:"
+        },
+        {
+          "address": "0x100155a2c",
+          "value": "_TtCC8PastePal11RegularCell10MFilesCell::.cxx_destruct"
+        },
+        {
+          "address": "0x100156034",
+          "value": "_TtCC8PastePal11RegularCell9OtherCell::viewDidLoad"
+        },
+        {
+          "address": "0x10015605c",
+          "value": "_TtCC8PastePal11RegularCell9OtherCell::prepareForReuse"
+        },
+        {
+          "address": "0x1001564e8",
+          "value": "_TtCC8PastePal11RegularCell9OtherCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x1001567dc",
+          "value": "_TtCC8PastePal11RegularCell9OtherCell::initWithCoder:"
+        },
+        {
+          "address": "0x100156870",
+          "value": "_TtCC8PastePal11RegularCell9OtherCell::.cxx_destruct"
+        },
+        {
+          "address": "0x100157274",
+          "value": "_TtCC8PastePal11RegularCell12RichTextCell::viewDidLoad"
+        },
+        {
+          "address": "0x100158084",
+          "value": "_TtCC8PastePal11RegularCell12RichTextCell::prepareForReuse"
+        },
+        {
+          "address": "0x10015827c",
+          "value": "_TtCC8PastePal11RegularCell12RichTextCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x100158480",
+          "value": "_TtCC8PastePal11RegularCell12RichTextCell::initWithCoder:"
+        },
+        {
+          "address": "0x100158544",
+          "value": "_TtCC8PastePal11RegularCell12RichTextCell::.cxx_destruct"
+        },
+        {
+          "address": "0x1001585dc",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem19PassThroughTextView::mouseDown:"
+        },
+        {
+          "address": "0x1001585e8",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem19PassThroughTextView::mouseUp:"
+        },
+        {
+          "address": "0x100158670",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem19PassThroughTextView::hitTest:"
+        },
+        {
+          "address": "0x100158678",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem19PassThroughTextView::initWithFrame:textContainer:"
+        },
+        {
+          "address": "0x1001586ec",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem19PassThroughTextView::initWithCoder:"
+        },
+        {
+          "address": "0x10015876c",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem19PassThroughTextView::initWithFrame:"
+        },
+        {
+          "address": "0x1001595f8",
+          "value": "_TtCC8PastePal11RegularCell8TextCell::viewDidLoad"
+        },
+        {
+          "address": "0x100159c14",
+          "value": "_TtCC8PastePal11RegularCell8TextCell::prepareForReuse"
+        },
+        {
+          "address": "0x100159e70",
+          "value": "_TtCC8PastePal11RegularCell8TextCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x10015a0d8",
+          "value": "_TtCC8PastePal11RegularCell8TextCell::initWithCoder:"
+        },
+        {
+          "address": "0x10015a19c",
+          "value": "_TtCC8PastePal11RegularCell8TextCell::.cxx_destruct"
+        },
+        {
+          "address": "0x10015ada0",
+          "value": "_TtC8PastePal8BaseCell::loadView"
+        },
+        {
+          "address": "0x10015ae0c",
+          "value": "_TtC8PastePal8BaseCell::viewDidLoad"
+        },
+        {
+          "address": "0x10015ae68",
+          "value": "_TtC8PastePal8BaseCell::prepareForReuse"
+        },
+        {
+          "address": "0x10015aed8",
+          "value": "_TtC8PastePal8BaseCell::isSelected"
+        },
+        {
+          "address": "0x10015af14",
+          "value": "_TtC8PastePal8BaseCell::setSelected:"
+        },
+        {
+          "address": "0x10015af80",
+          "value": "_TtC8PastePal8BaseCell::viewDidLayout"
+        },
+        {
+          "address": "0x10015b154",
+          "value": "_TtC8PastePal8BaseCell::mouseDown:"
+        },
+        {
+          "address": "0x10015b2b4",
+          "value": "_TtC8PastePal8BaseCell::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x10015b3f8",
+          "value": "_TtC8PastePal8BaseCell::initWithCoder:"
+        },
+        {
+          "address": "0x10015b450",
+          "value": "_TtC8PastePal8BaseCell::.cxx_destruct"
+        },
+        {
+          "address": "0x10015b6f4",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem11AppIconView::initWithFrame:"
+        },
+        {
+          "address": "0x10015b714",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem11AppIconView::initWithCoder:"
+        },
+        {
+          "address": "0x10015ba8c",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem11AppIconView::.cxx_destruct"
+        },
+        {
+          "address": "0x10015c9d4",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem17FileThumbnailView::initWithFrame:"
+        },
+        {
+          "address": "0x10015c9f4",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem17FileThumbnailView::initWithCoder:"
+        },
+        {
+          "address": "0x10015ca1c",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem17FileThumbnailView::prepareForReuse"
+        },
+        {
+          "address": "0x10015d30c",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem17FileThumbnailView::.cxx_destruct"
+        },
+        {
+          "address": "0x10015e4b4",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem10HeaderView::initWithFrame:"
+        },
+        {
+          "address": "0x10015e4d4",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem10HeaderView::initWithCoder:"
+        },
+        {
+          "address": "0x10015e4fc",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem10HeaderView::prepareForReuse"
+        },
+        {
+          "address": "0x10015ea94",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem10HeaderView::.cxx_destruct"
+        },
+        {
+          "address": "0x10015fb3c",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem5Label::initWithFrame:"
+        },
+        {
+          "address": "0x10015fb5c",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem5Label::initWithCoder:"
+        },
+        {
+          "address": "0x10015fba4",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem5Label::viewDidMoveToSuperview"
+        },
+        {
+          "address": "0x10015ff3c",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem15BackgroundLabel::initWithCoder:"
+        },
+        {
+          "address": "0x10015ff64",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem15BackgroundLabel::initWithFrame:"
+        },
+        {
+          "address": "0x10015ff94",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem15BackgroundLabel::.cxx_destruct"
+        },
+        {
+          "address": "0x1001600ac",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem10MenuButton::initWithFrame:"
+        },
+        {
+          "address": "0x10016019c",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem10MenuButton::initWithCoder:"
+        },
+        {
+          "address": "0x1001601fc",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem10MenuButton::.cxx_destruct"
+        },
+        {
+          "address": "0x100160230",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem16RoundedImageView::image"
+        },
+        {
+          "address": "0x100160274",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem16RoundedImageView::setImage:"
+        },
+        {
+          "address": "0x1001602f0",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem16RoundedImageView::layout"
+        },
+        {
+          "address": "0x10016059c",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem16RoundedImageView::initWithFrame:"
+        },
+        {
+          "address": "0x10016062c",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem16RoundedImageView::initWithCoder:"
+        },
+        {
+          "address": "0x10016070c",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem16RoundedImageView::.cxx_destruct"
+        },
+        {
+          "address": "0x100161168",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem13FillImageView::initWithFrame:"
+        },
+        {
+          "address": "0x100161188",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem13FillImageView::initWithCoder:"
+        },
+        {
+          "address": "0x1001611dc",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem13FillImageView::.cxx_destruct"
+        },
+        {
+          "address": "0x10016120c",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem13ThumbnailView::initWithFrame:"
+        },
+        {
+          "address": "0x1001612cc",
+          "value": "_TtCE8PastePalCSo20NSCollectionViewItem13ThumbnailView::initWithCoder:"
+        },
+        {
+          "address": "0x100162b04",
+          "value": "_TtC8PastePal24CollectionViewController::loadView"
+        },
+        {
+          "address": "0x100163724",
+          "value": "_TtC8PastePal24CollectionViewController::viewDidLoad"
+        },
+        {
+          "address": "0x10016424c",
+          "value": "_TtC8PastePal24CollectionViewController::initWithNibName:bundle:"
+        },
+        {
+          "address": "0x1001643dc",
+          "value": "_TtC8PastePal24CollectionViewController::initWithCoder:"
+        },
+        {
+          "address": "0x100164404",
+          "value": "_TtC8PastePal24CollectionViewController::.cxx_destruct"
+        },
+        {
+          "address": "0x1001644cc",
+          "value": "_TtC8PastePal24CollectionViewController::collectionView:didSelectItemsAtIndexPaths:"
+        },
+        {
+          "address": "0x100164568",
+          "value": "_TtC8PastePal24CollectionViewController::collectionView:didDeselectItemsAtIndexPaths:"
+        },
+        {
+          "address": "0x1001645ec",
+          "value": "_TtC8PastePal24CollectionViewController::collectionView:shouldSelectItemsAtIndexPaths:"
+        },
+        {
+          "address": "0x10016466c",
+          "value": "_TtC8PastePal24CollectionViewController::collectionView:willDisplayItem:forRepresentedObjectAtIndexPath:"
+        },
+        {
+          "address": "0x1001646e8",
+          "value": "_TtC8PastePal24CollectionViewController::collectionView:didEndDisplayingItem:forRepresentedObjectAtIndexPath:"
+        },
+        {
+          "address": "0x100164804",
+          "value": "_TtC8PastePal24CollectionViewController::collectionView:layout:sizeForItemAtIndexPath:"
+        },
+        {
+          "address": "0x100171324",
+          "value": "_TtC8PastePal24CollectionViewController::collectionView:canDragItemsAtIndexPaths:withEvent:"
+        },
+        {
+          "address": "0x1001713a4",
+          "value": "_TtC8PastePal24CollectionViewController::collectionView:draggingSession:willBeginAtPoint:forItemsAtIndexPaths:"
+        },
+        {
+          "address": "0x1001721cc",
+          "value": "_TtC8PastePal24CollectionViewController::collectionView:draggingSession:endedAtPoint:dragOperation:"
+        },
+        {
+          "address": "0x100172230",
+          "value": "_TtC8PastePal24CollectionViewController::collectionView:pasteboardWriterForItemAtIndexPath:"
+        },
+        {
+          "address": "0x100173f54",
+          "value": "_TtC8PastePal24CollectionViewController::collectionView:validateDrop:proposedIndexPath:dropOperation:"
+        },
+        {
+          "address": "0x10017445c",
+          "value": "_TtC8PastePal24CollectionViewController::collectionView:acceptDrop:indexPath:dropOperation:"
+        },
+        {
+          "address": "0x100175e80",
+          "value": "_TtC8PastePal24CollectionViewController::popoverDidShow:"
+        },
+        {
+          "address": "0x100175efc",
+          "value": "_TtC8PastePal24CollectionViewController::popoverDidClose:"
+        },
+        {
+          "address": "0x1001798b4",
+          "value": "_TtCC8PastePal24CollectionViewController16CustomScrollView::scrollWheel:"
+        },
+        {
+          "address": "0x100179904",
+          "value": "_TtCC8PastePal24CollectionViewController16CustomScrollView::initWithFrame:"
+        },
+        {
+          "address": "0x10017997c",
+          "value": "_TtCC8PastePal24CollectionViewController16CustomScrollView::initWithCoder:"
+        },
+        {
+          "address": "0x100179c10",
+          "value": "_TtCC8PastePal24CollectionViewController20CustomCollectionView::menuForEvent:"
+        },
+        {
+          "address": "0x100179c6c",
+          "value": "_TtCC8PastePal24CollectionViewController20CustomCollectionView::keyDown:"
+        },
+        {
+          "address": "0x100179f54",
+          "value": "_TtCC8PastePal24CollectionViewController20CustomCollectionView::mouseDown:"
+        },
+        {
+          "address": "0x100179fa4",
+          "value": "_TtCC8PastePal24CollectionViewController20CustomCollectionView::draggingSession:sourceOperationMaskForDraggingContext:"
+        },
+        {
+          "address": "0x10017a23c",
+          "value": "_TtCC8PastePal24CollectionViewController20CustomCollectionView::beginDraggingSessionWithItems:event:source:"
+        },
+        {
+          "address": "0x10017a3d0",
+          "value": "_TtCC8PastePal24CollectionViewController20CustomCollectionView::draggingEntered:"
+        },
+        {
+          "address": "0x10017a500",
+          "value": "_TtCC8PastePal24CollectionViewController20CustomCollectionView::draggingEnded:"
+        },
+        {
+          "address": "0x10017a61c",
+          "value": "_TtCC8PastePal24CollectionViewController20CustomCollectionView::draggingExited:"
+        },
+        {
+          "address": "0x10017a664",
+          "value": "_TtCC8PastePal24CollectionViewController20CustomCollectionView::initWithFrame:"
+        },
+        {
+          "address": "0x10017a6e8",
+          "value": "_TtCC8PastePal24CollectionViewController20CustomCollectionView::initWithCoder:"
+        },
+        {
+          "address": "0x10017a780",
+          "value": "_TtCC8PastePal24CollectionViewController20CustomCollectionView::.cxx_destruct"
+        },
+        {
+          "address": "0x10017a7b0",
+          "value": "_TtCC8PastePal24CollectionViewController7Popover::acceptsFirstResponder"
+        },
+        {
+          "address": "0x10017a7b8",
+          "value": "_TtCC8PastePal24CollectionViewController7Popover::becomeFirstResponder"
+        },
+        {
+          "address": "0x10017a7c0",
+          "value": "_TtCC8PastePal24CollectionViewController7Popover::keyDown:"
+        },
+        {
+          "address": "0x10017a904",
+          "value": "_TtCC8PastePal24CollectionViewController7Popover::cancelOperation:"
+        },
+        {
+          "address": "0x10017a98c",
+          "value": "_TtCC8PastePal24CollectionViewController7Popover::init"
+        },
+        {
+          "address": "0x10017a9c8",
+          "value": "_TtCC8PastePal24CollectionViewController7Popover::initWithCoder:"
+        },
+        {
+          "address": "0x10017c45c",
+          "value": "_TtC8PastePal9AppLoader::init"
+        },
+        {
+          "address": "0x10017c47c",
+          "value": "_TtC8PastePal9AppLoader::.cxx_destruct"
+        },
+        {
+          "address": "0x10017c79c",
+          "value": "_TtC8PastePal9AppLoader::controllerDidChangeContent:"
+        },
+        {
+          "address": "0x1001838c4",
+          "value": "_TtC8PastePal12FolderLoader::init"
+        },
+        {
+          "address": "0x1001838e4",
+          "value": "_TtC8PastePal12FolderLoader::.cxx_destruct"
+        },
+        {
+          "address": "0x100183c54",
+          "value": "_TtC8PastePal12FolderLoader::controllerDidChangeContent:"
+        },
+        {
+          "address": "0x100185be4",
+          "value": "_TtC8PastePal11ItemsLoader::init"
+        },
+        {
+          "address": "0x100185c10",
+          "value": "_TtC8PastePal11ItemsLoader::.cxx_destruct"
+        },
+        {
+          "address": "0x100185e40",
+          "value": "_TtC8PastePal11ItemsLoader::controllerDidChangeContent:"
+        },
+        {
+          "address": "0x10018e170",
+          "value": "_TtC8PastePal8MenuItem::handleAction"
+        },
+        {
+          "address": "0x10018e1e0",
+          "value": "_TtC8PastePal8MenuItem::initWithTitle:action:keyEquivalent:"
+        },
+        {
+          "address": "0x10018e254",
+          "value": "_TtC8PastePal8MenuItem::initWithCoder:"
+        },
+        {
+          "address": "0x10018e2e0",
+          "value": "_TtC8PastePal8MenuItem::.cxx_destruct"
+        },
+        {
+          "address": "0x1001ae8ac",
+          "value": "_TtCV8PastePal13ClipboardItem14PasteboardItem::init"
+        },
+        {
+          "address": "0x1001ae8e8",
+          "value": "_TtCV8PastePal13ClipboardItem14PasteboardItem::initWithPasteboardPropertyList:ofType:"
+        },
+        {
+          "address": "0x1001af3a8",
+          "value": "_TtCCV8PastePal13ClipboardItem14PasteboardItem12DataProvider::pasteboard:item:provideDataForType:"
+        },
+        {
+          "address": "0x1001af49c",
+          "value": "_TtCCV8PastePal13ClipboardItem14PasteboardItem12DataProvider::pasteboardFinishedWithDataProvider:"
+        },
+        {
+          "address": "0x1001afb2c",
+          "value": "_TtCCV8PastePal13ClipboardItem14PasteboardItem12DataProvider::init"
+        },
+        {
+          "address": "0x1001afb8c",
+          "value": "_TtCCV8PastePal13ClipboardItem14PasteboardItem12DataProvider::.cxx_destruct"
+        },
+        {
+          "address": "0x1001b0458",
+          "value": "_TtCV8PastePal13ClipboardItem21PasteboardWritingItem::writableTypesForPasteboard:"
+        },
+        {
+          "address": "0x1001b04d0",
+          "value": "_TtCV8PastePal13ClipboardItem21PasteboardWritingItem::writingOptionsForType:pasteboard:"
+        },
+        {
+          "address": "0x1001b0780",
+          "value": "_TtCV8PastePal13ClipboardItem21PasteboardWritingItem::pasteboardPropertyListForType:"
+        },
+        {
+          "address": "0x1001b0878",
+          "value": "_TtCV8PastePal13ClipboardItem21PasteboardWritingItem::init"
+        },
+        {
+          "address": "0x1001b08a4",
+          "value": "_TtCV8PastePal13ClipboardItem21PasteboardWritingItem::.cxx_destruct"
+        },
+        {
+          "address": "0x1001b28c4",
+          "value": "_TtC8PastePal16PeerShareManager::init"
+        },
+        {
+          "address": "0x1001b331c",
+          "value": "_TtC8PastePal16PeerShareManager::.cxx_destruct"
+        },
+        {
+          "address": "0x1001b35b0",
+          "value": "_TtC8PastePal16PeerShareManager::advertiser:didReceiveInvitationFromPeer:withContext:invitationHandler:"
+        },
+        {
+          "address": "0x1001b36a4",
+          "value": "_TtC8PastePal16PeerShareManager::browser:foundPeer:withDiscoveryInfo:"
+        },
+        {
+          "address": "0x1001b3744",
+          "value": "_TtC8PastePal16PeerShareManager::browser:lostPeer:"
+        },
+        {
+          "address": "0x1001b3b98",
+          "value": "_TtC8PastePal16PeerShareManager::session:peer:didChangeState:"
+        },
+        {
+          "address": "0x1001b3ce8",
+          "value": "_TtC8PastePal16PeerShareManager::session:didReceiveData:fromPeer:"
+        },
+        {
+          "address": "0x1001b3d9c",
+          "value": "_TtC8PastePal16PeerShareManager::session:didReceiveStream:withName:fromPeer:"
+        },
+        {
+          "address": "0x1001b3da0",
+          "value": "_TtC8PastePal16PeerShareManager::session:didStartReceivingResourceWithName:fromPeer:withProgress:"
+        },
+        {
+          "address": "0x1001b3da4",
+          "value": "_TtC8PastePal16PeerShareManager::session:didFinishReceivingResourceWithName:fromPeer:atURL:withError:"
+        },
+        {
+          "address": "0x1001b4c14",
+          "value": "_TtC8PastePal16PeerShareManager::browser:didNotStartBrowsingForPeers:"
+        },
+        {
+          "address": "0x1001b4c18",
+          "value": "_TtC8PastePal16PeerShareManager::advertiser:didNotStartAdvertisingPeer:"
+        },
+        {
+          "address": "0x1001b5030",
+          "value": "_TtC8PastePal16PeerShareManager::windowWillClose:"
+        },
+        {
+          "address": "0x1001c649c",
+          "value": "_TtCV8PastePal13QuickLookView17CustomPreviewView::becomeFirstResponder"
+        },
+        {
+          "address": "0x1001c64a4",
+          "value": "_TtCV8PastePal13QuickLookView17CustomPreviewView::initWithFrame:style:"
+        },
+        {
+          "address": "0x1001c6518",
+          "value": "_TtCV8PastePal13QuickLookView17CustomPreviewView::initWithFrame:"
+        },
+        {
+          "address": "0x1001c6584",
+          "value": "_TtCV8PastePal13QuickLookView17CustomPreviewView::initWithCoder:"
+        },
+        {
+          "address": "0x1001dabcc",
+          "value": "_TtCV8PastePal7WebView11Coordinator::webView:didStartProvisionalNavigation:"
+        },
+        {
+          "address": "0x1001dac44",
+          "value": "_TtCV8PastePal7WebView11Coordinator::webView:didFinishNavigation:"
+        },
+        {
+          "address": "0x1001dad04",
+          "value": "_TtCV8PastePal7WebView11Coordinator::init"
+        },
+        {
+          "address": "0x1001dad64",
+          "value": "_TtCV8PastePal7WebView11Coordinator::.cxx_destruct"
+        },
+        {
+          "address": "0x1001dafbc",
+          "value": "_TtCV8PastePal7WebViewP33_D494EAEFBA79C965C99DEAF737578BAC19NonFocusableWebView::removeFromSuperview"
+        },
+        {
+          "address": "0x1001db024",
+          "value": "_TtCV8PastePal7WebViewP33_D494EAEFBA79C965C99DEAF737578BAC19NonFocusableWebView::initWithFrame:configuration:"
+        },
+        {
+          "address": "0x1001db098",
+          "value": "_TtCV8PastePal7WebViewP33_D494EAEFBA79C965C99DEAF737578BAC19NonFocusableWebView::initWithCoder:"
+        },
+        {
+          "address": "0x1001de83c",
+          "value": "_TtC8PastePal14MenuBarManager::statusMenuButtonTouched:"
+        },
+        {
+          "address": "0x1001dee04",
+          "value": "_TtC8PastePalP33_2D606F1B35E825545888ADC50CBF738811MySavePanel::close"
+        },
+        {
+          "address": "0x1001dee88",
+          "value": "_TtC8PastePalP33_2D606F1B35E825545888ADC50CBF738811MySavePanel::initWithContentRect:styleMask:backing:defer:"
+        },
+        {
+          "address": "0x1001e12a8",
+          "value": "_TtC8PastePal11AppDelegate::applicationDidFinishLaunching:"
+        },
+        {
+          "address": "0x1001e1bb4",
+          "value": "_TtC8PastePal11AppDelegate::applicationShouldTerminateAfterLastWindowClosed:"
+        },
+        {
+          "address": "0x1001e1bbc",
+          "value": "_TtC8PastePal11AppDelegate::applicationWillTerminate:"
+        },
+        {
+          "address": "0x1001e1c40",
+          "value": "_TtC8PastePal11AppDelegate::applicationDidChangeScreenParameters:"
+        },
+        {
+          "address": "0x1001e1cf4",
+          "value": "_TtC8PastePal11AppDelegate::applicationShouldHandleReopen:hasVisibleWindows:"
+        },
+        {
+          "address": "0x1001e1d10",
+          "value": "_TtC8PastePal11AppDelegate::applicationShouldTerminate:"
+        },
+        {
+          "address": "0x1001e1e40",
+          "value": "_TtC8PastePal11AppDelegate::terminate:"
+        },
+        {
+          "address": "0x1001e1f34",
+          "value": "_TtC8PastePal11AppDelegate::onPreferenceMenuItem:"
+        },
+        {
+          "address": "0x1001e200c",
+          "value": "_TtC8PastePal11AppDelegate::application:didRegisterForRemoteNotificationsWithDeviceToken:"
+        },
+        {
+          "address": "0x1001e2044",
+          "value": "_TtC8PastePal11AppDelegate::application:didFailToRegisterForRemoteNotificationsWithError:"
+        },
+        {
+          "address": "0x1001e2048",
+          "value": "_TtC8PastePal11AppDelegate::init"
+        },
+        {
+          "address": "0x1001e2100",
+          "value": "_TtC8PastePal11AppDelegate::.cxx_destruct"
+        },
+        {
+          "address": "0x1001e571c",
+          "value": "CDClipboardApp::initWithEntity:insertIntoManagedObjectContext:"
+        },
+        {
+          "address": "0x1001e58dc",
+          "value": "CDClipboardItem::initWithEntity:insertIntoManagedObjectContext:"
+        },
+        {
+          "address": "0x1004b96d0",
+          "value": "RCPurchases::automaticAppleSearchAdsAttributionCollection"
+        },
+        {
+          "address": "0x1004b9760",
+          "value": "RCPurchases::setAutomaticAppleSearchAdsAttributionCollection:"
+        },
+        {
+          "address": "0x1008c9f1c",
+          "value": "/usr/lib/swift/libswiftFoundation.dylib::Foundation::Calendar::SearchDirection::typeMetadataAccessor"
+        },
+        {
+          "address": "0x1008ca348",
+          "value": "/System/Library/Frameworks/Combine.framework/Versions/A/Combine::(extension_Combine)::Combine::Publisher::$removeDuplicates"
+        },
+        {
+          "address": "0x1008cb728",
+          "value": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI::(extension_SwiftUI)::SwiftUI::View::$clipShape"
+        },
+        {
+          "address": "0x1008ce968",
+          "value": "_IORegistryEntrySearchCFProperty"
+        },
+        {
+          "address": "0x100e2f201",
+          "value": "NSPasteboard::generalPasteboard"
+        },
+        {
+          "address": "0x100e2f202",
+          "value": "NSPasteboard::accessBehavior"
+        },
+        {
+          "address": "0x100e2f203",
+          "value": "NSPasteboard::clearContents"
+        },
+        {
+          "address": "0x100e2f204",
+          "value": "NSPasteboard::stringForType:"
+        },
+        {
+          "address": "0x100e2f205",
+          "value": "NSPasteboard::setString:forType:"
+        }
+      ],
+      "confidence": "observed",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+        "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+        "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+        "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+        "Regex mode uses Java Pattern semantics. Matcher or compiler stack exhaustion returns a resource constraint without closing the session; literal mode avoids regex recursion and returns complete matching values.",
+        "macOS sessions require a matching executable Ghidra native decompiler; REA checks for it but does not build native components or change Gatekeeper quarantine state."
+      ],
+      "locations": [],
+      "evidence_links": []
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": 4
+}

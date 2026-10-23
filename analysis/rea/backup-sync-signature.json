@@ -1,0 +1,135 @@
+{
+  "evidence_id": "ev_2d5aad556ee24b552b434df6e70bd90e92cffacdeaec12e32f40cea1559383d2",
+  "subject": {
+    "name": "PastePal.arm64",
+    "digest": {
+      "sha256": "7ee43a4a8437e805cfd1ddd7a6ce2242532fb9944e796997401864004185f317"
+    },
+    "format": "mach-o",
+    "architecture": "arm64",
+    "local_path": "/Users/luwenjie/.rea/targets/pastepal-ecc6c102/PastePal.arm64"
+  },
+  "provider": {
+    "id": "native-macos",
+    "name": "macOS native inspection utilities",
+    "version": null
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_signature",
+  "parameters": {},
+  "raw_result": null,
+  "normalized_result": {
+    "signed": true,
+    "identifier": "com.onmyway133.PastePal",
+    "team_identifier": "T78DK947F2",
+    "format": "Mach-O thin (arm64)",
+    "cdhashes": [
+      "bda1aed9fc4af06e5b1f024128495fc1f39014b4"
+    ],
+    "hash_algorithms": [
+      "sha1",
+      "sha256"
+    ],
+    "authorities": [
+      "Apple Mac OS Application Signing",
+      "Apple Worldwide Developer Relations Certification Authority",
+      "Apple Root CA"
+    ],
+    "designated_requirement": "(anchor apple generic and certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = T78DK947F2) and identifier \"com.onmyway133.PastePal\"",
+    "entitlements": {
+      "com.apple.application-identifier": "T78DK947F2.com.onmyway133.PastePal",
+      "com.apple.developer.aps-environment": "production",
+      "com.apple.developer.icloud-container-environment": "Production",
+      "com.apple.developer.icloud-container-identifiers": [
+        "iCloud.com.onmyway133.PastePal"
+      ],
+      "com.apple.developer.icloud-services": [
+        "CloudKit",
+        "CloudDocuments"
+      ],
+      "com.apple.developer.team-identifier": "T78DK947F2",
+      "com.apple.developer.ubiquity-container-identifiers": [
+        "iCloud.com.onmyway133.PastePal"
+      ],
+      "com.apple.security.app-sandbox": true,
+      "com.apple.security.cs.allow-jit": true,
+      "com.apple.security.cs.disable-library-validation": true,
+      "com.apple.security.files.bookmarks.app-scope": true,
+      "com.apple.security.files.user-selected.read-write": true,
+      "com.apple.security.network.client": true
+    },
+    "timestamp": null,
+    "hardened_runtime": true,
+    "provenance": [
+      {
+        "tool": "codesign",
+        "command": [
+          "/usr/bin/codesign",
+          "-d",
+          "--verbose=4",
+          "$ARTIFACT"
+        ],
+        "tool_version": null,
+        "version_reason": "Tool exposes no uniform stable version flag; executable SHA-256 is a prelaunch file sample and does not prove atomic OS image binding.",
+        "executable_sha256": "214d455584d19abc0d74d02b9cbc7d3da6bdcb0596c235e6156dd9ed2f4e1ba7",
+        "exit": {
+          "code": 0,
+          "signal": null
+        },
+        "stdout_bytes": 0,
+        "stderr_bytes": 1175
+      },
+      {
+        "tool": "codesign",
+        "command": [
+          "/usr/bin/codesign",
+          "-d",
+          "-r-",
+          "$ARTIFACT"
+        ],
+        "tool_version": null,
+        "version_reason": "Tool exposes no uniform stable version flag; executable SHA-256 is a prelaunch file sample and does not prove atomic OS image binding.",
+        "executable_sha256": "214d455584d19abc0d74d02b9cbc7d3da6bdcb0596c235e6156dd9ed2f4e1ba7",
+        "exit": {
+          "code": 0,
+          "signal": null
+        },
+        "stdout_bytes": 344,
+        "stderr_bytes": 104
+      },
+      {
+        "tool": "codesign",
+        "command": [
+          "/usr/bin/codesign",
+          "-d",
+          "--entitlements",
+          ":-",
+          "$ARTIFACT"
+        ],
+        "tool_version": null,
+        "version_reason": "Tool exposes no uniform stable version flag; executable SHA-256 is a prelaunch file sample and does not prove atomic OS image binding.",
+        "executable_sha256": "214d455584d19abc0d74d02b9cbc7d3da6bdcb0596c235e6156dd9ed2f4e1ba7",
+        "exit": {
+          "code": 0,
+          "signal": null
+        },
+        "stdout_bytes": 1214,
+        "stderr_bytes": 192
+      }
+    ],
+    "limitations": [
+      "Entitlements and designated requirements require separate bounded commands.",
+      "Inspected a digest-verified Mach-O byte snapshot; filesystem-bound signing context and trust validation are not examined."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Entitlements and designated requirements require separate bounded commands.",
+    "Inspected a digest-verified Mach-O byte snapshot; filesystem-bound signing context and trust validation are not examined."
+  ],
+  "locations": [],
+  "evidence_links": []
+}

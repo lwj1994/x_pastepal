@@ -1,0 +1,204 @@
+        baseProperties 0x100000000 __mh_execute_header
+0000000100ad96d0 0x100b11fe8
+    isa        0x100b11fa8
+    superclass 0x0 _OBJC_CLASS_$__TtCs12_SwiftObject
+    cache      0x0 __objc_empty_cache
+    vtable     0x100000000 __mh_execute_header
+    data       0x100adebea Swift class
+        flags          0x80
+        instanceStart  16
+        instanceSize   32
+        reserved       0x0
+        ivarLayout     0x100000000 __mh_execute_header
+        name           0x1008d99b0 _TtC8PastePal16ClipboardChecker
+        baseMethods    0x100000000 __mh_execute_header
+        baseProtocols  0x100000000 __mh_execute_header
+        ivars          0x100adeba0
+            entsize   32
+            count     2
+            offset    0x1009429a0 16
+            name      0x1008d99d0 lastChangeCount
+            type      0x1008d5090 
+            alignment 3
+            size      8
+            offset    0x1009429a8 24
+            name      0x1008d99e0 recentDetections
+            type      0x1008d5090 
+            alignment 3
+            size      8
+        weakIvarLayout 0x100000000 __mh_execute_header
+        baseProperties 0x100000000 __mh_execute_header
+Meta Class
+    isa        0x0 _OBJC_METACLASS_$__TtCs12_SwiftObject
+    superclass 0x0 _OBJC_METACLASS_$__TtCs12_SwiftObject
+    cache      0x0 __objc_empty_cache
+    vtable     0x100000000 __mh_execute_header
+    data       0x100adeb58
+        flags          0x81 RO_META
+        instanceStart  40
+        instanceSize   40
+        reserved       0x0
+        ivarLayout     0x100000000 __mh_execute_header
+        name           0x1008d99b0 _TtC8PastePal16ClipboardChecker
+        baseMethods    0x100000000 __mh_execute_header
+        baseProtocols  0x100000000 __mh_execute_header
+        ivars          0x100000000 __mh_execute_header
+        weakIvarLayout 0x100000000 __mh_execute_header
+        baseProperties 0x100000000 __mh_execute_header
+0000000100ad96d8 0x100b120d0
+    isa        0x100b12090
+    superclass 0x0 _OBJC_CLASS_$__TtCs12_SwiftObject
+    cache      0x0 __objc_empty_cache
+    vtable     0x100000000 __mh_execute_header
+    data       0x100aded62 Swift class
+        flags          0x80
+        instanceStart  16
+        instanceSize   80
+        reserved       0x0
+        ivarLayout     0x100000000 __mh_execute_header
+        name           0x1008d9a00 _TtC8PastePal16ClipboardManager
+        baseMethods    0x100000000 __mh_execute_header
+        baseProtocols  0x100000000 __mh_execute_header
+        ivars          0x100adec78
+            entsize   32
+            count     7
+            offset    0x1009429d0 16
+            name      0x1008d9a20 pasteboard
+            type      0x1008d5090 
+            alignment 3
+            size      8
+            offset    0x1009429d8 24
+            name      0x1008d9a2c checker
+            type      0x1008d5090 
+            alignment 3
+            size      8
+            offset    0x1009429e0 32
+            name      0x1008d9a34 ruleChecker
+            type      0x1008d5090 
+            alignment 3
+            size      8
+            offset    0x1009429e8 40
+            name      0x1008d9a40 queue
+            type      0x1008d5090 
+            alignment 3
+            size      8
+            offset    0x1009429f0 48
+            name      0x1008d9a46 preferredFolder
+            type      0x1008d5090 
+            alignment 3
+            size      16
+            offset    0x1009429f8 64
+            name      0x1008d9a60 seenPasteboardPermission
+            type      0x1008d5090 
+            alignment 0
+            size      1
+            offset    0x100942a00 72
+            name      0x1008d9a79 timer
+            type      0x1008d5090 
+            alignment 3
+            size      8
+        weakIvarLayout 0x100000000 __mh_execute_header
+        baseProperties 0x100000000 __mh_execute_header
+Meta Class
+    isa        0x0 _OBJC_METACLASS_$__TtCs12_SwiftObject
+    superclass 0x0 _OBJC_METACLASS_$__TtCs12_SwiftObject
+    cache      0x0 __objc_empty_cache
+    vtable     0x100000000 __mh_execute_header
+    data       0x100adec30
+        flags          0x81 RO_META
+        instanceStart  40
+        instanceSize   40
+        reserved       0x0
+        ivarLayout     0x100000000 __mh_execute_header
+        name           0x1008d9a00 _TtC8PastePal16ClipboardManager
+        baseMethods    0x100000000 __mh_execute_header
+        baseProtocols  0x100000000 __mh_execute_header
+        ivars          0x100000000 __mh_execute_header
+        weakIvarLayout 0x100000000 __mh_execute_header
+        baseProperties 0x100000000 __mh_execute_header
+0000000100ad96e0 0x100b12220
+    isa        0x100b121e0
+    superclass 0x0 _OBJC_CLASS_$__TtCs12_SwiftObject
+    cache      0x0 __objc_empty_cache
+    vtable     0x100000000 __mh_execute_header
+        baseProperties 0x100000000 __mh_execute_header
+0000000100ad98e0 0x100b00980
+    isa        0x100b14af8
+    superclass 0x0 _OBJC_CLASS_$_NSPasteboardItem
+    cache      0x0 __objc_empty_cache
+    vtable     0x100000000 __mh_execute_header
+    data       0x100b00922 Swift class
+        flags          0x80
+        instanceStart  8
+        instanceSize   8
+        reserved       0x0
+        ivarLayout     0x100000000 __mh_execute_header
+        name           0x1008dcc20 _TtCV8PastePal13ClipboardItem14PasteboardItem
+        baseMethods    0x1008d1090
+            entsize 12 (relative)
+            count   2
+            name    0x2281f8 (0x100af9290 extends past end of file)
+            types   0xbda4 (0x1008dce40 extends past end of file)
+            imp     0xff8dd80c (0x1001ae8ac extends past end of file)
+            name    0x228edc (0x100af9f80 extends past end of file)
+            types   0x8d28 (0x1008d9dd0 extends past end of file)
+            imp     0xff8dd83c (0x1001ae8e8 extends past end of file)
+        baseProtocols  0x100000000 __mh_execute_header
+        ivars          0x100000000 __mh_execute_header
+        weakIvarLayout 0x100000000 __mh_execute_header
+        baseProperties 0x100000000 __mh_execute_header
+Meta Class
+    isa        0x0 _OBJC_METACLASS_$_NSObject
+    superclass 0x0 _OBJC_METACLASS_$_NSPasteboardItem
+    cache      0x0 __objc_empty_cache
+    vtable     0x100000000 __mh_execute_header
+    data       0x100ae1d08
+        flags          0x81 RO_META
+        instanceStart  40
+        instanceSize   40
+        reserved       0x0
+        ivarLayout     0x100000000 __mh_execute_header
+        name           0x1008dcc20 _TtCV8PastePal13ClipboardItem14PasteboardItem
+        baseMethods    0x100000000 __mh_execute_header
+        baseProtocols  0x100000000 __mh_execute_header
+        ivars          0x100000000 __mh_execute_header
+        weakIvarLayout 0x100000000 __mh_execute_header
+        baseProperties 0x100000000 __mh_execute_header
+0000000100ad98e8 0x100b00a38
+    isa        0x100b14b20
+    superclass 0x0 _OBJC_CLASS_$_NSObject
+    cache      0x0 __objc_empty_cache
+    vtable     0x100000000 __mh_execute_header
+    data       0x100b009d2 Swift class
+        flags          0x1c4 RO_HAS_CXX_STRUCTORS
+        instanceStart  0
+        instanceSize   8
+        reserved       0x0
+        ivarLayout     0x100000000 __mh_execute_header
+        name           0x1008dcc50 _TtCCV8PastePal13ClipboardItem14PasteboardItem12DataProvider
+        baseMethods    0x1008d0d88
+            entsize 12 (relative)
+            count   4
+            name    0x22ab28 (0x100afb8b8 extends past end of file)
+            types   0x9d9c (0x1008dab30 extends past end of file)
+            imp     0xff8de610 (0x1001af3a8 extends past end of file)
+            name    0x22ab24 (0x100afb8c0 extends past end of file)
+            types   0x5460 (0x1008d6200 extends past end of file)
+            imp     0xff8de6f8 (0x1001af49c extends past end of file)
+            name    0x2284e8 (0x100af9290 extends past end of file)
+            types   0xc094 (0x1008dce40 extends past end of file)
+            imp     0xff8ded7c (0x1001afb2c extends past end of file)
+            name    0x22a234 (0x100afafe8 extends past end of file)
+            types   0xac08 (0x1008db9c0 extends past end of file)
+            imp     0xff8dedd0 (0x1001afb8c extends past end of file)
+        baseProtocols  0x100ae1e08
+            count    1
+            list[0]  0x100ae1d50
+                isa       0x100000000 __mh_execute_header
+                name      0x1008dccd0 NSPasteboardItemDataProvider
+                protocols 0x100ae1e40
+                    count    1
+                    list[0]  0x100adc180
+                        isa       0x100000000 __mh_execute_header
+                        name      0x100931b90 NSObject
+                        protocols 0x100000000 __mh_execute_header

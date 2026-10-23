@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-20",
+  "original_path": "/Applications/PastePal.app/Contents/MacOS/PastePal",
+  "original_sha256": "ecc6c102b1b66b89ce70e649e682fd2c0c0041207281b4c047faaf4b8771e547",
+  "target_path": "/Users/luwenjie/.rea/targets/pastepal-ecc6c102/PastePal.arm64",
+  "target_sha256": "7ee43a4a8437e805cfd1ddd7a6ce2242532fb9944e796997401864004185f317",
+  "providers": [
+    "Apple llvm-otool/llvm-objdump",
+    "Ghidra 12.1.4 direct headless, -noanalysis -readOnly -deleteProject"
+  ],
+  "rea_status": "search_procedures timed out after 300s; session closed; targeted decompilation uses direct Ghidra and has no REA Evidence ID",
+  "assembly_commands": [
+    [
+      "xcrun",
+      "llvm-objdump",
+      "--disassemble",
+      "--start-address=0x100179cbc",
+      "--stop-address=0x100179fa4",
+      "/Users/luwenjie/.rea/targets/pastepal-ecc6c102/PastePal.arm64"
+    ],
+    [
+      "xcrun",
+      "llvm-objdump",
+      "--disassemble",
+      "--start-address=0x10015ab98",
+      "--stop-address=0x10015af80",
+      "/Users/luwenjie/.rea/targets/pastepal-ecc6c102/PastePal.arm64"
+    ],
+    [
+      "xcrun",
+      "llvm-objdump",
+      "--disassemble",
+      "--start-address=0x10015b084",
+      "--stop-address=0x10015b1a4",
+      "/Users/luwenjie/.rea/targets/pastepal-ecc6c102/PastePal.arm64"
+    ]
+  ],
+  "files": {
+    "analysis/rea/selection-methods.json": "9fbbc02cd4302c66075648c16cdf22564116386560be50a9f4d9a5322b01fcc7",
+    "analysis/rea/selection-assembly.txt": "a1647b7a1e7a29c2cf430d00d425c21ea0313426dc17595061eb3346647ca6b2",
+    "analysis/rea/selection-objc-metadata.txt": "e939316bbf6aebc59c7ce5b39f0ed308dee249293f680afab883af8f8151e62b",
+    "analysis/rea/SelectionDecompile.java": "a4f7efcda828c7f9bea35a68ed74cba147a39f980e1e82c3c87b80d7cf710e02",
+    "analysis/rea/selection-pseudocode/10015ab98.c": "990ae57ed356af2716795c2e70656b1b41347a56fe8670e1147c98603763e1db",
+    "analysis/rea/selection-pseudocode/10015af14.c": "c453b394bd4784a6a0c32e99ef01dc99d7894b58b172ada87c476cf1fd0a54e3",
+    "analysis/rea/selection-pseudocode/10015b084.c": "737a8b9996a1e818c537744a3be3eee7b41d4925d32566dbf551df8045dce393",
+    "analysis/rea/selection-pseudocode/1001644cc.c": "1b94203e02241d54f37a1af66a52d55cb422c6a0efd94cae2a74a6338b439330",
+    "analysis/rea/selection-pseudocode/10016583c.c": "0c3b640455e975d553ac432236b4cee47fae551794cfff4025d14a4643496d16",
+    "analysis/rea/selection-pseudocode/100179cbc.c": "1d56ece69119faeca496e38cb0d6e617af292170052a33d6a80c5d0759491054"
+  },
+  "limitations": [
+    "Static shipped-artifact observations; no runtime trace of PastePal.",
+    "Decompiled pseudocode is not original Swift source.",
+    "AppKit superclass selection timing is outside the recovered application functions.",
+    "Double-click downstream behavior depends on settings whose field names were not recovered."
+  ]
+}

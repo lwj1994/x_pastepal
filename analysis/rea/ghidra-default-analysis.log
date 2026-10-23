@@ -1,0 +1,828 @@
+2026-10-14 14:30:07 INFO  (LoggingInitialization) Using log config file: jar:file:/opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2026-10-14 14:30:07 INFO  (LoggingInitialization) Using log file: /var/folders/t0/r52spm717rn77wnlkbydt2vw0000gn/T/rea-ghidra-6XmrvT/ghidra.log  
+2026-10-14 14:30:07 DEBUG (GhidraObjectInputFilter) Including serial input filter: FileSystem/data/client.rmi.serial.filter  
+2026-10-14 14:30:07 INFO  (Preferences) Loading user preferences: /var/folders/t0/r52spm717rn77wnlkbydt2vw0000gn/T/rea-ghidra-6XmrvT/config/luwenjie-ghidra/ghidra_12.1.4_PUBLIC/preferences  
+2026-10-14 14:30:07 INFO  (ClassSearcher) Searching for classes...  
+2026-10-14 14:30:07 INFO  (ClassSearcher) Class search complete (413 ms)  
+2026-10-14 14:30:07 INFO  (DefaultSSLContextInitializer) Initializing SSL Context  
+2026-10-14 14:30:08 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2026-10-14 14:30:08 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2026-10-14 14:30:08 INFO  (DefaultTrustManagerFactory) Trust manager disabled, cacerts have not been set  
+2026-10-14 14:30:08 INFO  (FileCacheMaintenanceDaemon) Starting cache cleanup: /var/folders/t0/r52spm717rn77wnlkbydt2vw0000gn/T/rea-ghidra-6XmrvT/cache/luwenjie-ghidra/fscache2  
+2026-10-14 14:30:08 INFO  (FileCacheMaintenanceDaemon) Finished cache cleanup, estimated storage used: 0  
+2026-10-14 14:30:08 INFO  (AnalyzeHeadless) Headless startup complete (2549 ms)  
+2026-10-14 14:30:08 INFO  (ClassSearcher) Class searcher loaded 59 extension points (20 false positives)  
+2026-10-14 14:30:09 INFO  (HeadlessAnalyzer) HEADLESS Script Paths:
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Processors/JVM/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Processors/PIC/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/PyGhidra/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Debug/Debugger/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/PDB/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/VersionTracking/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/FunctionID/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/BytePatterns/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/BSim/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/SwiftDemangler/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/Decompiler/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Processors/DATA/ghidra_scripts
+    /Users/luwenjie/.local/share/mise/installs/node/26.0.0/lib/node_modules/rea-agents/bridge/ghidra
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/Base/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/FileFormats/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Processors/8051/ghidra_scripts
+    /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Processors/Atmel/ghidra_scripts  
+2026-10-14 14:30:09 INFO  (HeadlessAnalyzer) HEADLESS: execution starts  
+2026-10-14 14:30:09 INFO  (HeadlessAnalyzer) Creating temporary project: /var/folders/t0/r52spm717rn77wnlkbydt2vw0000gn/T/rea-ghidra-6XmrvT/project/rea-project  
+2026-10-14 14:30:09 DEBUG (DefaultProjectManager) No tools found; Installing default tools  
+2026-10-14 14:30:09 DEBUG (DefaultProjectManager) 	no recent project directories found  
+2026-10-14 14:30:09 INFO  (DefaultProject) Creating project: /var/folders/t0/r52spm717rn77wnlkbydt2vw0000gn/T/rea-ghidra-6XmrvT/project/rea-project  
+2026-10-14 14:30:09 INFO  (HeadlessAnalyzer) REPORT: Processing input files:   
+2026-10-14 14:30:09 INFO  (HeadlessAnalyzer)      project: /var/folders/t0/r52spm717rn77wnlkbydt2vw0000gn/T/rea-ghidra-6XmrvT/project/rea-project  
+2026-10-14 14:30:09 INFO  (HeadlessAnalyzer) IMPORTING: file:///private/var/folders/t0/r52spm717rn77wnlkbydt2vw0000gn/T/rea-ghidra-6XmrvT/target-7ee43a4a8437.arm64  
+2026-10-14 14:30:10 INFO  (ProgramLoader) Using Loader: Mac OS X Mach-O  
+2026-10-14 14:30:10 INFO  (ProgramLoader) Using Language/Compiler: AARCH64:LE:64:AppleSilicon:swift  
+2026-10-14 14:30:10 INFO  (ProgramLoader) Using Library Search Path: [., /System/Library/dyld/dyld_shared_cache_arm64e, /System/Library/dyld/dyld_shared_cache_x86_64, /System/Library/dyld/dyld_shared_cache_x86_64h, /System/Cryptexes/OS/System/Library/dyld/dyld_shared_cache_arm64e, /System/Cryptexes/OS/System/Library/dyld/dyld_shared_cache_x86_64, /System/Cryptexes/OS/System/Library/dyld/dyld_shared_cache_x86_64h, /var/folders/t0/r52spm717rn77wnlkbydt2vw0000gn/T/rea-ghidra-6XmrvT/home/Library/Java/Extensions, /Library/Java/Extensions, /Network/Library/Java/Extensions, /System/Library/Java/Extensions, /usr/lib/java]  
+2026-10-14 14:30:15 INFO  (ProgramLoader) Additional info:
+Loading file:///private/var/folders/t0/r52spm717rn77wnlkbydt2vw0000gn/T/rea-ghidra-6XmrvT/target-7ee43a4a8437.arm64?MD5=d29f001e594bb4b83c11b734f9d203f7...
+Discovered 55851 DYLD_CHAINED_PTR_64_OFFSET chained pointers.
+Fixed up 55851 chained pointers.
+target-7ee43a4a8437.arm64: installed 8 objc SpecExtensions
+------------------------------------------------
+
+Linking the External Programs of 'target-7ee43a4a8437.arm64' to imported libraries...
+  [/System/Library/Frameworks/CloudKit.framework/Versions/A/CloudKit] -> not found in project
+  [/System/Library/Frameworks/StoreKit.framework/Versions/A/StoreKit] -> not found in project
+  [/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation] -> not found in project
+  [/usr/lib/libobjc.A.dylib] -> not found in project
+  [/usr/lib/libSystem.B.dylib] -> not found in project
+  [/System/Library/Frameworks/AVFAudio.framework/Versions/A/AVFAudio] -> not found in project
+  [/System/Library/Frameworks/AVFoundation.framework/Versions/A/AVFoundation] -> not found in project
+  [/System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate] -> not found in project
+  [/System/Library/Frameworks/AdServices.framework/Versions/A/AdServices] -> not found in project
+  [/System/Library/Frameworks/AppIntents.framework/Versions/A/AppIntents] -> not found in project
+  [/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit] -> not found in project
+  [/System/Library/Frameworks/ApplicationServices.framework/Versions/A/ApplicationServices] -> not found in project
+  [/System/Library/Frameworks/Carbon.framework/Versions/A/Carbon] -> not found in project
+  [/System/Library/Frameworks/Combine.framework/Versions/A/Combine] -> not found in project
+  [/System/Library/Frameworks/CoreData.framework/Versions/A/CoreData] -> not found in project
+  [/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation] -> not found in project
+  [/System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics] -> not found in project
+  [/System/Library/Frameworks/CoreImage.framework/Versions/A/CoreImage] -> not found in project
+  [/System/Library/Frameworks/CoreServices.framework/Versions/A/CoreServices] -> not found in project
+  [/System/Library/Frameworks/CoreText.framework/Versions/A/CoreText] -> not found in project
+  [/System/Library/Frameworks/CoreVideo.framework/Versions/A/CoreVideo] -> not found in project
+  [/System/Library/Frameworks/CryptoKit.framework/Versions/A/CryptoKit] -> not found in project
+  [/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit] -> not found in project
+  [/System/Library/Frameworks/ImageIO.framework/Versions/A/ImageIO] -> not found in project
+  [/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/JavaScriptCore] -> not found in project
+  [/System/Library/Frameworks/LinkPresentation.framework/Versions/A/LinkPresentation] -> not found in project
+  [/System/Library/Frameworks/MultipeerConnectivity.framework/Versions/A/MultipeerConnectivity] -> not found in project
+  [/System/Library/Frameworks/PDFKit.framework/Versions/A/PDFKit] -> not found in project
+  [/System/Library/Frameworks/Photos.framework/Versions/A/Photos] -> not found in project
+  [/System/Library/Frameworks/QuartzCore.framework/Versions/A/QuartzCore] -> not found in project
+  [/System/Library/Frameworks/QuickLookThumbnailing.framework/Versions/A/QuickLookThumbnailing] -> not found in project
+  [/System/Library/Frameworks/QuickLookUI.framework/Versions/A/QuickLookUI] -> not found in project
+  [/System/Library/Frameworks/Security.framework/Versions/A/Security] -> not found in project
+  [/System/Library/Frameworks/ServiceManagement.framework/Versions/A/ServiceManagement] -> not found in project
+  [/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI] -> not found in project
+  [/System/Library/Frameworks/Symbols.framework/Versions/A/Symbols] -> not found in project
+  [/System/Library/Frameworks/Vision.framework/Versions/A/Vision] -> not found in project
+  [/System/Library/Frameworks/WebKit.framework/Versions/A/WebKit] -> not found in project
+  [/System/Library/Frameworks/WidgetKit.framework/Versions/A/WidgetKit] -> not found in project
+  [/System/Library/Frameworks/_AppIntents_AppKit.framework/Versions/A/_AppIntents_AppKit] -> not found in project
+  [/System/Library/Frameworks/_AppIntents_SwiftUI.framework/Versions/A/_AppIntents_SwiftUI] -> not found in project
+  [/System/Library/Frameworks/_StoreKit_SwiftUI.framework/Versions/A/_StoreKit_SwiftUI] -> not found in project
+  [/usr/lib/libc++.1.dylib] -> not found in project
+  [/usr/lib/libsqlite3.dylib] -> not found in project
+  [/usr/lib/swift/libswiftAVFoundation.dylib] -> not found in project
+  [/usr/lib/swift/libswiftAccelerate.dylib] -> not found in project
+  [/usr/lib/swift/libswiftCore.dylib] -> not found in project
+  [/usr/lib/swift/libswiftCoreAudio.dylib] -> not found in project
+  [/usr/lib/swift/libswiftCoreFoundation.dylib] -> not found in project
+  [/usr/lib/swift/libswiftCoreImage.dylib] -> not found in project
+  [/usr/lib/swift/libswiftCoreLocation.dylib] -> not found in project
+  [/usr/lib/swift/libswiftCoreMIDI.dylib] -> not found in project
+  [/usr/lib/swift/libswiftCoreMedia.dylib] -> not found in project
+  [/usr/lib/swift/libswiftDarwin.dylib] -> not found in project
+  [/usr/lib/swift/libswiftDispatch.dylib] -> not found in project
+  [/usr/lib/swift/libswiftIOKit.dylib] -> not found in project
+  [/usr/lib/swift/libswiftIntents.dylib] -> not found in project
+  [/usr/lib/swift/libswiftMapKit.dylib] -> not found in project
+  [/usr/lib/swift/libswiftMetal.dylib] -> not found in project
+  [/usr/lib/swift/libswiftOSLog.dylib] -> not found in project
+  [/usr/lib/swift/libswiftObjectiveC.dylib] -> not found in project
+  [/usr/lib/swift/libswiftQuartzCore.dylib] -> not found in project
+  [/usr/lib/swift/libswiftQuickLookUI.dylib] -> not found in project
+  [/usr/lib/swift/libswiftSpatial.dylib] -> not found in project
+  [/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib] -> not found in project
+  [/usr/lib/swift/libswiftXPC.dylib] -> not found in project
+  [/usr/lib/swift/libswift_Concurrency.dylib] -> not found in project
+  [/usr/lib/swift/libswiftos.dylib] -> not found in project
+  [/usr/lib/swift/libswiftsimd.dylib] -> not found in project
+  [/usr/lib/swift/libswiftCloudKit.dylib] -> not found in project
+  [/usr/lib/swift/libswiftFoundation.dylib] -> not found in project
+  [/usr/lib/swift/libswiftAppKit.dylib] -> not found in project
+  [/usr/lib/swift/libswiftCoreData.dylib] -> not found in project
+  [/usr/lib/swift/libswiftCoreGraphics.dylib] -> not found in project
+  [/usr/lib/swift/libswiftNetwork.dylib] -> not found in project
+  [/usr/lib/swift/libswiftPhotosUI.dylib] -> not found in project
+------------------------------------------------
+
+  
+2026-10-14 14:30:15 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-10-14 14:30:15 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///private/var/folders/t0/r52spm717rn77wnlkbydt2vw0000gn/T/rea-ghidra-6XmrvT/target-7ee43a4a8437.arm64  
+2026-10-14 14:30:18 ERROR (ObjcUtils) Unhandled method signature: Unsupported Objective C type encoding: < java.lang.UnsupportedOperationException: Unsupported Objective C type encoding: <
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.createProperDataType(Objc1TypeEncodings.java:423)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.parseDataType(Objc1TypeEncodings.java:214)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.processMethodSignature(Objc1TypeEncodings.java:130)
+	at ghidra.app.util.bin.format.objc.ObjcUtils.createMethods(ObjcUtils.java:328)
+	at ghidra.app.util.bin.format.objc.objc2.Objc2TypeMetadata.applyTo(Objc2TypeMetadata.java:332)
+	at ghidra.app.plugin.core.analysis.ObjcTypeMetadataAnalyzer.added(ObjcTypeMetadataAnalyzer.java:61)
+	at ghidra.app.plugin.core.analysis.AnalysisScheduler.runAnalyzer(AnalysisScheduler.java:186)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:37)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:24)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager$AnalysisTaskWrapper.run(AutoAnalysisManager.java:660)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:760)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:639)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:604)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1052)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileWithImport(HeadlessAnalyzer.java:1591)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithLoader(HeadlessAnalyzer.java:1751)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1692)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1776)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:452)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:199)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:81)
+	at ghidra.Ghidra.main(Ghidra.java:54)
+ 
+2026-10-14 14:30:19 ERROR (ObjcUtils) Unhandled method signature: Unsupported Objective C type encoding: < java.lang.UnsupportedOperationException: Unsupported Objective C type encoding: <
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.createProperDataType(Objc1TypeEncodings.java:423)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.parseDataType(Objc1TypeEncodings.java:214)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.processMethodSignature(Objc1TypeEncodings.java:130)
+	at ghidra.app.util.bin.format.objc.ObjcUtils.createMethods(ObjcUtils.java:328)
+	at ghidra.app.util.bin.format.objc.objc2.Objc2TypeMetadata.applyTo(Objc2TypeMetadata.java:332)
+	at ghidra.app.plugin.core.analysis.ObjcTypeMetadataAnalyzer.added(ObjcTypeMetadataAnalyzer.java:61)
+	at ghidra.app.plugin.core.analysis.AnalysisScheduler.runAnalyzer(AnalysisScheduler.java:186)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:37)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:24)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager$AnalysisTaskWrapper.run(AutoAnalysisManager.java:660)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:760)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:639)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:604)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1052)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileWithImport(HeadlessAnalyzer.java:1591)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithLoader(HeadlessAnalyzer.java:1751)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1692)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1776)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:452)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:199)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:81)
+	at ghidra.Ghidra.main(Ghidra.java:54)
+ 
+2026-10-14 14:30:19 ERROR (ObjcUtils) Unhandled method signature: Unsupported Objective C type encoding: < java.lang.UnsupportedOperationException: Unsupported Objective C type encoding: <
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.createProperDataType(Objc1TypeEncodings.java:423)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.parseDataType(Objc1TypeEncodings.java:214)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.processMethodSignature(Objc1TypeEncodings.java:130)
+	at ghidra.app.util.bin.format.objc.ObjcUtils.createMethods(ObjcUtils.java:328)
+	at ghidra.app.util.bin.format.objc.objc2.Objc2TypeMetadata.applyTo(Objc2TypeMetadata.java:332)
+	at ghidra.app.plugin.core.analysis.ObjcTypeMetadataAnalyzer.added(ObjcTypeMetadataAnalyzer.java:61)
+	at ghidra.app.plugin.core.analysis.AnalysisScheduler.runAnalyzer(AnalysisScheduler.java:186)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:37)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:24)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager$AnalysisTaskWrapper.run(AutoAnalysisManager.java:660)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:760)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:639)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:604)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1052)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileWithImport(HeadlessAnalyzer.java:1591)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithLoader(HeadlessAnalyzer.java:1751)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1692)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1776)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:452)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:199)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:81)
+	at ghidra.Ghidra.main(Ghidra.java:54)
+ 
+2026-10-14 14:30:20 ERROR (ObjcUtils) Unhandled method signature: Unsupported Objective C type encoding: < java.lang.UnsupportedOperationException: Unsupported Objective C type encoding: <
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.createProperDataType(Objc1TypeEncodings.java:423)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.parseDataType(Objc1TypeEncodings.java:214)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.processMethodSignature(Objc1TypeEncodings.java:130)
+	at ghidra.app.util.bin.format.objc.ObjcUtils.createMethods(ObjcUtils.java:328)
+	at ghidra.app.util.bin.format.objc.objc2.Objc2TypeMetadata.applyTo(Objc2TypeMetadata.java:332)
+	at ghidra.app.plugin.core.analysis.ObjcTypeMetadataAnalyzer.added(ObjcTypeMetadataAnalyzer.java:61)
+	at ghidra.app.plugin.core.analysis.AnalysisScheduler.runAnalyzer(AnalysisScheduler.java:186)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:37)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:24)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager$AnalysisTaskWrapper.run(AutoAnalysisManager.java:660)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:760)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:639)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:604)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1052)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileWithImport(HeadlessAnalyzer.java:1591)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithLoader(HeadlessAnalyzer.java:1751)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1692)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1776)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:452)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:199)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:81)
+	at ghidra.Ghidra.main(Ghidra.java:54)
+ 
+2026-10-14 14:30:20 ERROR (ObjcUtils) Unhandled method signature: Unsupported Objective C type encoding: < java.lang.UnsupportedOperationException: Unsupported Objective C type encoding: <
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.createProperDataType(Objc1TypeEncodings.java:423)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.parseDataType(Objc1TypeEncodings.java:214)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.processMethodSignature(Objc1TypeEncodings.java:130)
+	at ghidra.app.util.bin.format.objc.ObjcUtils.createMethods(ObjcUtils.java:328)
+	at ghidra.app.util.bin.format.objc.objc2.Objc2TypeMetadata.applyTo(Objc2TypeMetadata.java:332)
+	at ghidra.app.plugin.core.analysis.ObjcTypeMetadataAnalyzer.added(ObjcTypeMetadataAnalyzer.java:61)
+	at ghidra.app.plugin.core.analysis.AnalysisScheduler.runAnalyzer(AnalysisScheduler.java:186)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:37)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:24)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager$AnalysisTaskWrapper.run(AutoAnalysisManager.java:660)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:760)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:639)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:604)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1052)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileWithImport(HeadlessAnalyzer.java:1591)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithLoader(HeadlessAnalyzer.java:1751)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1692)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1776)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:452)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:199)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:81)
+	at ghidra.Ghidra.main(Ghidra.java:54)
+ 
+2026-10-14 14:30:20 ERROR (ObjcUtils) Unhandled method signature: Unsupported Objective C type encoding: < java.lang.UnsupportedOperationException: Unsupported Objective C type encoding: <
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.createProperDataType(Objc1TypeEncodings.java:423)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.parseDataType(Objc1TypeEncodings.java:214)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.processMethodSignature(Objc1TypeEncodings.java:130)
+	at ghidra.app.util.bin.format.objc.ObjcUtils.createMethods(ObjcUtils.java:328)
+	at ghidra.app.util.bin.format.objc.objc2.Objc2TypeMetadata.applyTo(Objc2TypeMetadata.java:332)
+	at ghidra.app.plugin.core.analysis.ObjcTypeMetadataAnalyzer.added(ObjcTypeMetadataAnalyzer.java:61)
+	at ghidra.app.plugin.core.analysis.AnalysisScheduler.runAnalyzer(AnalysisScheduler.java:186)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:37)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:24)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager$AnalysisTaskWrapper.run(AutoAnalysisManager.java:660)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:760)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:639)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:604)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1052)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileWithImport(HeadlessAnalyzer.java:1591)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithLoader(HeadlessAnalyzer.java:1751)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1692)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1776)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:452)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:199)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:81)
+	at ghidra.Ghidra.main(Ghidra.java:54)
+ 
+2026-10-14 14:30:20 ERROR (ObjcUtils) Unhandled method signature: Unsupported Objective C type encoding: < java.lang.UnsupportedOperationException: Unsupported Objective C type encoding: <
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.createProperDataType(Objc1TypeEncodings.java:423)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.parseDataType(Objc1TypeEncodings.java:214)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.processMethodSignature(Objc1TypeEncodings.java:130)
+	at ghidra.app.util.bin.format.objc.ObjcUtils.createMethods(ObjcUtils.java:328)
+	at ghidra.app.util.bin.format.objc.objc2.Objc2TypeMetadata.applyTo(Objc2TypeMetadata.java:332)
+	at ghidra.app.plugin.core.analysis.ObjcTypeMetadataAnalyzer.added(ObjcTypeMetadataAnalyzer.java:61)
+	at ghidra.app.plugin.core.analysis.AnalysisScheduler.runAnalyzer(AnalysisScheduler.java:186)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:37)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:24)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager$AnalysisTaskWrapper.run(AutoAnalysisManager.java:660)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:760)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:639)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:604)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1052)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileWithImport(HeadlessAnalyzer.java:1591)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithLoader(HeadlessAnalyzer.java:1751)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1692)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1776)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:452)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:199)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:81)
+	at ghidra.Ghidra.main(Ghidra.java:54)
+ 
+2026-10-14 14:30:20 ERROR (ObjcUtils) Unhandled method signature: Unsupported Objective C type encoding: < java.lang.UnsupportedOperationException: Unsupported Objective C type encoding: <
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.createProperDataType(Objc1TypeEncodings.java:423)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.parseDataType(Objc1TypeEncodings.java:214)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.processMethodSignature(Objc1TypeEncodings.java:130)
+	at ghidra.app.util.bin.format.objc.ObjcUtils.createMethods(ObjcUtils.java:328)
+	at ghidra.app.util.bin.format.objc.objc2.Objc2TypeMetadata.applyTo(Objc2TypeMetadata.java:332)
+	at ghidra.app.plugin.core.analysis.ObjcTypeMetadataAnalyzer.added(ObjcTypeMetadataAnalyzer.java:61)
+	at ghidra.app.plugin.core.analysis.AnalysisScheduler.runAnalyzer(AnalysisScheduler.java:186)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:37)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:24)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager$AnalysisTaskWrapper.run(AutoAnalysisManager.java:660)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:760)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:639)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:604)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1052)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileWithImport(HeadlessAnalyzer.java:1591)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithLoader(HeadlessAnalyzer.java:1751)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1692)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1776)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:452)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:199)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:81)
+	at ghidra.Ghidra.main(Ghidra.java:54)
+ 
+2026-10-14 14:30:20 ERROR (ObjcUtils) Unhandled method signature: Unsupported Objective C type encoding: < java.lang.UnsupportedOperationException: Unsupported Objective C type encoding: <
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.createProperDataType(Objc1TypeEncodings.java:423)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.parseDataType(Objc1TypeEncodings.java:214)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.processMethodSignature(Objc1TypeEncodings.java:130)
+	at ghidra.app.util.bin.format.objc.ObjcUtils.createMethods(ObjcUtils.java:328)
+	at ghidra.app.util.bin.format.objc.objc2.Objc2TypeMetadata.applyTo(Objc2TypeMetadata.java:332)
+	at ghidra.app.plugin.core.analysis.ObjcTypeMetadataAnalyzer.added(ObjcTypeMetadataAnalyzer.java:61)
+	at ghidra.app.plugin.core.analysis.AnalysisScheduler.runAnalyzer(AnalysisScheduler.java:186)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:37)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:24)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager$AnalysisTaskWrapper.run(AutoAnalysisManager.java:660)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:760)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:639)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:604)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1052)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileWithImport(HeadlessAnalyzer.java:1591)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithLoader(HeadlessAnalyzer.java:1751)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1692)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1776)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:452)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:199)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:81)
+	at ghidra.Ghidra.main(Ghidra.java:54)
+ 
+2026-10-14 14:30:20 ERROR (ObjcUtils) Unhandled method signature: Unsupported Objective C type encoding: < java.lang.UnsupportedOperationException: Unsupported Objective C type encoding: <
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.createProperDataType(Objc1TypeEncodings.java:423)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.parseDataType(Objc1TypeEncodings.java:214)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.processMethodSignature(Objc1TypeEncodings.java:130)
+	at ghidra.app.util.bin.format.objc.ObjcUtils.createMethods(ObjcUtils.java:328)
+	at ghidra.app.util.bin.format.objc.objc2.Objc2TypeMetadata.applyTo(Objc2TypeMetadata.java:332)
+	at ghidra.app.plugin.core.analysis.ObjcTypeMetadataAnalyzer.added(ObjcTypeMetadataAnalyzer.java:61)
+	at ghidra.app.plugin.core.analysis.AnalysisScheduler.runAnalyzer(AnalysisScheduler.java:186)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:37)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:24)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager$AnalysisTaskWrapper.run(AutoAnalysisManager.java:660)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:760)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:639)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:604)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1052)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileWithImport(HeadlessAnalyzer.java:1591)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithLoader(HeadlessAnalyzer.java:1751)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1692)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1776)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:452)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:199)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:81)
+	at ghidra.Ghidra.main(Ghidra.java:54)
+ 
+2026-10-14 14:30:21 ERROR (ObjcUtils) Unhandled method signature: Unsupported Objective C type encoding: < java.lang.UnsupportedOperationException: Unsupported Objective C type encoding: <
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.createProperDataType(Objc1TypeEncodings.java:423)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.parseDataType(Objc1TypeEncodings.java:214)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.processMethodSignature(Objc1TypeEncodings.java:130)
+	at ghidra.app.util.bin.format.objc.ObjcUtils.createMethods(ObjcUtils.java:328)
+	at ghidra.app.util.bin.format.objc.objc2.Objc2TypeMetadata.applyTo(Objc2TypeMetadata.java:332)
+	at ghidra.app.plugin.core.analysis.ObjcTypeMetadataAnalyzer.added(ObjcTypeMetadataAnalyzer.java:61)
+	at ghidra.app.plugin.core.analysis.AnalysisScheduler.runAnalyzer(AnalysisScheduler.java:186)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:37)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:24)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager$AnalysisTaskWrapper.run(AutoAnalysisManager.java:660)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:760)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:639)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:604)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1052)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileWithImport(HeadlessAnalyzer.java:1591)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithLoader(HeadlessAnalyzer.java:1751)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1692)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1776)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:452)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:199)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:81)
+	at ghidra.Ghidra.main(Ghidra.java:54)
+ 
+2026-10-14 14:30:21 ERROR (ObjcUtils) Unhandled method signature: Unsupported Objective C type encoding: < java.lang.UnsupportedOperationException: Unsupported Objective C type encoding: <
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.createProperDataType(Objc1TypeEncodings.java:423)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.parseDataType(Objc1TypeEncodings.java:214)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.processMethodSignature(Objc1TypeEncodings.java:130)
+	at ghidra.app.util.bin.format.objc.ObjcUtils.createMethods(ObjcUtils.java:328)
+	at ghidra.app.util.bin.format.objc.objc2.Objc2TypeMetadata.applyTo(Objc2TypeMetadata.java:332)
+	at ghidra.app.plugin.core.analysis.ObjcTypeMetadataAnalyzer.added(ObjcTypeMetadataAnalyzer.java:61)
+	at ghidra.app.plugin.core.analysis.AnalysisScheduler.runAnalyzer(AnalysisScheduler.java:186)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:37)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:24)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager$AnalysisTaskWrapper.run(AutoAnalysisManager.java:660)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:760)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:639)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:604)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1052)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileWithImport(HeadlessAnalyzer.java:1591)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithLoader(HeadlessAnalyzer.java:1751)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1692)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1776)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:452)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:199)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:81)
+	at ghidra.Ghidra.main(Ghidra.java:54)
+ 
+2026-10-14 14:30:21 ERROR (ObjcUtils) Unhandled method signature: Unsupported Objective C type encoding: < java.lang.UnsupportedOperationException: Unsupported Objective C type encoding: <
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.createProperDataType(Objc1TypeEncodings.java:423)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.parseDataType(Objc1TypeEncodings.java:214)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.processMethodSignature(Objc1TypeEncodings.java:130)
+	at ghidra.app.util.bin.format.objc.ObjcUtils.createMethods(ObjcUtils.java:328)
+	at ghidra.app.util.bin.format.objc.objc2.Objc2TypeMetadata.applyTo(Objc2TypeMetadata.java:332)
+	at ghidra.app.plugin.core.analysis.ObjcTypeMetadataAnalyzer.added(ObjcTypeMetadataAnalyzer.java:61)
+	at ghidra.app.plugin.core.analysis.AnalysisScheduler.runAnalyzer(AnalysisScheduler.java:186)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:37)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:24)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager$AnalysisTaskWrapper.run(AutoAnalysisManager.java:660)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:760)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:639)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:604)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1052)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileWithImport(HeadlessAnalyzer.java:1591)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithLoader(HeadlessAnalyzer.java:1751)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1692)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1776)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:452)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:199)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:81)
+	at ghidra.Ghidra.main(Ghidra.java:54)
+ 
+2026-10-14 14:30:21 ERROR (ObjcUtils) Unhandled method signature: Unsupported Objective C type encoding: < java.lang.UnsupportedOperationException: Unsupported Objective C type encoding: <
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.createProperDataType(Objc1TypeEncodings.java:423)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.parseDataType(Objc1TypeEncodings.java:214)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.processMethodSignature(Objc1TypeEncodings.java:130)
+	at ghidra.app.util.bin.format.objc.ObjcUtils.createMethods(ObjcUtils.java:328)
+	at ghidra.app.util.bin.format.objc.objc2.Objc2TypeMetadata.applyTo(Objc2TypeMetadata.java:332)
+	at ghidra.app.plugin.core.analysis.ObjcTypeMetadataAnalyzer.added(ObjcTypeMetadataAnalyzer.java:61)
+	at ghidra.app.plugin.core.analysis.AnalysisScheduler.runAnalyzer(AnalysisScheduler.java:186)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:37)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:24)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager$AnalysisTaskWrapper.run(AutoAnalysisManager.java:660)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:760)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:639)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:604)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1052)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileWithImport(HeadlessAnalyzer.java:1591)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithLoader(HeadlessAnalyzer.java:1751)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1692)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1776)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:452)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:199)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:81)
+	at ghidra.Ghidra.main(Ghidra.java:54)
+ 
+2026-10-14 14:30:21 ERROR (ObjcUtils) Unhandled method signature: Unsupported Objective C type encoding: < java.lang.UnsupportedOperationException: Unsupported Objective C type encoding: <
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.createProperDataType(Objc1TypeEncodings.java:423)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.parseDataType(Objc1TypeEncodings.java:214)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.processMethodSignature(Objc1TypeEncodings.java:130)
+	at ghidra.app.util.bin.format.objc.ObjcUtils.createMethods(ObjcUtils.java:328)
+	at ghidra.app.util.bin.format.objc.objc2.Objc2TypeMetadata.applyTo(Objc2TypeMetadata.java:332)
+	at ghidra.app.plugin.core.analysis.ObjcTypeMetadataAnalyzer.added(ObjcTypeMetadataAnalyzer.java:61)
+	at ghidra.app.plugin.core.analysis.AnalysisScheduler.runAnalyzer(AnalysisScheduler.java:186)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:37)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:24)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager$AnalysisTaskWrapper.run(AutoAnalysisManager.java:660)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:760)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:639)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:604)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1052)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileWithImport(HeadlessAnalyzer.java:1591)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithLoader(HeadlessAnalyzer.java:1751)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1692)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1776)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:452)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:199)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:81)
+	at ghidra.Ghidra.main(Ghidra.java:54)
+ 
+2026-10-14 14:30:22 ERROR (ObjcUtils) Unhandled method signature: Unsupported Objective C type encoding: < java.lang.UnsupportedOperationException: Unsupported Objective C type encoding: <
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.createProperDataType(Objc1TypeEncodings.java:423)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.parseDataType(Objc1TypeEncodings.java:214)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.processMethodSignature(Objc1TypeEncodings.java:130)
+	at ghidra.app.util.bin.format.objc.ObjcUtils.createMethods(ObjcUtils.java:328)
+	at ghidra.app.util.bin.format.objc.objc2.Objc2TypeMetadata.applyTo(Objc2TypeMetadata.java:332)
+	at ghidra.app.plugin.core.analysis.ObjcTypeMetadataAnalyzer.added(ObjcTypeMetadataAnalyzer.java:61)
+	at ghidra.app.plugin.core.analysis.AnalysisScheduler.runAnalyzer(AnalysisScheduler.java:186)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:37)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:24)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager$AnalysisTaskWrapper.run(AutoAnalysisManager.java:660)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:760)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:639)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:604)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1052)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileWithImport(HeadlessAnalyzer.java:1591)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithLoader(HeadlessAnalyzer.java:1751)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1692)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1776)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:452)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:199)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:81)
+	at ghidra.Ghidra.main(Ghidra.java:54)
+ 
+2026-10-14 14:30:22 ERROR (ObjcUtils) Unhandled method signature: Unsupported Objective C type encoding: < java.lang.UnsupportedOperationException: Unsupported Objective C type encoding: <
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.createProperDataType(Objc1TypeEncodings.java:423)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.parseDataType(Objc1TypeEncodings.java:214)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.processMethodSignature(Objc1TypeEncodings.java:130)
+	at ghidra.app.util.bin.format.objc.ObjcUtils.createMethods(ObjcUtils.java:328)
+	at ghidra.app.util.bin.format.objc.objc2.Objc2TypeMetadata.applyTo(Objc2TypeMetadata.java:332)
+	at ghidra.app.plugin.core.analysis.ObjcTypeMetadataAnalyzer.added(ObjcTypeMetadataAnalyzer.java:61)
+	at ghidra.app.plugin.core.analysis.AnalysisScheduler.runAnalyzer(AnalysisScheduler.java:186)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:37)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:24)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager$AnalysisTaskWrapper.run(AutoAnalysisManager.java:660)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:760)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:639)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:604)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1052)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileWithImport(HeadlessAnalyzer.java:1591)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithLoader(HeadlessAnalyzer.java:1751)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1692)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1776)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:452)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:199)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:81)
+	at ghidra.Ghidra.main(Ghidra.java:54)
+ 
+2026-10-14 14:30:22 ERROR (ObjcUtils) Unhandled method signature: Unsupported Objective C type encoding: < java.lang.UnsupportedOperationException: Unsupported Objective C type encoding: <
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.createProperDataType(Objc1TypeEncodings.java:423)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.parseDataType(Objc1TypeEncodings.java:214)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.processMethodSignature(Objc1TypeEncodings.java:130)
+	at ghidra.app.util.bin.format.objc.ObjcUtils.createMethods(ObjcUtils.java:328)
+	at ghidra.app.util.bin.format.objc.objc2.Objc2TypeMetadata.applyTo(Objc2TypeMetadata.java:332)
+	at ghidra.app.plugin.core.analysis.ObjcTypeMetadataAnalyzer.added(ObjcTypeMetadataAnalyzer.java:61)
+	at ghidra.app.plugin.core.analysis.AnalysisScheduler.runAnalyzer(AnalysisScheduler.java:186)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:37)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:24)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager$AnalysisTaskWrapper.run(AutoAnalysisManager.java:660)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:760)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:639)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:604)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1052)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileWithImport(HeadlessAnalyzer.java:1591)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithLoader(HeadlessAnalyzer.java:1751)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1692)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1776)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:452)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:199)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:81)
+	at ghidra.Ghidra.main(Ghidra.java:54)
+ 
+2026-10-14 14:30:23 ERROR (ObjcUtils) Unhandled method signature: Unsupported Objective C type encoding: < java.lang.UnsupportedOperationException: Unsupported Objective C type encoding: <
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.createProperDataType(Objc1TypeEncodings.java:423)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.parseDataType(Objc1TypeEncodings.java:214)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.processMethodSignature(Objc1TypeEncodings.java:130)
+	at ghidra.app.util.bin.format.objc.ObjcUtils.createMethods(ObjcUtils.java:328)
+	at ghidra.app.util.bin.format.objc.objc2.Objc2TypeMetadata.applyTo(Objc2TypeMetadata.java:332)
+	at ghidra.app.plugin.core.analysis.ObjcTypeMetadataAnalyzer.added(ObjcTypeMetadataAnalyzer.java:61)
+	at ghidra.app.plugin.core.analysis.AnalysisScheduler.runAnalyzer(AnalysisScheduler.java:186)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:37)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:24)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager$AnalysisTaskWrapper.run(AutoAnalysisManager.java:660)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:760)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:639)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:604)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1052)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileWithImport(HeadlessAnalyzer.java:1591)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithLoader(HeadlessAnalyzer.java:1751)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1692)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1776)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:452)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:199)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:81)
+	at ghidra.Ghidra.main(Ghidra.java:54)
+ 
+2026-10-14 14:30:23 ERROR (ObjcUtils) Unhandled method signature: Unsupported Objective C type encoding: < java.lang.UnsupportedOperationException: Unsupported Objective C type encoding: <
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.createProperDataType(Objc1TypeEncodings.java:423)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.parseDataType(Objc1TypeEncodings.java:214)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.processMethodSignature(Objc1TypeEncodings.java:130)
+	at ghidra.app.util.bin.format.objc.ObjcUtils.createMethods(ObjcUtils.java:328)
+	at ghidra.app.util.bin.format.objc.objc2.Objc2TypeMetadata.applyTo(Objc2TypeMetadata.java:332)
+	at ghidra.app.plugin.core.analysis.ObjcTypeMetadataAnalyzer.added(ObjcTypeMetadataAnalyzer.java:61)
+	at ghidra.app.plugin.core.analysis.AnalysisScheduler.runAnalyzer(AnalysisScheduler.java:186)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:37)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:24)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager$AnalysisTaskWrapper.run(AutoAnalysisManager.java:660)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:760)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:639)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:604)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1052)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileWithImport(HeadlessAnalyzer.java:1591)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithLoader(HeadlessAnalyzer.java:1751)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1692)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1776)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:452)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:199)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:81)
+	at ghidra.Ghidra.main(Ghidra.java:54)
+ 
+2026-10-14 14:30:23 ERROR (ObjcUtils) Unhandled method signature: Unsupported Objective C type encoding: < java.lang.UnsupportedOperationException: Unsupported Objective C type encoding: <
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.createProperDataType(Objc1TypeEncodings.java:423)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.parseDataType(Objc1TypeEncodings.java:214)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.processMethodSignature(Objc1TypeEncodings.java:130)
+	at ghidra.app.util.bin.format.objc.ObjcUtils.createMethods(ObjcUtils.java:328)
+	at ghidra.app.util.bin.format.objc.objc2.Objc2TypeMetadata.applyTo(Objc2TypeMetadata.java:332)
+	at ghidra.app.plugin.core.analysis.ObjcTypeMetadataAnalyzer.added(ObjcTypeMetadataAnalyzer.java:61)
+	at ghidra.app.plugin.core.analysis.AnalysisScheduler.runAnalyzer(AnalysisScheduler.java:186)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:37)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:24)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager$AnalysisTaskWrapper.run(AutoAnalysisManager.java:660)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:760)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:639)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:604)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1052)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileWithImport(HeadlessAnalyzer.java:1591)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithLoader(HeadlessAnalyzer.java:1751)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1692)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1776)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:452)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:199)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:81)
+	at ghidra.Ghidra.main(Ghidra.java:54)
+ 
+2026-10-14 14:30:23 ERROR (ObjcUtils) Unhandled method signature: Unsupported Objective C type encoding: < java.lang.UnsupportedOperationException: Unsupported Objective C type encoding: <
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.createProperDataType(Objc1TypeEncodings.java:423)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.parseDataType(Objc1TypeEncodings.java:214)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.processMethodSignature(Objc1TypeEncodings.java:130)
+	at ghidra.app.util.bin.format.objc.ObjcUtils.createMethods(ObjcUtils.java:328)
+	at ghidra.app.util.bin.format.objc.objc2.Objc2TypeMetadata.applyTo(Objc2TypeMetadata.java:332)
+	at ghidra.app.plugin.core.analysis.ObjcTypeMetadataAnalyzer.added(ObjcTypeMetadataAnalyzer.java:61)
+	at ghidra.app.plugin.core.analysis.AnalysisScheduler.runAnalyzer(AnalysisScheduler.java:186)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:37)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:24)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager$AnalysisTaskWrapper.run(AutoAnalysisManager.java:660)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:760)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:639)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:604)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1052)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileWithImport(HeadlessAnalyzer.java:1591)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithLoader(HeadlessAnalyzer.java:1751)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1692)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1776)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:452)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:199)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:81)
+	at ghidra.Ghidra.main(Ghidra.java:54)
+ 
+2026-10-14 14:30:23 ERROR (ObjcUtils) Unhandled method signature: Unsupported Objective C type encoding: < java.lang.UnsupportedOperationException: Unsupported Objective C type encoding: <
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.createProperDataType(Objc1TypeEncodings.java:423)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.parseDataType(Objc1TypeEncodings.java:214)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.processMethodSignature(Objc1TypeEncodings.java:130)
+	at ghidra.app.util.bin.format.objc.ObjcUtils.createMethods(ObjcUtils.java:328)
+	at ghidra.app.util.bin.format.objc.objc2.Objc2TypeMetadata.applyTo(Objc2TypeMetadata.java:332)
+	at ghidra.app.plugin.core.analysis.ObjcTypeMetadataAnalyzer.added(ObjcTypeMetadataAnalyzer.java:61)
+	at ghidra.app.plugin.core.analysis.AnalysisScheduler.runAnalyzer(AnalysisScheduler.java:186)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:37)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:24)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager$AnalysisTaskWrapper.run(AutoAnalysisManager.java:660)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:760)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:639)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:604)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1052)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileWithImport(HeadlessAnalyzer.java:1591)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithLoader(HeadlessAnalyzer.java:1751)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1692)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1776)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:452)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:199)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:81)
+	at ghidra.Ghidra.main(Ghidra.java:54)
+ 
+2026-10-14 14:30:23 ERROR (ObjcUtils) Unhandled method signature: Unsupported Objective C type encoding: < java.lang.UnsupportedOperationException: Unsupported Objective C type encoding: <
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.createProperDataType(Objc1TypeEncodings.java:423)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.parseDataType(Objc1TypeEncodings.java:214)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.processMethodSignature(Objc1TypeEncodings.java:130)
+	at ghidra.app.util.bin.format.objc.ObjcUtils.createMethods(ObjcUtils.java:328)
+	at ghidra.app.util.bin.format.objc.objc2.Objc2TypeMetadata.applyTo(Objc2TypeMetadata.java:332)
+	at ghidra.app.plugin.core.analysis.ObjcTypeMetadataAnalyzer.added(ObjcTypeMetadataAnalyzer.java:61)
+	at ghidra.app.plugin.core.analysis.AnalysisScheduler.runAnalyzer(AnalysisScheduler.java:186)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:37)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:24)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager$AnalysisTaskWrapper.run(AutoAnalysisManager.java:660)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:760)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:639)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:604)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1052)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileWithImport(HeadlessAnalyzer.java:1591)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithLoader(HeadlessAnalyzer.java:1751)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1692)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1776)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:452)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:199)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:81)
+	at ghidra.Ghidra.main(Ghidra.java:54)
+ 
+2026-10-14 14:30:23 ERROR (ObjcUtils) Unhandled method signature: Unsupported Objective C type encoding: < java.lang.UnsupportedOperationException: Unsupported Objective C type encoding: <
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.createProperDataType(Objc1TypeEncodings.java:423)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.parseDataType(Objc1TypeEncodings.java:214)
+	at ghidra.app.util.bin.format.objc.objc1.Objc1TypeEncodings.processMethodSignature(Objc1TypeEncodings.java:130)
+	at ghidra.app.util.bin.format.objc.ObjcUtils.createMethods(ObjcUtils.java:328)
+	at ghidra.app.util.bin.format.objc.objc2.Objc2TypeMetadata.applyTo(Objc2TypeMetadata.java:332)
+	at ghidra.app.plugin.core.analysis.ObjcTypeMetadataAnalyzer.added(ObjcTypeMetadataAnalyzer.java:61)
+	at ghidra.app.plugin.core.analysis.AnalysisScheduler.runAnalyzer(AnalysisScheduler.java:186)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:37)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:24)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager$AnalysisTaskWrapper.run(AutoAnalysisManager.java:660)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:760)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:639)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:604)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1052)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileWithImport(HeadlessAnalyzer.java:1591)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithLoader(HeadlessAnalyzer.java:1751)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1692)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1776)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:452)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:199)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:81)
+	at ghidra.Ghidra.main(Ghidra.java:54)
+ 
+2026-10-14 14:30:26 ERROR (PngDataType) Invalid PNG data at 100b19d88  
+2026-10-14 14:30:29 INFO  (DecompilerSwitchAnalyzer) hit non-returning function, restarting decompiler switch analyzer later  
+2026-10-14 14:30:33 WARN  (DecompileCallback) Decompiling 1004523e0: Unable to read bytes at ram:aa04a50c  
+2026-10-14 14:30:35 WARN  (DecompileCallback) Decompiling 1006d9f08: Unable to read bytes at ram:aa2d2034  
+2026-10-14 14:31:10 WARN  (DecompileCallback) Decompiling 100887480: Unable to read bytes at ram:d18b3a24  
+2026-10-14 14:31:10 WARN  (DecompileCallback) Decompiling 1008203c4: Unable to read bytes at ram:aa3d6c68  
+2026-10-14 14:31:10 WARN  (DecompileCallback) Decompiling 1008203c4: Unable to read bytes at ram:aa3d6e8c  
+2026-10-14 14:31:11 WARN  (DecompileCallback) Decompiling 1004cbbc8: Unable to read bytes at ram:aa093258  
+2026-10-14 14:31:12 WARN  (DecompileCallback) Decompiling 100886ac4: Unable to read bytes at ram:aa43d3b4  
+2026-10-14 14:31:12 WARN  (DecompileCallback) Decompiling 100887a3c: Unable to read bytes at ram:d18a7fd4  
+2026-10-14 14:31:41 WARN  (DecompileCallback) Decompiling 1008203c4: Unable to read bytes at ram:aa3d6c68  
+2026-10-14 14:31:41 WARN  (DecompileCallback) Decompiling 1008203c4: Unable to read bytes at ram:aa3d6e8c  
+2026-10-14 14:31:42 WARN  (DecompileCallback) Decompiling 100886ac4: Unable to read bytes at ram:aa43d3b4  
+2026-10-14 14:32:03 ERROR (VarnodeContext) VarnodeContext: out of address spaces at @10087fa9c for: d16-10087fa9c  
+2026-10-14 14:32:06 ERROR (VarnodeContext) VarnodeContext: out of address spaces at @10085d0e4 for: d26-10085d0e4  
+2026-10-14 14:32:08 ERROR (VarnodeContext) VarnodeContext: out of address spaces at @1008634f0 for: x12-1008634f0  
+2026-10-14 14:32:08 ERROR (VarnodeContext) VarnodeContext: out of address spaces at @10083366c for: x10-10083366c  
+2026-10-14 14:32:10 ERROR (VarnodeContext) VarnodeContext: out of address spaces at @1008439d0 for: d16-1008439d0  
+2026-10-14 14:32:13 ERROR (VarnodeContext) VarnodeContext: out of address spaces at @100810b24 for: x8-100810b24  
+2026-10-14 14:32:18 ERROR (VarnodeContext) VarnodeContext: out of address spaces at @1008253a4 for: d25-1008253a4  
+2026-10-14 14:32:19 ERROR (VarnodeContext) VarnodeContext: out of address spaces at @1007f3c00 for: d31-1007f3c00  
+2026-10-14 14:32:21 ERROR (VarnodeContext) VarnodeContext: out of address spaces at @10084aeb4 for: x0-10084aeb4  
+2026-10-14 14:33:18 WARN  (DecompileCallback) Decompiling 1004523e0: Unable to read bytes at ram:aa04a50c  
+2026-10-14 14:33:20 WARN  (DecompileCallback) Decompiling 1004cbbc8: Unable to read bytes at ram:aa093258  
+2026-10-14 14:33:26 ERROR (InternalResultListener) Unexpected exception getting Decompiler result java.util.concurrent.ExecutionException: java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at generic.concurrent.QResult.<init>(QResult.java:40)
+	at generic.concurrent.FutureTaskMonitor.run(FutureTaskMonitor.java:77)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at ghidra.app.plugin.core.analysis.ObjcMessageAnalyzer.findMessages(ObjcMessageAnalyzer.java:324)
+	at ghidra.app.plugin.core.analysis.ObjcMessageAnalyzer.fixMsgSendCalls(ObjcMessageAnalyzer.java:370)
+	at ghidra.app.plugin.core.analysis.ObjcMessageAnalyzer$1.process(ObjcMessageAnalyzer.java:148)
+	at ghidra.app.plugin.core.analysis.ObjcMessageAnalyzer$1.process(ObjcMessageAnalyzer.java:145)
+	at ghidra.app.decompiler.parallel.DecompilerCallback.process(DecompilerCallback.java:80)
+	at ghidra.app.decompiler.parallel.DecompilerCallback.process(DecompilerCallback.java:41)
+	at generic.concurrent.ConcurrentQ$CallbackCallable.call(ConcurrentQ.java:706)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at generic.concurrent.FutureTaskMonitor.run(FutureTaskMonitor.java:75)
+	... 3 more
+ 
+2026-10-14 14:33:35 ERROR (InternalResultListener) Unexpected exception getting Decompiler result java.util.concurrent.ExecutionException: java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at generic.concurrent.QResult.<init>(QResult.java:40)
+	at generic.concurrent.FutureTaskMonitor.run(FutureTaskMonitor.java:77)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2
+	at ghidra.app.plugin.core.analysis.ObjcMessageAnalyzer.findMessages(ObjcMessageAnalyzer.java:325)
+	at ghidra.app.plugin.core.analysis.ObjcMessageAnalyzer.fixMsgSendCalls(ObjcMessageAnalyzer.java:370)
+	at ghidra.app.plugin.core.analysis.ObjcMessageAnalyzer$1.process(ObjcMessageAnalyzer.java:148)
+	at ghidra.app.plugin.core.analysis.ObjcMessageAnalyzer$1.process(ObjcMessageAnalyzer.java:145)
+	at ghidra.app.decompiler.parallel.DecompilerCallback.process(DecompilerCallback.java:80)
+	at ghidra.app.decompiler.parallel.DecompilerCallback.process(DecompilerCallback.java:41)
+	at generic.concurrent.ConcurrentQ$CallbackCallable.call(ConcurrentQ.java:706)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at generic.concurrent.FutureTaskMonitor.run(FutureTaskMonitor.java:75)
+	... 3 more
+ 
+2026-10-14 14:33:35 DEBUG (FidAnalyzer) No FID Libraries apply for language AARCH64:LE:64:AppleSilicon  
+2026-10-14 14:33:35 INFO  (PackedDatabaseCache) Packed database cache: /var/folders/t0/r52spm717rn77wnlkbydt2vw0000gn/T/rea-ghidra-6XmrvT/cache/luwenjie-ghidra/packed-db-cache  
+2026-10-14 14:33:35 DEBUG (PackedDatabaseCache) Caching packed database: /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/Base/data/typeinfo/mac_10.9/mac_osx.gdt  
+2026-10-14 14:33:35 DEBUG (PackedDatabase) Unpacking database /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/Base/data/typeinfo/mac_10.9/mac_osx.gdt -> /var/folders/t0/r52spm717rn77wnlkbydt2vw0000gn/T/rea-ghidra-6XmrvT/cache/luwenjie-ghidra/packed-db-cache/pdb0D10D78D/db.1.gbf  
+2026-10-14 14:33:35 DEBUG (PackedDatabaseCache) Cache update completed: /opt/homebrew/Cellar/ghidra/12.1.4/libexec/Ghidra/Features/Base/data/typeinfo/mac_10.9/mac_osx.gdt  
+2026-10-14 14:33:36 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: mac_osx  
+2026-10-14 14:33:51 ERROR (InternalResultListener) Unexpected exception getting Decompiler result java.util.concurrent.ExecutionException: java.lang.ArrayIndexOutOfBoundsException
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at generic.concurrent.QResult.<init>(QResult.java:40)
+	at generic.concurrent.FutureTaskMonitor.run(FutureTaskMonitor.java:77)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+ 
+2026-10-14 14:33:51 ERROR (InternalResultListener) Unexpected exception getting Decompiler result java.util.concurrent.ExecutionException: java.lang.ArrayIndexOutOfBoundsException
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at generic.concurrent.QResult.<init>(QResult.java:40)
+	at generic.concurrent.FutureTaskMonitor.run(FutureTaskMonitor.java:77)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+ 
