@@ -45,9 +45,14 @@ struct QuickPanelView: View {
         .onChange(of: collectionID) { _, _ in resetSelection() }
         .onChange(of: kind) { _, _ in resetSelection() }
         .onChange(of: pinnedOnly) { _, _ in resetSelection() }
-        .onChange(of: items.map(\.id)) { _, ids in
+        .onChange(of: items.map(\.id)) { oldIDs, ids in
             selectedIDs.formIntersection(ids)
-            if let focusedID, !ids.contains(focusedID) { resetSelection() }
+            guard let focusedID, !ids.contains(focusedID) else { return }
+            // 焦点卡片被删除时停在原位置的相邻卡片，而不是跳回第一条。
+            guard let neighbor = neighbor(of: focusedID, in: oldIDs, remaining: Set(ids)) else { resetSelection(); return }
+            self.focusedID = neighbor
+            if selectedIDs.isEmpty { selectedIDs = [neighbor] }
+            selectionAnchor = neighbor
         }
         .popover(item: $previewItem) { item in LibraryPreviewSheet(item: item, store: store) }
     }
@@ -214,6 +219,12 @@ struct QuickPanelView: View {
             }
             if vertical { Text("↩ 粘贴 · ⇧↩ 纯文本 · 空格预览 · Esc 关闭") }
         }.font(.system(size: 10)).foregroundStyle(.secondary).padding(.horizontal, 18).padding(.vertical, 11)
+    }
+
+    private func neighbor(of id: UUID, in oldIDs: [UUID], remaining: Set<UUID>) -> UUID? {
+        guard let index = oldIDs.firstIndex(of: id) else { return nil }
+        return oldIDs[(index + 1)...].first(where: remaining.contains)
+            ?? oldIDs[..<index].last(where: remaining.contains)
     }
 
     private func resetSelection() {
