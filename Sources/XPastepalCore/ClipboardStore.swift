@@ -72,6 +72,8 @@ public final class ClipboardStore {
     @ObservationIgnored private var syncGeneration = 0
     @ObservationIgnored private var retrySyncAfter = Date.distantPast
     @ObservationIgnored private var syncFailures = 0
+    /// 推迟重排的记录，按复制先后排列，用于同一时间戳下决定先后。
+    @ObservationIgnored private var deferredReorderIDs: [UUID] = []
 
     /// 直接保留剪贴板原始数据，避免在主线程解码或重新压缩图片。
     private static let maximumPayloadBytes = 25 * 1_024 * 1_024
@@ -195,8 +197,9 @@ public final class ClipboardStore {
         save()
     }
 
+    /// `reorder` 为 false 时只更新使用时间，位置调整推迟到 `applyDeferredReorder()`。
     @discardableResult
-    public func copy(_ item: ClipItem, plainText: Bool = false) -> Bool {
+    public func copy(_ item: ClipItem, plainText: Bool = false, reorder: Bool = true) -> Bool {
         let content = items.first(where: { $0.id == item.id }) ?? item
         let boardItem = NSPasteboardItem()
         if plainText {
@@ -210,7 +213,7 @@ public final class ClipboardStore {
                 pasteboard.clearContents()
                 let success = pasteboard.writeObjects(urls)
                 lastChangeCount = pasteboard.changeCount
-                if success { markCopied(content) }
+                if success { markCopied(content, reorder: reorder) }
                 return success
             case .image:
                 guard let data = content.imageData, !data.isEmpty else { return false }
@@ -224,7 +227,7 @@ public final class ClipboardStore {
         pasteboard.clearContents()
         let success = pasteboard.writeObjects([boardItem])
         lastChangeCount = pasteboard.changeCount
-        if success { markCopied(content) }
+        if success { markCopied(content, reorder: reorder) }
         return success
     }
 
@@ -330,12 +333,12 @@ public final class ClipboardStore {
 
     /// 多选文本按传入顺序连接，一次性写入剪贴板，不产生重复采集。
     @discardableResult
-    public func copyItems(_ selectedItems: [ClipItem], separator: String = "\n") -> Bool {
+    public func copyItems(_ selectedItems: [ClipItem], separator: String = "\n", reorder: Bool = true) -> Bool {
         var seen = Set<UUID>()
         let currentByID = Dictionary(items.map { ($0.id, $0) }, uniquingKeysWith: { first, _ in first })
         let content = selectedItems.filter { seen.insert($0.id).inserted }.map { currentByID[$0.id] ?? $0 }
         guard !content.isEmpty else { return false }
-        if content.count == 1 { return copy(content[0]) }
+        if content.count == 1 { return copy(content[0], reorder: reorder) }
         guard content.allSatisfy({ [.text, .link].contains($0.kind) }) else {
             errorMessage = "合并复制仅支持文本和链接"
             return false
@@ -354,13 +357,20 @@ public final class ClipboardStore {
         guard success else { errorMessage = "无法写入剪贴板"; return false }
         let ids = Set(content.map(\.id))
         let now = Date()
-        let updated = content.filter { currentByID[$0.id] != nil }.map { value in
-            var item = value
-            item.lastCopiedAt = now
-            return item
+        if reorder {
+            let updated = content.filter { currentByID[$0.id] != nil }.map { value in
+                var item = value
+                item.lastCopiedAt = now
+                return item
+            }
+            items.removeAll { ids.contains($0.id) }
+            items.insert(contentsOf: updated, at: 0)
+        } else {
+            for index in items.indices where ids.contains(items[index].id) { items[index].lastCopiedAt = now }
+            // 同一时间戳按选择顺序排列，与立即重排的结果一致。
+            deferredReorderIDs.removeAll { ids.contains($0) }
+            deferredReorderIDs.insert(contentsOf: content.map(\.id), at: 0)
         }
-        items.removeAll { ids.contains($0.id) }
-        items.insert(contentsOf: updated, at: 0)
         save()
         lastAction = "已合并复制 \(content.count) 条记录"
         return true
@@ -830,11 +840,34 @@ public final class ClipboardStore {
         }
     }
 
-    private func markCopied(_ item: ClipItem) {
+    /// 按最近使用时间应用之前推迟的排序；相同时间保持原有相对顺序。
+    public func applyDeferredReorder() {
+        guard !deferredReorderIDs.isEmpty else { return }
+        let ranks = Dictionary(deferredReorderIDs.enumerated().map { ($1, $0) }, uniquingKeysWith: { first, _ in first })
+        deferredReorderIDs = []
+        let sorted = items.enumerated().sorted { left, right in
+            guard left.element.lastCopiedAt == right.element.lastCopiedAt else {
+                return left.element.lastCopiedAt > right.element.lastCopiedAt
+            }
+            let leftRank = ranks[left.element.id] ?? .max, rightRank = ranks[right.element.id] ?? .max
+            return leftRank == rightRank ? left.offset < right.offset : leftRank < rightRank
+        }.map(\.element)
+        guard sorted.map(\.id) != items.map(\.id) else { return }
+        items = sorted
+        save()
+    }
+
+    private func markCopied(_ item: ClipItem, reorder: Bool = true) {
         if let index = items.firstIndex(where: { $0.id == item.id }) {
-            var updated = items.remove(at: index)
-            updated.lastCopiedAt = Date()
-            items.insert(updated, at: 0)
+            if reorder {
+                var updated = items.remove(at: index)
+                updated.lastCopiedAt = Date()
+                items.insert(updated, at: 0)
+            } else {
+                items[index].lastCopiedAt = Date()
+                deferredReorderIDs.removeAll { $0 == item.id }
+                deferredReorderIDs.insert(item.id, at: 0)
+            }
             save()
         }
         lastAction = "已复制到剪贴板"

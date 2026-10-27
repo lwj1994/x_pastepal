@@ -322,6 +322,27 @@ struct ClipboardStoreTests {
         }
     }
 
+    @Test("推迟重排的复制保持位置，应用后按最近使用排序")
+    func deferredReorderKeepsPositionUntilApplied() async throws {
+        try await withFixture { fixture in
+            for text in ["一", "二", "三", "四"] { fixture.record(text) }
+            let original = fixture.store.items
+            #expect(original.map(\.text) == ["四", "三", "二", "一"])
+
+            #expect(fixture.store.copy(original[2], reorder: false))
+            #expect(fixture.board.string(forType: .string) == "二")
+            #expect(fixture.store.items.map(\.text) == ["四", "三", "二", "一"])
+            fixture.store.applyDeferredReorder()
+            #expect(fixture.store.items.map(\.text) == ["二", "四", "三", "一"])
+
+            #expect(fixture.store.copyItems([original[3], original[1]], reorder: false))
+            #expect(fixture.board.string(forType: .string) == "一\n三")
+            #expect(fixture.store.items.map(\.text) == ["二", "四", "三", "一"])
+            fixture.store.applyDeferredReorder()
+            #expect(fixture.store.items.map(\.text) == ["一", "三", "二", "四"])
+        }
+    }
+
     @Test("导入合并 UUID 和内容，映射同名收藏夹，保留本机记录和设置")
     func importMergesWithoutReplacingLocalData() async throws {
         try await withFixture { fixture in

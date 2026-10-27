@@ -115,7 +115,7 @@ struct QuickPanelView: View {
             }.labelsHidden().frame(maxWidth: 110)
             Spacer(minLength: 0)
             if selectedIDs.count > 1 {
-                Button("复制 \(selectedIDs.count) 项") { store.copyItems(chosen) }.font(.caption)
+                Button("复制 \(selectedIDs.count) 项") { store.copyItems(chosen, reorder: false) }.font(.caption)
             }
             Text("\(items.count) 项").font(.caption).foregroundStyle(.secondary)
         }.controlSize(.small).padding(.horizontal, 18).padding(.bottom, 10)
@@ -155,7 +155,7 @@ struct QuickPanelView: View {
             .contextMenu {
                 Button("粘贴") { coordinator.paste(item) }
                 Button("粘贴为纯文本") { coordinator.paste(item, plainText: true) }.disabled(item.text.isEmpty)
-                Button("仅复制") { store.copy(item) }
+                Button("仅复制") { store.copy(item, reorder: false) }
                 Button("预览") { previewItem = item }
                 Divider()
                 Button { store.togglePin(item) } label: {
@@ -230,7 +230,7 @@ struct QuickPanelView: View {
         let command = flags.contains(.command)
         if command, let char = event.charactersIgnoringModifiers?.lowercased() {
             if char == "f" { searchFocused = true; return true }
-            if char == "c", !searchFocused { store.copyItems(chosen); return true }
+            if char == "c", !searchFocused { store.copyItems(chosen, reorder: false); return true }
             if char == "a", !searchFocused { selectedIDs = Set(items.map(\.id)); return true }
             if let number = Int(char), (1...9).contains(number), items.count >= number {
                 coordinator.paste(items[number - 1]); return true

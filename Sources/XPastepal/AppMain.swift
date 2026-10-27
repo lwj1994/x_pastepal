@@ -182,6 +182,7 @@ final class AppCoordinator: NSObject, NSApplicationDelegate, NSWindowDelegate {
 
     func showLibrary() {
         dismissPanel(animated: false)
+        store.applyDeferredReorder()
         if mainWindow == nil {
             let window = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 1180, height: 760),
                 styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView], backing: .buffered, defer: false)
@@ -224,6 +225,8 @@ final class AppCoordinator: NSObject, NSApplicationDelegate, NSWindowDelegate {
         pasteMessage = nil
         let screen = NSScreen.screens.first(where: { NSMouseInRect(NSEvent.mouseLocation, $0.frame, false) }) ?? NSScreen.main
         guard let screen else { return }
+        // 面板内复制不会立即调整顺序，留到下次打开时再按最近使用排序。
+        store.applyDeferredReorder()
         preparePanel(in: screen)
         // 先隐藏常规窗口，再交给面板接收键盘输入，避免资料库一起被带到前台。
         mainWindow?.orderOut(nil)
@@ -313,13 +316,13 @@ final class AppCoordinator: NSObject, NSApplicationDelegate, NSWindowDelegate {
     func pasteItems(_ items: [ClipItem], plainText: Bool = false) {
         guard !items.isEmpty else { return }
         if items.count == 1, let item = items.first { paste(item, plainText: plainText); return }
-        guard store.copyItems(items) else { pasteMessage = store.errorMessage; return }
+        guard store.copyItems(items, reorder: false) else { pasteMessage = store.errorMessage; return }
         finishPaste()
     }
 
     func paste(_ item: ClipItem, plainText: Bool = false) {
         let usePlainText = plainText || (panelPreferences.plainTextByDefault && (item.kind == .text || item.kind == .link))
-        guard store.copy(item, plainText: usePlainText) else { pasteMessage = store.errorMessage; return }
+        guard store.copy(item, plainText: usePlainText, reorder: false) else { pasteMessage = store.errorMessage; return }
         finishPaste()
     }
 
