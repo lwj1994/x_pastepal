@@ -24,6 +24,8 @@ final class AppCoordinator: NSObject, NSApplicationDelegate, NSWindowDelegate {
     var pasteMessage: String?
     /// 面板内短暂显示的提示，每次复制生成新 ID 以重新计时。
     private(set) var toast: PanelToast?
+    /// 每次打开快捷面板递增，面板据此回到第一条。
+    private(set) var panelPresentation = 0
     var shortcutLabel: String { shortcuts.shortcutLabel }
     @ObservationIgnored private var mainWindow: NSWindow?
     @ObservationIgnored private var settingsWindow: NSWindow?
@@ -230,6 +232,7 @@ final class AppCoordinator: NSObject, NSApplicationDelegate, NSWindowDelegate {
         guard let screen else { return }
         // 面板内复制不会立即调整顺序，留到下次打开时再按最近使用排序。
         store.applyDeferredReorder()
+        panelPresentation += 1
         preparePanel(in: screen)
         // 先隐藏常规窗口，再交给面板接收键盘输入，避免资料库一起被带到前台。
         mainWindow?.orderOut(nil)

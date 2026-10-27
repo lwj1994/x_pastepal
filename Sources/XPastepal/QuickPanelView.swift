@@ -40,6 +40,7 @@ struct QuickPanelView: View {
         .clipShape(RoundedRectangle(cornerRadius: 18))
         .background(PanelKeyboardMonitor(onKeyDown: handleKey))
         .onAppear { searchFocused = true; resetSelection() }
+        .onChange(of: coordinator.panelPresentation) { _, _ in resetSelection() }
         .onChange(of: query) { _, _ in resetSelection() }
         .onChange(of: collectionID) { _, _ in resetSelection() }
         .onChange(of: kind) { _, _ in resetSelection() }
@@ -145,6 +146,10 @@ struct QuickPanelView: View {
                 }
                 .onChange(of: focusedID) { _, id in
                     if let id { withAnimation(.easeOut(duration: 0.12)) { proxy.scrollTo(id) } }
+                }
+                // 重新打开时直接回到开头，焦点未变化时也要滚动。
+                .onChange(of: coordinator.panelPresentation) { _, _ in
+                    if let id = items.first?.id { proxy.scrollTo(id, anchor: vertical ? .top : .leading) }
                 }
             }
         }
