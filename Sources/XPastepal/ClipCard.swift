@@ -48,7 +48,10 @@ struct ClipCard: View {
     let item: ClipItem
     let isSelected: Bool
     let onSelect: () -> Void
+    /// 卡片上的复制按钮。
     let onCopy: () -> Void
+    /// 双击卡片；未指定时与复制按钮相同。
+    var onActivate: (() -> Void)?
     var aspectRatio: CGFloat = maximumAspectRatio
 
     @State private var isHovered = false
@@ -66,7 +69,7 @@ struct ClipCard: View {
             }
             .shadow(color: .black.opacity(isSelected ? 0.06 : 0.025), radius: 7, x: 0, y: 3)
             .contentShape(RoundedRectangle(cornerRadius: 14))
-            .clipClickActions(onSelect: onSelect, onActivate: onCopy)
+            .clipClickActions(onSelect: onSelect, onActivate: onActivate ?? onCopy)
             .onHover { isHovered = $0 }
             .accessibilityElement(children: .contain)
             .accessibilityLabel("\(ClipPresentation.label(for: item))，\(item.title)，来自\(item.sourceApp)")

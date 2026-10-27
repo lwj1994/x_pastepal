@@ -152,7 +152,8 @@ struct QuickPanelView: View {
 
     private func card(_ item: ClipItem, aspectRatio: CGFloat = ClipCard.maximumAspectRatio) -> some View {
         ClipCard(item: item, isSelected: selectedIDs.contains(item.id),
-                 onSelect: { select(item) }, onCopy: { coordinator.paste(item) }, aspectRatio: aspectRatio)
+                 onSelect: { select(item) }, onCopy: { coordinator.copy(item) },
+                 onActivate: { coordinator.paste(item) }, aspectRatio: aspectRatio)
             .id(item.id)
             .contextMenu {
                 Button("粘贴") { coordinator.paste(item) }
@@ -239,6 +240,11 @@ struct QuickPanelView: View {
         searchFocused = false
     }
 
+    private func hasSelectedSearchText(in window: NSWindow?) -> Bool {
+        guard searchFocused, let editor = window?.firstResponder as? NSTextView else { return false }
+        return editor.selectedRanges.contains { $0.rangeValue.length > 0 }
+    }
+
     private func handleKey(_ event: NSEvent) -> Bool {
         guard previewItem == nil else { return false }
         if let client = event.window?.firstResponder as? NSTextInputClient, client.hasMarkedText() { return false }
@@ -246,7 +252,11 @@ struct QuickPanelView: View {
         let command = flags.contains(.command)
         if command, let char = event.charactersIgnoringModifiers?.lowercased() {
             if char == "f" { searchFocused = true; return true }
-            if char == "c", !searchFocused { coordinator.copyItems(chosen); return true }
+            // 搜索框选中了文字时保留系统复制，否则复制当前选中的卡片。
+            if char == "c", !hasSelectedSearchText(in: event.window) {
+                guard !chosen.isEmpty else { return false }
+                coordinator.copyItems(chosen); return true
+            }
             if char == "a", !searchFocused { selectedIDs = Set(items.map(\.id)); return true }
             if let number = Int(char), (1...9).contains(number), items.count >= number {
                 coordinator.paste(items[number - 1]); return true
