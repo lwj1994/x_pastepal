@@ -35,6 +35,8 @@ struct QuickPanelView: View {
             footer
         }
         .background(.regularMaterial)
+        .overlay(alignment: .bottom) { toastView }
+        .animation(.easeOut(duration: 0.18), value: coordinator.toast)
         .clipShape(RoundedRectangle(cornerRadius: 18))
         .background(PanelKeyboardMonitor(onKeyDown: handleKey))
         .onAppear { searchFocused = true; resetSelection() }
@@ -115,7 +117,7 @@ struct QuickPanelView: View {
             }.labelsHidden().frame(maxWidth: 110)
             Spacer(minLength: 0)
             if selectedIDs.count > 1 {
-                Button("复制 \(selectedIDs.count) 项") { store.copyItems(chosen, reorder: false) }.font(.caption)
+                Button("复制 \(selectedIDs.count) 项") { coordinator.copyItems(chosen) }.font(.caption)
             }
             Text("\(items.count) 项").font(.caption).foregroundStyle(.secondary)
         }.controlSize(.small).padding(.horizontal, 18).padding(.bottom, 10)
@@ -155,7 +157,7 @@ struct QuickPanelView: View {
             .contextMenu {
                 Button("粘贴") { coordinator.paste(item) }
                 Button("粘贴为纯文本") { coordinator.paste(item, plainText: true) }.disabled(item.text.isEmpty)
-                Button("仅复制") { store.copy(item, reorder: false) }
+                Button("仅复制") { coordinator.copy(item) }
                 Button("预览") { previewItem = item }
                 Divider()
                 Button { store.togglePin(item) } label: {
@@ -171,6 +173,20 @@ struct QuickPanelView: View {
                 }
                 Button("删除", role: .destructive) { store.delete(item) }
             }
+    }
+
+    @ViewBuilder private var toastView: some View {
+        if let toast = coordinator.toast {
+            Label(toast.message, systemImage: "checkmark.circle.fill")
+                .font(.system(size: 12, weight: .medium))
+                .padding(.horizontal, 14).padding(.vertical, 8)
+                .background(.thickMaterial, in: Capsule())
+                .shadow(color: .black.opacity(0.15), radius: 8, y: 2)
+                .padding(.bottom, 44)
+                .transition(.opacity.combined(with: .scale(scale: 0.9)))
+                .allowsHitTesting(false)
+                .id(toast.id)
+        }
     }
 
     private var emptyView: some View {
@@ -230,7 +246,7 @@ struct QuickPanelView: View {
         let command = flags.contains(.command)
         if command, let char = event.charactersIgnoringModifiers?.lowercased() {
             if char == "f" { searchFocused = true; return true }
-            if char == "c", !searchFocused { store.copyItems(chosen, reorder: false); return true }
+            if char == "c", !searchFocused { coordinator.copyItems(chosen); return true }
             if char == "a", !searchFocused { selectedIDs = Set(items.map(\.id)); return true }
             if let number = Int(char), (1...9).contains(number), items.count >= number {
                 coordinator.paste(items[number - 1]); return true

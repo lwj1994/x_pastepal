@@ -22,6 +22,8 @@ final class AppCoordinator: NSObject, NSApplicationDelegate, NSWindowDelegate {
     let shortcuts: ShortcutService
     let panelPreferences: PanelPreferences
     var pasteMessage: String?
+    /// 面板内短暂显示的提示，每次复制生成新 ID 以重新计时。
+    private(set) var toast: PanelToast?
     var shortcutLabel: String { shortcuts.shortcutLabel }
     @ObservationIgnored private var mainWindow: NSWindow?
     @ObservationIgnored private var settingsWindow: NSWindow?
@@ -223,6 +225,7 @@ final class AppCoordinator: NSObject, NSApplicationDelegate, NSWindowDelegate {
         let front = NSWorkspace.shared.frontmostApplication
         if front?.processIdentifier != ProcessInfo.processInfo.processIdentifier { previousApp = front }
         pasteMessage = nil
+        toast = nil
         let screen = NSScreen.screens.first(where: { NSMouseInRect(NSEvent.mouseLocation, $0.frame, false) }) ?? NSScreen.main
         guard let screen else { return }
         // 面板内复制不会立即调整顺序，留到下次打开时再按最近使用排序。
@@ -316,14 +319,38 @@ final class AppCoordinator: NSObject, NSApplicationDelegate, NSWindowDelegate {
     func pasteItems(_ items: [ClipItem], plainText: Bool = false) {
         guard !items.isEmpty else { return }
         if items.count == 1, let item = items.first { paste(item, plainText: plainText); return }
-        guard store.copyItems(items, reorder: false) else { pasteMessage = store.errorMessage; return }
+        guard copyItems(items) else { return }
         finishPaste()
     }
 
     func paste(_ item: ClipItem, plainText: Bool = false) {
         let usePlainText = plainText || (panelPreferences.plainTextByDefault && (item.kind == .text || item.kind == .link))
-        guard store.copy(item, plainText: usePlainText, reorder: false) else { pasteMessage = store.errorMessage; return }
+        guard copy(item, plainText: usePlainText) else { return }
         finishPaste()
+    }
+
+    /// 面板内仅复制：写入剪贴板并提示，不粘贴。
+    @discardableResult
+    func copy(_ item: ClipItem, plainText: Bool = false) -> Bool {
+        guard store.copy(item, plainText: plainText, reorder: false) else { pasteMessage = store.errorMessage; return false }
+        showToast("已复制")
+        return true
+    }
+
+    @discardableResult
+    func copyItems(_ items: [ClipItem]) -> Bool {
+        guard store.copyItems(items, reorder: false) else { pasteMessage = store.errorMessage; return false }
+        showToast(items.count > 1 ? "已复制 \(items.count) 项" : "已复制")
+        return true
+    }
+
+    private func showToast(_ message: String) {
+        let current = PanelToast(message: message)
+        toast = current
+        Task { @MainActor [weak self] in
+            try? await Task.sleep(for: .seconds(1.2))
+            if self?.toast?.id == current.id { self?.toast = nil }
+        }
     }
 
     private func finishPaste() {
@@ -366,6 +393,11 @@ final class AppCoordinator: NSObject, NSApplicationDelegate, NSWindowDelegate {
     }
 
 
+}
+
+struct PanelToast: Equatable {
+    let id = UUID()
+    let message: String
 }
 
 class QuickPanel: NSPanel {
