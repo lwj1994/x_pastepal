@@ -19,6 +19,10 @@ public final class ClipboardStore {
     public private(set) var lastSyncDate: Date?
     public var cloudConfigurationError: String? { CloudKitTransport.configurationError }
     public var backupDirectory: URL { directory.appendingPathComponent("Backups", isDirectory: true) }
+    /// 剪贴板当前版本号，用于判断内容是否仍是自己写入的那一份。
+    public var pasteboardChangeCount: Int { pasteboard.changeCount }
+    /// 每次采集到新的剪贴板内容后调用，参数为写入历史后的条目。
+    @ObservationIgnored public var onCapture: ((ClipItem) -> Void)?
     public var automaticBackupEnabled = true { didSet { if !isLoading { save() } } }
     public var backupIntervalHours = 6 {
         didSet {
@@ -195,6 +199,7 @@ public final class ClipboardStore {
         items.insert(newItem, at: 0)
         applyLimits()
         save()
+        onCapture?(newItem)
     }
 
     /// `reorder` 为 false 时只更新使用时间，位置调整推迟到 `applyDeferredReorder()`。
@@ -805,7 +810,12 @@ public final class ClipboardStore {
             applyLimits()
             if items.count != count { save() }
         }
-        guard pasteboard.changeCount != lastChangeCount else { return }
+        captureIfChanged()
+    }
+
+    /// 立即采集轮询尚未发现的剪贴板变化，避免内容在下一次轮询前被覆盖。
+    public func captureIfChanged() {
+        guard isMonitoring, pasteboard.changeCount != lastChangeCount else { return }
         captureCurrentClipboard()
     }
 

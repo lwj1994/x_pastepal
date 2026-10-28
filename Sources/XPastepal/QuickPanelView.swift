@@ -29,6 +29,7 @@ struct QuickPanelView: View {
         VStack(spacing: 0) {
             header
             filterBar
+            queueBanner
             Divider()
             if items.isEmpty { emptyView } else { cards }
             Divider()
@@ -127,6 +128,21 @@ struct QuickPanelView: View {
             }
             Text("\(items.count) 项").font(.caption).foregroundStyle(.secondary)
         }.controlSize(.small).padding(.horizontal, 18).padding(.bottom, 10)
+    }
+
+    @ViewBuilder private var queueBanner: some View {
+        let queue = coordinator.pasteQueue
+        if queue.isActive {
+            HStack(spacing: 8) {
+                Image(systemName: "list.number").foregroundStyle(Color.accentColor)
+                Text("粘贴队列 \(queue.count) 项 · 下一项：\(queue.nextItem?.title ?? "")")
+                    .lineLimit(1).truncationMode(.tail)
+                Spacer(minLength: 0)
+                Button("结束队列") { coordinator.endPasteQueue() }
+            }
+            .font(.caption).controlSize(.small)
+            .padding(.horizontal, 18).padding(.bottom, 10)
+        }
     }
 
     private var cards: some View {

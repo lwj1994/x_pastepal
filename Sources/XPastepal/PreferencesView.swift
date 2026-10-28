@@ -54,6 +54,21 @@ struct PreferencesView: View {
                 Text("收藏的内容不受自动清理限制。可在“备份与同步”管理本地快照和 iCloud。")
                     .font(.caption).foregroundStyle(.secondary)
             }
+            Section("粘贴队列") {
+                Toggle("连续复制自动排队", isOn: Binding(
+                    get: { coordinator.panelPreferences.autoPasteQueue },
+                    set: { coordinator.panelPreferences.autoPasteQueue = $0; coordinator.updatePasteQueueMonitor() }))
+                Text("10 秒内连续复制的多条内容会按复制顺序排队，在其他应用每按一次 ⌘V 粘贴下一条，全部粘完恢复正常。复制之间粘贴过，或在快捷面板选择内容，都不会排队。")
+                    .font(.caption).foregroundStyle(.secondary)
+                if coordinator.panelPreferences.autoPasteQueue && authorizationState != .granted {
+                    HStack {
+                        Label("需要辅助功能权限才能识别 ⌘V", systemImage: "exclamationmark.triangle.fill")
+                            .foregroundStyle(.orange)
+                        Spacer()
+                        Button("启用…") { PermissionAccess.authorizeAccessibility() }
+                    }.font(.caption)
+                }
+            }
             Section("启动") {
                 Toggle("登录时启动", isOn: Binding(
                     get: { loginStatus == .enabled || loginStatus == .requiresApproval },
@@ -92,7 +107,7 @@ struct PreferencesView: View {
         Form {
             Section("全局快捷键") {
                 ShortcutRecorderView(service: coordinator.shortcuts)
-                Text("全局快捷键无需辅助功能权限。辅助功能仅用于自动粘贴。")
+                Text("全局快捷键无需辅助功能权限。辅助功能仅用于自动粘贴和粘贴队列。")
                     .font(.caption).foregroundStyle(.secondary)
             }
             Section("面板内操作") {
@@ -120,7 +135,7 @@ struct PreferencesView: View {
                     .help("打开辅助功能设置，并显示 XPastepal 拖拽授权浮层")
                 }
                 Text(authorizationState == .granted
-                     ? "辅助功能用于把选中的内容粘贴到目标应用。"
+                     ? "辅助功能用于把选中的内容粘贴到目标应用，并让粘贴队列识别 ⌘V。"
                      : "点击启用，将浮层里的 XPastepal 拖入辅助功能列表并打开开关。未授权时仍可复制，再按 ⌘V 粘贴。")
                     .font(.caption).foregroundStyle(.secondary)
             }

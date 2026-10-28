@@ -22,6 +22,8 @@ final class PanelPreferences {
     var plainTextByDefault: Bool { didSet { defaults.set(plainTextByDefault, forKey: "panel.plainText") } }
     var copyOnly: Bool { didSet { defaults.set(copyOnly, forKey: "panel.copyOnly") } }
     var cardWidth: Double { didSet { defaults.set(cardWidth, forKey: "panel.cardWidth") } }
+    /// 短时间内连续复制的内容自动排队，⌘V 依次粘贴。
+    var autoPasteQueue: Bool { didSet { defaults.set(autoPasteQueue, forKey: "pasteQueue.auto") } }
     @ObservationIgnored private let defaults: UserDefaults
 
     init(defaults: UserDefaults = .standard) {
@@ -30,6 +32,7 @@ final class PanelPreferences {
         staysOpen = defaults.bool(forKey: "panel.staysOpen")
         plainTextByDefault = defaults.bool(forKey: "panel.plainText")
         copyOnly = defaults.bool(forKey: "panel.copyOnly")
+        autoPasteQueue = defaults.object(forKey: "pasteQueue.auto") as? Bool ?? true
         let saved = defaults.double(forKey: "panel.cardWidth")
         cardWidth = saved == 0 ? 228 : min(300, max(180, saved))
     }

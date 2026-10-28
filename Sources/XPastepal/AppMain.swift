@@ -21,6 +21,7 @@ final class AppCoordinator: NSObject, NSApplicationDelegate, NSWindowDelegate {
     let store: ClipboardStore
     let shortcuts: ShortcutService
     let panelPreferences: PanelPreferences
+    let pasteQueue: PasteQueue
     var pasteMessage: String?
     /// 面板内短暂显示的提示，每次复制生成新 ID 以重新计时。
     private(set) var toast: PanelToast?
@@ -38,6 +39,7 @@ final class AppCoordinator: NSObject, NSApplicationDelegate, NSWindowDelegate {
     @ObservationIgnored private var previousApp: NSRunningApplication?
     @ObservationIgnored private var localClickMonitor: Any?
     @ObservationIgnored private var activationObserver: NSObjectProtocol?
+    @ObservationIgnored private let pasteKeyMonitor: PasteKeyMonitor
 
     override convenience init() {
         self.init(store: nil, shortcuts: ShortcutService(), panelPreferences: PanelPreferences())
@@ -70,8 +72,15 @@ final class AppCoordinator: NSObject, NSApplicationDelegate, NSWindowDelegate {
                 self.store.move(item, to: self.store.collections.first?.id)
             }
         } else { self.store = ClipboardStore() }
+        pasteQueue = PasteQueue(store: self.store)
+        pasteKeyMonitor = PasteKeyMonitor(pasteKeyDown: { [store = self.store] in
+            // 先采集轮询还没发现的复制，避免刚复制的内容被队首覆盖。
+            store.captureIfChanged()
+            return store.pasteboardChangeCount
+        })
         super.init()
         escapeShortcut.onEscape = { [weak self] in self?.dismissPanel() }
+        configurePasteQueue()
     }
 
     func applicationDidFinishLaunching(_ notification: Notification) {
@@ -83,6 +92,8 @@ final class AppCoordinator: NSObject, NSApplicationDelegate, NSWindowDelegate {
         item.button?.action = #selector(statusClicked(_:))
         item.button?.sendAction(on: [.leftMouseUp, .rightMouseUp])
         statusItem = item
+        observePasteQueue()
+        updatePasteQueueMonitor()
         shortcuts.onTogglePanel = { [weak self] in self?.toggleQuickPanel() }
         activationObserver = NSWorkspace.shared.notificationCenter.addObserver(
             forName: NSWorkspace.didActivateApplicationNotification, object: nil, queue: .main
@@ -147,6 +158,7 @@ final class AppCoordinator: NSObject, NSApplicationDelegate, NSWindowDelegate {
 
     func applicationShouldTerminate(_ sender: NSApplication) -> NSApplication.TerminateReply {
         shortcuts.stop()
+        pasteKeyMonitor.stop()
         dismissPanel(animated: false)
         if let activationObserver {
             NSWorkspace.shared.notificationCenter.removeObserver(activationObserver)
@@ -161,12 +173,15 @@ final class AppCoordinator: NSObject, NSApplicationDelegate, NSWindowDelegate {
     @objc private func statusClicked(_ sender: NSStatusBarButton) {
         if NSApp.currentEvent?.type == .rightMouseUp {
             let menu = NSMenu()
-            let items: [(String, Selector)] = [
+            var items: [(String, Selector)] = [
                 ("打开资料库", #selector(openLibrary)),
                 (store.isMonitoring ? "暂停记录" : "继续记录", #selector(toggleMonitoring)),
                 ("设置…", #selector(openSettings)),
                 ("退出 XPastepal", #selector(quit))
             ]
+            if pasteQueue.isActive {
+                items.insert(("结束粘贴队列（剩 \(pasteQueue.count) 项）", #selector(endPasteQueueAction)), at: 0)
+            }
             for (title, action) in items {
                 let item = NSMenuItem(title: title, action: action, keyEquivalent: "")
                 item.target = self
@@ -181,6 +196,7 @@ final class AppCoordinator: NSObject, NSApplicationDelegate, NSWindowDelegate {
     @objc private func openLibrary() { showLibrary() }
     @objc private func openSettings() { showSettings() }
     @objc private func openQuickPanel() { toggleQuickPanel() }
+    @objc private func endPasteQueueAction() { endPasteQueue() }
     @objc private func toggleMonitoring() { store.isMonitoring ? store.stopMonitoring() : store.startMonitoring() }
     @objc private func quit() { NSApp.terminate(nil) }
 
@@ -335,6 +351,8 @@ final class AppCoordinator: NSObject, NSApplicationDelegate, NSWindowDelegate {
     /// 面板内仅复制：写入剪贴板并提示，不粘贴。
     @discardableResult
     func copy(_ item: ClipItem, plainText: Bool = false) -> Bool {
+        // 手动选择内容即结束自动排队。
+        pasteQueue.stop()
         guard store.copy(item, plainText: plainText, reorder: false) else { pasteMessage = store.errorMessage; return false }
         showToast("已复制")
         return true
@@ -342,6 +360,7 @@ final class AppCoordinator: NSObject, NSApplicationDelegate, NSWindowDelegate {
 
     @discardableResult
     func copyItems(_ items: [ClipItem]) -> Bool {
+        pasteQueue.stop()
         guard store.copyItems(items, reorder: false) else { pasteMessage = store.errorMessage; return false }
         showToast(items.count > 1 ? "已复制 \(items.count) 项" : "已复制")
         return true
@@ -354,6 +373,56 @@ final class AppCoordinator: NSObject, NSApplicationDelegate, NSWindowDelegate {
             try? await Task.sleep(for: .seconds(1.2))
             if self?.toast?.id == current.id { self?.toast = nil }
         }
+    }
+
+    // MARK: 粘贴队列
+
+    private func configurePasteQueue() {
+        pasteQueue.prefersPlainText = { [weak self] item in
+            self?.panelPreferences.plainTextByDefault == true && (item.kind == .text || item.kind == .link)
+        }
+        store.onCapture = { [weak self] item in
+            guard let self else { return }
+            self.pasteKeyMonitor.restartIfNewlyTrusted()
+            // 无法识别 ⌘V 时排队会一直停在第一项，因此不排队。
+            guard self.panelPreferences.autoPasteQueue, self.pasteKeyMonitor.isRunning,
+                  PermissionAccess.isAccessibilityGranted else { self.pasteQueue.stop(); return }
+            self.pasteQueue.didCapture(item)
+        }
+        pasteKeyMonitor.onPaste = { [weak self] changeCount in
+            self?.pasteQueue.didPaste(changeCount: changeCount)
+        }
+    }
+
+    /// 按“连续复制自动排队”设置启停 ⌘V 监听。
+    func updatePasteQueueMonitor() {
+        if panelPreferences.autoPasteQueue {
+            if !pasteKeyMonitor.isRunning { pasteKeyMonitor.start() }
+        } else {
+            pasteKeyMonitor.stop()
+            pasteQueue.stop()
+        }
+    }
+
+    /// 结束当前队列，剪贴板保留当前内容。
+    func endPasteQueue() { pasteQueue.stop() }
+
+    private func observePasteQueue() {
+        withObservationTracking { updateStatusItem() } onChange: { [weak self] in
+            Task { @MainActor [weak self] in self?.observePasteQueue() }
+        }
+    }
+
+    /// 排队时菜单栏图标显示剩余数量。
+    private func updateStatusItem() {
+        let isActive = pasteQueue.isActive
+        let count = pasteQueue.count
+        guard let statusItem, let button = statusItem.button else { return }
+        button.image = NSImage(systemSymbolName: isActive ? "list.number" : "square.on.square", accessibilityDescription: "XPastepal")
+        button.title = isActive ? "\(count)" : ""
+        button.imagePosition = isActive ? .imageLeading : .imageOnly
+        statusItem.length = isActive ? NSStatusItem.variableLength : NSStatusItem.squareLength
+        button.toolTip = isActive ? "XPastepal · 粘贴队列剩余 \(count) 项，按 ⌘V 依次粘贴" : "XPastepal · 剪贴板历史"
     }
 
     private func finishPaste() {
