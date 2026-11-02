@@ -179,7 +179,8 @@ struct QuickPanelView: View {
     private func card(_ item: ClipItem, aspectRatio: CGFloat = ClipCard.maximumAspectRatio) -> some View {
         ClipCard(item: item, isSelected: selectedIDs.contains(item.id),
                  onSelect: { select(item) }, onCopy: { coordinator.copy(item) },
-                 onActivate: { coordinator.paste(item) }, aspectRatio: aspectRatio)
+                 onActivate: { coordinator.paste(item) },
+                 onToggleFavorite: { store.togglePin(item) }, aspectRatio: aspectRatio)
             .id(item.id)
             .contextMenu {
                 Button("粘贴") { coordinator.paste(item) }

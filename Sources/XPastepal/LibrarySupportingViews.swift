@@ -203,6 +203,7 @@ struct LibraryListRow: View {
     let isSelected: Bool
     let onSelect: () -> Void
     let onCopy: () -> Void
+    let onToggleFavorite: () -> Void
     @State private var isHovered = false
 
     var body: some View {
@@ -221,7 +222,10 @@ struct LibraryListRow: View {
                 .foregroundStyle(.secondary)
             }
             Spacer(minLength: 4)
-            FavoriteIcon(isFavorite: item.isPinned).font(.system(size: 10))
+            Button(action: onToggleFavorite) { FavoriteIcon(isFavorite: item.isPinned).font(.system(size: 10)) }
+                .buttonStyle(.plain)
+                .help(item.isPinned ? "取消收藏" : "收藏此条内容")
+                .accessibilityLabel(item.isPinned ? "取消收藏\(item.title)" : "收藏\(item.title)")
             Text(item.createdAt, style: .relative)
                 .font(.system(size: 10)).foregroundStyle(.tertiary).lineLimit(1)
             Button(action: onCopy) { Image(systemName: "doc.on.doc") }

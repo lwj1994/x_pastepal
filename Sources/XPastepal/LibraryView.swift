@@ -392,7 +392,8 @@ struct LibraryView: View {
                             ForEach(visibleItems) { item in
                                 LibraryListRow(item: item, isSelected: selectedIDs.contains(item.id),
                                     onSelect: { select(item, modifiers: NSEvent.modifierFlags) },
-                                    onCopy: { store.copy(item) })
+                                    onCopy: { store.copy(item) },
+                                    onToggleFavorite: { store.togglePin(item) })
                                     .id(item.id)
                                     .contextMenu { itemMenu(item) }
                             }
@@ -404,7 +405,8 @@ struct LibraryView: View {
                             ForEach(visibleItems) { item in
                                 ClipCard(item: item, isSelected: selectedIDs.contains(item.id),
                                     onSelect: { select(item, modifiers: NSEvent.modifierFlags) },
-                                    onCopy: { store.copy(item) })
+                                    onCopy: { store.copy(item) },
+                                    onToggleFavorite: { store.togglePin(item) })
                                     .id(item.id)
                                     .contextMenu { itemMenu(item) }
                             }

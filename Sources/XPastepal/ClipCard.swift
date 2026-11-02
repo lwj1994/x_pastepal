@@ -52,6 +52,8 @@ struct ClipCard: View {
     let onCopy: () -> Void
     /// 双击卡片；未指定时与复制按钮相同。
     var onActivate: (() -> Void)?
+    /// 卡片上的收藏按钮。
+    var onToggleFavorite: (() -> Void)?
     var aspectRatio: CGFloat = maximumAspectRatio
 
     @State private var isHovered = false
@@ -88,8 +90,7 @@ struct ClipCard: View {
                     .font(.system(size: 11, weight: .medium))
                     .foregroundStyle(.secondary)
                 Spacer(minLength: 4)
-                FavoriteIcon(isFavorite: item.isPinned)
-                    .font(.system(size: 10))
+                favoriteButton
                 Button(action: onCopy) {
                     Image(systemName: "doc.on.doc")
                         .font(.system(size: 11, weight: .medium))
@@ -116,6 +117,24 @@ struct ClipCard: View {
             }
             .font(.system(size: 10))
             .foregroundStyle(.tertiary)
+        }
+    }
+
+    @ViewBuilder private var favoriteButton: some View {
+        if let onToggleFavorite {
+            Button(action: onToggleFavorite) {
+                FavoriteIcon(isFavorite: item.isPinned)
+                    .font(.system(size: 11))
+                    .frame(width: 25, height: 25)
+                    .contentShape(Rectangle())
+            }
+            .buttonStyle(.plain)
+            .background(isHovered ? Color.primary.opacity(0.05) : .clear, in: RoundedRectangle(cornerRadius: 6))
+            .help(item.isPinned ? "取消收藏" : "收藏此条内容")
+            .accessibilityLabel(item.isPinned ? "取消收藏\(item.title)" : "收藏\(item.title)")
+        } else {
+            FavoriteIcon(isFavorite: item.isPinned)
+                .font(.system(size: 10))
         }
     }
 
