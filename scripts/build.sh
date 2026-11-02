@@ -103,6 +103,15 @@ PY
   print -r -- "CloudKit signing configured (${ICLOUD_ENVIRONMENT:-Development})."
 else
   rm -f "$APP/Contents/embedded.provisionprofile"
-  codesign --force --sign - "$APP"
+  # ad-hoc 签名按 cdhash 识别，每次构建都会让辅助功能授权失效；有开发证书时改用固定证书签名。
+  local_identity="${LOCAL_SIGN_IDENTITY:-$(security find-identity -v -p codesigning 2>/dev/null \
+    | awk '/"Apple Development: / { print $2; exit }')}"
+  if [[ -n "$local_identity" && "$local_identity" != "-" ]]; then
+    codesign --force --sign "$local_identity" "$APP"
+    print -r -- "本地签名：$local_identity"
+  else
+    codesign --force --sign - "$APP"
+    print -r -- "未找到开发证书，使用 ad-hoc 签名；重新构建后需在辅助功能列表中重新加入应用。"
+  fi
 fi
 print -r -- "构建完成：$APP"
