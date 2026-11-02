@@ -86,6 +86,18 @@ struct PreferencesView: View {
                 }
                 if let loginError { Text(loginError).font(.caption).foregroundStyle(.orange) }
             }
+            Section("更新") {
+                Toggle("自动检查更新", isOn: Binding(
+                    get: { coordinator.updater.automaticallyChecks },
+                    set: { coordinator.updater.automaticallyChecks = $0 }))
+                HStack {
+                    Text("每天从 GitHub 检查一次新版本，发现后可一键安装并重启。")
+                        .font(.caption).foregroundStyle(.secondary)
+                    Spacer()
+                    Button(coordinator.updater.menuTitle) { coordinator.updater.checkForUpdates() }
+                        .disabled(coordinator.updater.isChecking || coordinator.updater.isInstalling)
+                }
+            }
             Section {
                 HStack {
                     Text("XPastepal \(Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "开发版")").foregroundStyle(.secondary)

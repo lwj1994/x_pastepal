@@ -13,6 +13,8 @@ open dist/XPastepal.app
 
 安装到本机用户应用目录：`./scripts/install.sh`，随后打开 `~/Applications/XPastepal.app`。
 
+正式发布：`./scripts/release.sh` 使用 Developer ID 证书签名（hardened runtime）、提交公证并装订票据，产出 `dist/XPastepal-<版本>.dmg`。默认使用钥匙串中第一个 Developer ID Application 证书和名为 `notary` 的 notarytool 凭据，可用 `DEVELOPER_ID_IDENTITY`、`NOTARY_PROFILE` 覆盖。
+
 直接使用 Swift Package 开发：
 
 ```sh
@@ -56,7 +58,7 @@ swift test
 
 此版本实现本机剪贴板管理、本地轮换备份和可选的多台 Mac iCloud 同步。未实现 iOS 客户端、附近分享、一次粘贴整个队列、自动 OCR 索引、JavaScript 转换、热边缘和系统快捷指令。采用独立的数据格式、图标和界面代码，不依赖原应用的账户或云容器。云端真实双机验证需要配置专用 CloudKit 容器与签名；默认 ad-hoc 构建仅提供本地功能。
 
-第三方权限库使用固定版本 PermissionFlow 2.11.3，全局快捷键使用 KeyboardShortcuts 3.1.0；许可见 `THIRD_PARTY_NOTICES.md`。更新后如系统不再识别本机 ad-hoc 签名，请在权限列表中重新加入当前应用。
+第三方权限库使用固定版本 PermissionFlow 2.11.3，全局快捷键使用 KeyboardShortcuts 3.1.0；许可见 `THIRD_PARTY_NOTICES.md`。本地构建默认使用钥匙串中第一个 Apple Development 证书签名（可用 `LOCAL_SIGN_IDENTITY` 指定），重新构建后辅助功能授权保持有效；没有证书时退回 ad-hoc 签名，更新后需在权限列表中重新加入当前应用。
 
 `open dist/XPastepal.app --args --demo` 会使用独立临时目录和命名剪贴板展示明确的演示内容，不采集系统剪贴板；正常使用请不加这个参数。`--background` 仅后台启动，不打开主窗口；`--quick-panel` 启动时直接显示快捷面板。
 

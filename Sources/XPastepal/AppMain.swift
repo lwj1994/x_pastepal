@@ -22,6 +22,7 @@ final class AppCoordinator: NSObject, NSApplicationDelegate, NSWindowDelegate {
     let shortcuts: ShortcutService
     let panelPreferences: PanelPreferences
     let pasteQueue: PasteQueue
+    let updater = AppUpdater()
     var pasteMessage: String?
     /// 面板内短暂显示的提示，每次复制生成新 ID 以重新计时。
     private(set) var toast: PanelToast?
@@ -107,6 +108,7 @@ final class AppCoordinator: NSObject, NSApplicationDelegate, NSWindowDelegate {
         }
         shortcuts.start()
         store.startBackgroundServices()
+        if !ProcessInfo.processInfo.arguments.contains("--demo") { updater.start() }
         if ProcessInfo.processInfo.arguments.contains("--quick-panel") { toggleQuickPanel() }
         else if !ProcessInfo.processInfo.arguments.contains("--background") { showLibrary() }
         // Prepare the hosting hierarchy before the first hotkey, outside the launch callback.
@@ -128,6 +130,9 @@ final class AppCoordinator: NSObject, NSApplicationDelegate, NSWindowDelegate {
         let quickItem = NSMenuItem(title: "打开快捷面板", action: #selector(openQuickPanel), keyEquivalent: "")
         quickItem.target = self
         appMenu.addItem(quickItem)
+        let updateItem = NSMenuItem(title: "检查更新…", action: #selector(checkForUpdates), keyEquivalent: "")
+        updateItem.target = self
+        appMenu.addItem(updateItem)
         appMenu.addItem(.separator())
         let quitItem = NSMenuItem(title: "退出 XPastepal", action: #selector(quit), keyEquivalent: "q")
         quitItem.target = self
@@ -151,6 +156,7 @@ final class AppCoordinator: NSObject, NSApplicationDelegate, NSWindowDelegate {
 
     func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
         if let panel, panelTransition.isPresented { panel.makeKeyAndOrderFront(nil) }
+        else if mainWindow?.isMiniaturized == true { showLibrary() }
         else if !flag { toggleQuickPanel() }
         // 已自行选择要显示的窗口，不再让系统默认重开其他窗口。
         return false
@@ -159,6 +165,7 @@ final class AppCoordinator: NSObject, NSApplicationDelegate, NSWindowDelegate {
     func applicationShouldTerminate(_ sender: NSApplication) -> NSApplication.TerminateReply {
         shortcuts.stop()
         pasteKeyMonitor.stop()
+        updater.stop()
         dismissPanel(animated: false)
         if let activationObserver {
             NSWorkspace.shared.notificationCenter.removeObserver(activationObserver)
@@ -177,6 +184,7 @@ final class AppCoordinator: NSObject, NSApplicationDelegate, NSWindowDelegate {
                 ("打开资料库", #selector(openLibrary)),
                 (store.isMonitoring ? "暂停记录" : "继续记录", #selector(toggleMonitoring)),
                 ("设置…", #selector(openSettings)),
+                (updater.menuTitle, #selector(checkForUpdates)),
                 ("退出 XPastepal", #selector(quit))
             ]
             if pasteQueue.isActive {
@@ -195,6 +203,7 @@ final class AppCoordinator: NSObject, NSApplicationDelegate, NSWindowDelegate {
 
     @objc private func openLibrary() { showLibrary() }
     @objc private func openSettings() { showSettings() }
+    @objc private func checkForUpdates() { updater.checkForUpdates() }
     @objc private func openQuickPanel() { toggleQuickPanel() }
     @objc private func endPasteQueueAction() { endPasteQueue() }
     @objc private func toggleMonitoring() { store.isMonitoring ? store.stopMonitoring() : store.startMonitoring() }
@@ -213,14 +222,16 @@ final class AppCoordinator: NSObject, NSApplicationDelegate, NSWindowDelegate {
             window.minSize = NSSize(width: 1000, height: 620)
             window.isReleasedWhenClosed = false
             window.setFrameAutosaveName("XPastepal.Library")
+            window.delegate = self
             window.contentView = NSHostingView(rootView: LibraryView(store: store,
                 onShowQuickPanel: { [weak self] in self?.toggleQuickPanel() },
                 onShowSettings: { [weak self] in self?.showSettings() }))
             window.center()
             mainWindow = window
         }
-        NSApp.activate(ignoringOtherApps: true)
         mainWindow?.makeKeyAndOrderFront(nil)
+        updateDockIcon()
+        NSApp.activate(ignoringOtherApps: true)
     }
 
     func showSettings() {
@@ -230,12 +241,14 @@ final class AppCoordinator: NSObject, NSApplicationDelegate, NSWindowDelegate {
                 styleMask: [.titled, .closable], backing: .buffered, defer: false)
             window.title = "XPastepal 设置"
             window.isReleasedWhenClosed = false
+            window.delegate = self
             window.contentView = NSHostingView(rootView: PreferencesView(coordinator: self, store: store))
             window.center()
             settingsWindow = window
         }
-        NSApp.activate(ignoringOtherApps: true)
         settingsWindow?.makeKeyAndOrderFront(nil)
+        updateDockIcon()
+        NSApp.activate(ignoringOtherApps: true)
     }
 
     func toggleQuickPanel() {
@@ -253,6 +266,7 @@ final class AppCoordinator: NSObject, NSApplicationDelegate, NSWindowDelegate {
         // 先隐藏常规窗口，再交给面板接收键盘输入，避免资料库一起被带到前台。
         mainWindow?.orderOut(nil)
         settingsWindow?.orderOut(nil)
+        updateDockIcon()
         NSApp.activate(ignoringOtherApps: true)
         if let panel {
             panelTransition.show(panel: panel, frame: panelFrame(in: screen), position: panelPreferences.position, screen: screen)
@@ -295,6 +309,20 @@ final class AppCoordinator: NSObject, NSApplicationDelegate, NSWindowDelegate {
             panel = window
             window.contentView?.layoutSubtreeIfNeeded()
         }
+    }
+
+    func windowWillClose(_ notification: Notification) {
+        updateDockIcon(closing: notification.object as? NSWindow)
+    }
+
+    /// 资料库或设置窗口可见（含最小化）时显示 Dock 图标，全部关闭后回到菜单栏模式。
+    private func updateDockIcon(closing: NSWindow? = nil) {
+        let hasWindow = [mainWindow, settingsWindow].contains { window in
+            guard let window, window !== closing else { return false }
+            return window.isVisible || window.isMiniaturized
+        }
+        let policy: NSApplication.ActivationPolicy = hasWindow ? .regular : .accessory
+        if NSApp.activationPolicy() != policy { NSApp.setActivationPolicy(policy) }
     }
 
     func windowDidBecomeKey(_ notification: Notification) { updateEscapeShortcut() }
