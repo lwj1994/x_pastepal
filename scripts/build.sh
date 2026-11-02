@@ -86,7 +86,7 @@ if [[ "$cloud_signing" == true ]]; then
   codesign --force --options runtime --sign "$CODE_SIGN_IDENTITY" \
     --entitlements "$BUILD_SIGNING_DIR/entitlements.plist" "$APP"
   codesign --verify --deep --strict "$APP"
-  codesign --display --extract-certificates "$BUILD_SIGNING_DIR/signer" "$APP" 2>/dev/null
+  codesign --display --extract-certificates="$BUILD_SIGNING_DIR/signer" "$APP" 2>/dev/null
   python3 - "$BUILD_SIGNING_DIR" <<'PY'
 import hashlib
 import pathlib
