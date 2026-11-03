@@ -109,7 +109,9 @@ final class AppUpdater {
             do {
                 let installation = try await AppUpdateInstaller().prepareInstallation(for: info)
                 try installation.launchInstaller()
-                NSApp.terminate(nil)
+                // 退出时要等异步保存回复 terminateLater；在主队列任务里调用 terminate 会让保存任务排不上而卡死，
+                // 所以交给 RunLoop 回调执行。
+                RunLoop.main.perform { NSApp.terminate(nil) }
             } catch {
                 guard let self else { return }
                 self.isInstalling = false
